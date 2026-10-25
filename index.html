@@ -1,11 +1,12 @@
-<!DOCTYPE html><html class="dark" lang="en" style=""><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<!DOCTYPE html>
+<html class="dark" lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>LEARN WITH ANMOL — Learn Java. Master DSA.</title>
-<link href="https://fonts.googleapis.com" rel="preconnect">
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
     tailwind.config = {
@@ -99,7 +100,28 @@
     }
   </style>
 <!-- Playlist image is embedded directly so it works on GitHub Pages and Netlify without a separate image upload. -->
-</head>
+<style>
+/* Premium visual refresh */
+:root { color-scheme: dark; }
+html { scroll-behavior: smooth; }
+body { background: radial-gradient(ellipse at 50% -10%, rgba(16,185,129,.13), transparent 42%), #06111f !important; }
+header { background: rgba(4,16,30,.88) !important; border-color: rgba(52,211,153,.22) !important; }
+section { scroll-margin-top: 90px; }
+section:first-of-type { position:relative; }
+section:first-of-type h1 { letter-spacing:-.045em; text-wrap:balance; }
+section:first-of-type p { line-height:1.8; }
+section:first-of-type a, section:first-of-type button { transition:transform .2s ease, box-shadow .2s ease; }
+section:first-of-type a:hover, section:first-of-type button:hover { transform:translateY(-2px); box-shadow:0 10px 35px rgba(16,185,129,.2); }
+#handwritten-notes, #online-notes, #java-playlist, #java-oneshot { position:relative; }
+#handwritten-notes, #online-notes { background:linear-gradient(145deg, rgba(12,31,48,.92), rgba(5,18,32,.96)) !important; }
+#java-playlist, #java-oneshot { background:linear-gradient(145deg, rgba(8,29,45,.88), rgba(5,17,30,.96)) !important; }
+#handwritten-notes h2, #online-notes h2, #java-playlist h2, #java-oneshot h2 { letter-spacing:-.035em; }
+#handwritten-notes [class*="rounded"], #online-notes [class*="rounded"], #java-playlist [class*="rounded"], #java-oneshot [class*="rounded"] { transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease; }
+#handwritten-notes [class*="rounded"]:hover, #online-notes [class*="rounded"]:hover { border-color:rgba(52,211,153,.55) !important; box-shadow:0 12px 35px rgba(0,0,0,.22); }
+iframe { display:block; width:100%; aspect-ratio:16/9; height:auto; border:0; border-radius:16px; background:#02070d; box-shadow:0 16px 45px rgba(0,0,0,.32); }
+footer { background:#030b14 !important; }
+@media (max-width:640px) { section { padding-top:3.5rem !important; padding-bottom:3.5rem !important; } header { backdrop-filter:blur(18px); } }
+</style></head>
 <body class="bg-surface text-on-surface antialiased min-h-screen flex flex-col">
 <!-- 1. STICKY TOP NAVIGATION BAR -->
 <header class="sticky top-0 z-50 bg-[#051424]/90 backdrop-blur-md border-b border-[#3c4a42]/40 shadow-[0_4px_20px_rgba(0,0,0,0.5)]">
@@ -107,7 +129,7 @@
 <!-- Brand Logo + Typography -->
 <a class="flex items-center gap-3.5 group shrink-0" href="#">
 <div class="relative">
-<img alt="LEARN WITH ANMOL Official Logo" class="h-[42px] w-[42px] rounded-full object-cover ring-2 ring-primary/60 shadow-[0_0_12px_rgba(78,222,163,0.35)] group-hover:ring-primary transition-all duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBtW4_ILe1sxcoPxJlb0DzYT6PsXnIv1UFBIQb5hZAVrlXk-8gCvCscB-zlP23N2Bo6CvId9jKGfqjiFNHMAge33LNupGVm0111fJINWJY_6tNvHWrwouyPtiv_rr22Vdf_gZgTgW5MefZYvi0opEfOSPAsd5hbImpPtnUCGq7PhKTW4XNlkOP93NwKZ_JMZuEs_wTkEzf13sjNGSaHhKb2zKjzInLH7SxbMmlOKkrHrE3hLkqZ__uHbK1SbASob1yndE">
+<img alt="LEARN WITH ANMOL Official Logo" class="h-[42px] w-[42px] rounded-full object-cover ring-2 ring-primary/60 shadow-[0_0_12px_rgba(78,222,163,0.35)] group-hover:ring-primary transition-all duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBtW4_ILe1sxcoPxJlb0DzYT6PsXnIv1UFBIQb5hZAVrlXk-8gCvCscB-zlP23N2Bo6CvId9jKGfqjiFNHMAge33LNupGVm0111fJINWJY_6tNvHWrwouyPtiv_rr22Vdf_gZgTgW5MefZYvi0opEfOSPAsd5hbImpPtnUCGq7PhKTW4XNlkOP93NwKZ_JMZuEs_wTkEzf13sjNGSaHhKb2zKjzInLH7SxbMmlOKkrHrE3hLkqZ__uHbK1SbASob1yndE"/>
 </div>
 <div class="flex flex-col">
 <span class="font-headline-sm text-[19px] font-extrabold tracking-tight text-on-surface group-hover:text-primary transition-colors">
@@ -121,24 +143,24 @@
 <!-- Navigation Links -->
 <nav class="hidden lg:flex items-center gap-1 xl:gap-2 text-[14px] font-medium text-on-surface-variant">
 <a class="px-3.5 py-2 rounded-lg text-primary font-semibold hover:bg-surface-container-high transition-colors" href="#">Home</a>
-<a class="px-3.5 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#curriculum">Java Course</a>
+
+<a class="px-3.5 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#courses">Courses</a>
 <a class="px-3.5 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#java-playlist">Videos</a>
+<a class="px-3.5 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#practice-quiz">Quiz</a>
 <a class="px-3.5 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#lectures">50+ Lectures</a>
-<a class="px-3.5 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#roadmap">DSA Roadmap</a>
-<a class="px-3.5 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#practice">Practice</a>
-<a class="px-3.5 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#about">About</a>
+<a class="px-3.5 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#contact-form">Ask Doubt</a>
+
+
+
 </nav>
 <!-- Right CTAs -->
-<div class="flex items-center gap-3 shrink-0"><a aria-label="WhatsApp Channel" title="Join WhatsApp Channel" class="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-primary/10 border border-primary/30 hover:bg-primary/20 text-primary transition-all duration-200 shadow-sm" href="https://whatsapp.com/channel/0029Vb8fc4Y1t90hknWrql2Z" target="_blank" rel="noopener noreferrer"><svg class="w-[18px] h-[18px] fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.186 8.186 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3z"></path></svg></a><a aria-label="LinkedIn Profile" title="Connect on LinkedIn" class="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-secondary/10 border border-secondary/30 hover:bg-secondary/20 text-secondary transition-all duration-200 shadow-sm" href="https://linkedin.com/in/anmol-singh-8b6641308?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer"><svg class="w-[16px] h-[16px] fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path></svg></a>
-<a aria-label="Instagram Profile" title="Follow on Instagram" class="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-[#ec4899]/10 border border-[#ec4899]/30 hover:bg-[#ec4899]/20 text-[#f472b6] transition-all duration-200 shadow-sm" href="https://www.instagram.com/learn.with.anmol/reels/?hl=en" target="_blank" rel="noopener noreferrer"><svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"></circle></svg></a>
+<div class="flex items-center gap-3 shrink-0"><a aria-label="WhatsApp Channel" class="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-primary/10 border border-primary/30 hover:bg-primary/20 text-primary transition-all duration-200 shadow-sm" href="https://whatsapp.com/channel/0029Vb8fc4Y1t90hknWrql2Z" rel="noopener noreferrer" target="_blank" title="Join WhatsApp Channel"><svg class="w-[18px] h-[18px] fill-current" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.186 8.186 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3z"></path></svg></a><a aria-label="LinkedIn Profile" class="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-secondary/10 border border-secondary/30 hover:bg-secondary/20 text-secondary transition-all duration-200 shadow-sm" href="https://linkedin.com/in/anmol-singh-8b6641308?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" rel="noopener noreferrer" target="_blank" title="Connect on LinkedIn"><svg class="w-[16px] h-[16px] fill-current" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path></svg></a>
+<a aria-label="Instagram Profile" class="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-[#ec4899]/10 border border-[#ec4899]/30 hover:bg-[#ec4899]/20 text-[#f472b6] transition-all duration-200 shadow-sm" href="https://www.instagram.com/learn.with.anmol/reels/?hl=en" rel="noopener noreferrer" target="_blank" title="Follow on Instagram"><svg class="w-[18px] h-[18px]" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="18" rx="5" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" fill="currentColor" r="0.8"></circle></svg></a>
 <a class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-[#dc2626] hover:bg-[#ef4444] text-white text-[13px] font-semibold transition-all duration-200 shadow-[0_0_16px_rgba(220,38,38,0.35)]" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank">
 <span class="material-symbols-outlined text-[18px]">smart_display</span>
 <span class="">YouTube</span>
 </a>
-<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-primary-container hover:bg-primary-fixed text-on-primary text-[13px] font-bold transition-all duration-200 shadow-[0_0_18px_rgba(16,185,129,0.35)]" href="#curriculum">
-<span class="material-symbols-outlined text-[18px]">code</span>
-<span class="">Start Learning</span>
-</a>
+
 </div>
 </div>
 </header>
@@ -151,6 +173,11 @@
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
 <!-- Left Column -->
 <div class="lg:col-span-5 flex flex-col gap-6">
+<!-- Welcome greeting -->
+<div class="mb-1 rounded-2xl border border-primary/30 bg-gradient-to-r from-primary/10 via-surface-container to-secondary/10 px-4 py-3 shadow-[0_0_28px_rgba(16,185,129,.10)]">
+  <p class="text-primary text-sm sm:text-base font-bold">👋 Welcome to Learn With Anmol!</p>
+  <p class="text-xs sm:text-sm text-on-surface-variant mt-1">Your learning journey starts here — learn, practise, and grow one concept at a time.</p>
+</div>
 <!-- Pill -->
 <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container-high border border-primary/30 w-fit">
 <span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
@@ -168,10 +195,7 @@
             </p>
 <!-- Buttons -->
 <div class="flex flex-wrap items-center gap-4 pt-1">
-<a class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary-container text-on-primary font-headline-sm text-sm font-bold hover:bg-primary-fixed transition-all shadow-[0_0_24px_rgba(16,185,129,0.4)]" href="#curriculum">
-<span class="">Start Learning</span>
-<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-</a>
+
 <a class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-surface-container border border-surface-variant text-on-surface font-headline-sm text-sm font-semibold hover:bg-surface-container-high transition-all" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank">
 <span class="material-symbols-outlined text-[#ff7a73] text-[20px]">play_circle</span>
 <span class="">Watch on YouTube</span>
@@ -196,1016 +220,254 @@
 <span class="material-symbols-outlined text-[16px]">subscriptions</span>
 <span class="">Subscribe on YouTube</span>
 </a>
-</div><div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-1"><a class="flex items-center justify-between p-3.5 rounded-xl bg-surface-container-low border border-primary/30 hover:border-primary/60 hover:bg-surface-container transition-all group shadow-md" href="https://whatsapp.com/channel/0029Vb8fc4Y1t90hknWrql2Z" rel="noopener noreferrer" target="_blank"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-110 transition-transform"><svg class="w-[18px] h-[18px] fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.186 8.186 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3z"></path></svg></div><div class="flex flex-col"><span class="font-headline-sm text-xs font-bold text-on-surface group-hover:text-primary transition-colors">WhatsApp Channel</span><span class="text-[11px] text-on-surface-variant">Notes, PDF Slides &amp; Lecture Drops</span></div></div><span class="material-symbols-outlined text-[16px] text-primary group-hover:translate-x-0.5 transition-transform">arrow_forward</span></a><a class="flex items-center justify-between p-3.5 rounded-xl bg-surface-container-low border border-secondary/30 hover:border-secondary/60 hover:bg-surface-container transition-all group shadow-md" href="https://linkedin.com/in/anmol-singh-8b6641308?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" rel="noopener noreferrer" target="_blank"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-lg bg-secondary/10 border border-secondary/30 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform"><svg class="w-[16px] h-[16px] fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path></svg></div><div class="flex flex-col"><span class="font-headline-sm text-xs font-bold text-on-surface group-hover:text-secondary transition-colors">Connect on LinkedIn</span><span class="text-[11px] text-on-surface-variant">Anmol Singh • Mentor Profile</span></div></div><span class="material-symbols-outlined text-[16px] text-secondary group-hover:translate-x-0.5 transition-transform">arrow_forward</span></a><a class="flex items-center justify-between p-3.5 rounded-xl bg-surface-container-low border border-[#ec4899]/30 hover:border-[#ec4899]/60 hover:bg-surface-container transition-all group shadow-md" href="https://www.instagram.com/learn.with.anmol/reels/?hl=en" rel="noopener noreferrer" target="_blank"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-lg bg-[#ec4899]/10 border border-[#ec4899]/30 flex items-center justify-center text-[#f472b6] group-hover:scale-110 transition-transform"><svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"></circle></svg></div><div class="flex flex-col"><span class="font-headline-sm text-xs font-bold text-on-surface group-hover:text-[#f472b6] transition-colors">Connect with Instagram</span><span class="text-[11px] text-on-surface-variant">Follow @learn.with.anmol</span></div></div><span class="material-symbols-outlined text-[16px] text-[#f472b6] group-hover:translate-x-0.5 transition-transform">arrow_forward</span></a></div>
+</div><div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-1"><a class="flex items-center justify-between p-3.5 rounded-xl bg-surface-container-low border border-primary/30 hover:border-primary/60 hover:bg-surface-container transition-all group shadow-md" href="https://whatsapp.com/channel/0029Vb8fc4Y1t90hknWrql2Z" rel="noopener noreferrer" target="_blank"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-110 transition-transform"><svg class="w-[18px] h-[18px] fill-current" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.186 8.186 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3z"></path></svg></div><div class="flex flex-col"><span class="font-headline-sm text-xs font-bold text-on-surface group-hover:text-primary transition-colors">WhatsApp Channel</span><span class="text-[11px] text-on-surface-variant">Notes, PDF Slides &amp; Lecture Drops</span></div></div><span class="material-symbols-outlined text-[16px] text-primary group-hover:translate-x-0.5 transition-transform">arrow_forward</span></a><a class="flex items-center justify-between p-3.5 rounded-xl bg-surface-container-low border border-secondary/30 hover:border-secondary/60 hover:bg-surface-container transition-all group shadow-md" href="https://linkedin.com/in/anmol-singh-8b6641308?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" rel="noopener noreferrer" target="_blank"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-lg bg-secondary/10 border border-secondary/30 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform"><svg class="w-[16px] h-[16px] fill-current" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path></svg></div><div class="flex flex-col"><span class="font-headline-sm text-xs font-bold text-on-surface group-hover:text-secondary transition-colors">Connect on LinkedIn</span><span class="text-[11px] text-on-surface-variant">Anmol Singh • Mentor Profile</span></div></div><span class="material-symbols-outlined text-[16px] text-secondary group-hover:translate-x-0.5 transition-transform">arrow_forward</span></a><a class="flex items-center justify-between p-3.5 rounded-xl bg-surface-container-low border border-[#ec4899]/30 hover:border-[#ec4899]/60 hover:bg-surface-container transition-all group shadow-md" href="https://www.instagram.com/learn.with.anmol/reels/?hl=en" rel="noopener noreferrer" target="_blank"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-lg bg-[#ec4899]/10 border border-[#ec4899]/30 flex items-center justify-center text-[#f472b6] group-hover:scale-110 transition-transform"><svg class="w-[18px] h-[18px]" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="18" rx="5" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" fill="currentColor" r="0.8"></circle></svg></div><div class="flex flex-col"><span class="font-headline-sm text-xs font-bold text-on-surface group-hover:text-[#f472b6] transition-colors">Connect with Instagram</span><span class="text-[11px] text-on-surface-variant">Follow @learn.with.anmol</span></div></div><span class="material-symbols-outlined text-[16px] text-[#f472b6] group-hover:translate-x-0.5 transition-transform">arrow_forward</span></a></div>
 </div>
 <!-- Right Column: Large Java Playlist Preview -->
 <div class="lg:col-span-7">
-  <a href="https://youtube.com/playlist?list=PLGv1PVd5hYNQ&si=AlgKVB69Q7mbzN7-9" target="_blank" rel="noopener noreferrer" class="block group">
-    <div class="relative rounded-2xl bg-surface-container-lowest border border-primary/40 shadow-2xl overflow-hidden hover:border-primary/70 transition-all duration-300 hover:-translate-y-1 java-playlist-card">
-      <img src="java-playlist.png" alt="Complete Java Tutorial in Hindi by Learn With Anmol" class="w-full h-auto block object-contain java-playlist-image transition-transform duration-500 group-hover:scale-[1.01]">
-      <div class="px-5 py-4 bg-surface-container border-t border-surface-container-highest flex items-center justify-between gap-3">
-        <div>
-          <p class="text-base font-bold text-on-surface">Complete Java Tutorial in Hindi</p>
-          <p class="text-xs text-on-surface-variant mt-1">31 Videos • Core Java • Beginner Friendly • Free</p>
-        </div>
-        <span class="material-symbols-outlined text-primary text-2xl group-hover:translate-x-1 transition-transform">arrow_forward</span>
-      </div>
-    </div>
-  </a>
+<a class="block group" href="https://youtube.com/playlist?list=PLGv1PVd5hYNQ&amp;si=AlgKVB69Q7mbzN7-9" rel="noopener noreferrer" target="_blank">
+<div class="relative rounded-2xl bg-surface-container-lowest border border-primary/40 shadow-2xl overflow-hidden hover:border-primary/70 transition-all duration-300 hover:-translate-y-1 java-playlist-card">
+<img alt="Complete Java Tutorial in Hindi by Learn With Anmol" class="w-full h-auto block object-contain java-playlist-image transition-transform duration-500 group-hover:scale-[1.01]" src="java-playlist.png"/>
+<div class="px-5 py-4 bg-surface-container border-t border-surface-container-highest flex items-center justify-between gap-3">
+<div>
+<p class="text-base font-bold text-on-surface">Complete Java Tutorial in Hindi</p>
+<p class="text-xs text-on-surface-variant mt-1">31 Videos • Core Java • Beginner Friendly • Free</p>
+</div>
+<span class="material-symbols-outlined text-primary text-2xl group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</a>
 </div></div>
 </div>
-</div>
+
 </section>
 <!-- 3. FEATURE CARDS SECTIONn>
 <!-- 3. FEATURE CARDS SECTION (Why Learn With Anmol & Core Pillars) -->
-<section class="py-20 border-b border-surface-container-highest/40 bg-surface-container-lowest/50" id="about">
-<div class="max-w-[1280px] mx-auto px-6">
-<div class="text-center max-w-2xl mx-auto mb-14">
-<span class="font-label-mono-sm text-xs text-primary font-bold uppercase tracking-wider">The Standard in Developer Prep</span>
-<h2 class="font-headline-xl text-3xl sm:text-4xl font-extrabold text-on-surface mt-2 tracking-tight">
-            Why Learn With Anmol?
-          </h2>
-<p class="text-base text-on-surface-variant mt-3 leading-relaxed">
-            Eliminating superficial tutorials. Every lecture is engineered to build unshakeable intuition, clean coding hygiene, and algorithm mastery.
-          </p>
-</div>
-<!-- 4 Core Pillars Grid -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-<!-- Card 1 -->
-<div class="group rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/50 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 shadow-lg">
-<div>
-<div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary mb-5 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-[26px]">video_library</span>
-</div>
-<span class="font-label-mono-sm text-xs text-primary font-semibold uppercase tracking-wider">Pillar 01</span>
-<h3 class="font-headline-sm text-lg font-bold text-on-surface mt-1">50+ Structured Lectures</h3>
-<p class="text-sm text-on-surface-variant mt-2.5 leading-relaxed">
-                Systematic roadmap structured into 6 modules from foundational Java syntax to advanced Dynamic Programming and Graph traversals.
-              </p>
-</div>
-<div class="pt-5 border-t border-surface-container-highest/60 flex items-center justify-between text-xs font-label-mono-sm text-secondary">
-<span class="">Modules 01–06</span>
-<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-</div>
-</div>
-<!-- Card 2 -->
-<div class="group rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/50 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 shadow-lg">
-<div>
-<div class="w-12 h-12 rounded-xl bg-[#dc2626]/15 border border-[#dc2626]/30 flex items-center justify-center text-[#ff7a73] mb-5 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-[26px]">smart_display</span>
-</div>
-<span class="font-label-mono-sm text-xs text-[#ff7a73] font-semibold uppercase tracking-wider">Pillar 02</span>
-<h3 class="font-headline-sm text-lg font-bold text-on-surface mt-1">YouTube-First Free Learning</h3>
-<p class="text-sm text-on-surface-variant mt-2.5 leading-relaxed">
-                100% free open-access education on YouTube (@LEARNWITHANMOL-q3i). No paywalls, hidden fees, or gated modules.
-              </p>
-</div>
-<div class="pt-5 border-t border-surface-container-highest/60 flex items-center justify-between text-xs font-label-mono-sm text-[#ff7a73]">
-<span class="">Free Forever</span>
-<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-</div>
-</div>
-<!-- Card 3 -->
-<div class="group rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/50 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 shadow-lg">
-<div>
-<div class="w-12 h-12 rounded-xl bg-secondary/10 border border-secondary/20 flex items-center justify-center text-secondary mb-5 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-[26px]">school</span>
-</div>
-<span class="font-label-mono-sm text-xs text-secondary font-semibold uppercase tracking-wider">Pillar 03</span>
-<h3 class="font-headline-sm text-lg font-bold text-on-surface mt-1">University &amp; Placement Ready</h3>
-<p class="text-sm text-on-surface-variant mt-2.5 leading-relaxed">
-                Specifically tailored for B.Tech, BCA, and MCA semester curricula, tech aptitude rounds, and corporate coding exams.
-              </p>
-</div>
-<div class="pt-5 border-t border-surface-container-highest/60 flex items-center justify-between text-xs font-label-mono-sm text-secondary">
-<span class="">BCA • MCA • B.Tech</span>
-<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-</div>
-</div>
-<!-- Card 4 -->
-<div class="group rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/50 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 shadow-lg">
-<div>
-<div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary mb-5 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-[26px]">terminal</span>
-</div>
-<span class="font-label-mono-sm text-xs text-primary font-semibold uppercase tracking-wider">Pillar 04</span>
-<h3 class="font-headline-sm text-lg font-bold text-on-surface mt-1">Practical Code &amp; DSA</h3>
-<p class="text-sm text-on-surface-variant mt-2.5 leading-relaxed">
-                Direct hands-on problem solving across Arrays, LinkedLists, Trees, Heaps, and Dynamic Programming with time-complexity analysis.
-              </p>
-</div>
-<div class="pt-5 border-t border-surface-container-highest/60 flex items-center justify-between text-xs font-label-mono-sm text-primary">
-<span class="">O(1) Space &amp; O(N) Time</span>
-<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-</div>
-</div>
-</div>
-</div>
-</section>
+
 <!-- HANDWRITTEN NOTES SECTION -->
 <section class="py-14 sm:py-16 border-b border-surface-container-highest/40 bg-surface" id="handwritten-notes">
-  <div class="max-w-[1280px] mx-auto px-6">
-    <div class="rounded-3xl bg-surface-container-low border border-primary/30 p-6 sm:p-9 shadow-xl flex flex-col md:flex-row md:items-center justify-between gap-7">
-      <div class="flex items-start gap-4 sm:gap-5">
-        <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary shrink-0">
-          <span class="material-symbols-outlined text-[32px]">edit_note</span>
-        </div>
-        <div>
-          <span class="font-label-mono-sm text-xs text-primary font-bold uppercase tracking-wider">Study Resources</span>
-          <h2 class="font-headline-xl text-2xl sm:text-3xl font-extrabold text-on-surface mt-1 tracking-tight">Handwritten Notes</h2>
-          <p class="text-sm sm:text-base text-on-surface-variant mt-2 leading-relaxed max-w-2xl">Easy-to-follow handwritten notes to revise important concepts, prepare for exams, and support your Java and DSA learning journey.</p>
-        </div>
-      </div>
-      <button type="button" id="explore-handwritten-notes" aria-expanded="false" aria-controls="handwritten-notes-categories" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-primary-container hover:bg-primary-fixed text-on-primary text-sm font-bold transition-all shadow-[0_0_18px_rgba(16,185,129,0.3)] shrink-0">
-        <span class="material-symbols-outlined text-[20px]">menu_book</span>
-        <span>Explore Handwritten Notes</span>
-        <span class="material-symbols-outlined text-[18px]" id="notes-toggle-icon">expand_more</span>
-      </button>
-    </div>
-    <div id="handwritten-notes-categories" class="hidden mt-8" aria-label="Explore Handwritten Notes categories">
-      <div class="text-center mb-6">
-        <h3 class="font-headline-xl text-xl sm:text-2xl font-extrabold text-on-surface">Choose Your Notes Subject</h3>
-        <p class="text-sm text-on-surface-variant mt-2">Select a subject to open its handwritten notes.</p>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        <div class="rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/60 transition-all hover:-translate-y-1">
-          <div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary mb-4"><span class="material-symbols-outlined text-[26px]">code</span></div>
-          <h4 class="font-headline-sm text-lg font-bold text-on-surface">Java</h4>
-          <p class="text-sm text-on-surface-variant mt-2">Java programming handwritten notes and examples.</p>
-          <div class="mt-5 pt-4 border-t border-surface-container-highest/60 flex flex-wrap gap-3">
-            <a href="https://drive.google.com/file/d/1woNwdmLzqyJfswiqGjIH4V__uuj1FClS/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-bold text-primary">Open Notes <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
-            <a href="https://drive.google.com/uc?export=download&id=1woNwdmLzqyJfswiqGjIH4V__uuj1FClS" download class="inline-flex items-center gap-1 text-xs font-bold text-primary"><span class="material-symbols-outlined text-[16px]">download</span> Download</a>
-          </div>
-        </div>
-        <div class="rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/60 transition-all hover:-translate-y-1">
-          <div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary mb-4"><span class="material-symbols-outlined text-[26px]">account_tree</span></div>
-          <h4 class="font-headline-sm text-lg font-bold text-on-surface">DSA</h4>
-          <p class="text-sm text-on-surface-variant mt-2">Data Structures and Algorithms handwritten notes.</p>
-          <div class="mt-5 pt-4 border-t border-surface-container-highest/60 flex flex-wrap gap-3">
-            <a href="https://drive.google.com/file/d/1UhIyTriXeF4DulZSTpCyo1R4B9ywGBz9/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-bold text-primary">Open Notes <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
-            <a href="https://drive.google.com/uc?export=download&id=1UhIyTriXeF4DulZSTpCyo1R4B9ywGBz9" download class="inline-flex items-center gap-1 text-xs font-bold text-primary"><span class="material-symbols-outlined text-[16px]">download</span> Download</a>
-          </div>
-        </div>
-        <div class="rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/60 transition-all hover:-translate-y-1">
-          <div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary mb-4"><span class="material-symbols-outlined text-[26px]">terminal</span></div>
-          <h4 class="font-headline-sm text-lg font-bold text-on-surface">C Programming</h4>
-          <p class="text-sm text-on-surface-variant mt-2">C language notes, syntax, and programming examples.</p>
-          <div class="mt-5 pt-4 border-t border-surface-container-highest/60 flex flex-wrap gap-3">
-            <a href="YOUR_C_NOTES_LINK" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-bold text-primary">Open Notes <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
-            <a href="YOUR_C_DOWNLOAD_LINK" download class="inline-flex items-center gap-1 text-xs font-bold text-primary"><span class="material-symbols-outlined text-[16px]">download</span> Download</a>
-          </div>
-        </div>
-        <div class="rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/60 transition-all hover:-translate-y-1">
-          <div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary mb-4"><span class="material-symbols-outlined text-[26px]">integration_instructions</span></div>
-          <h4 class="font-headline-sm text-lg font-bold text-on-surface">C++</h4>
-          <p class="text-sm text-on-surface-variant mt-2">C++ programming notes and important concepts.</p>
-          <div class="mt-5 pt-4 border-t border-surface-container-highest/60 flex flex-wrap gap-3">
-            <a href="YOUR_CPP_NOTES_LINK" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-bold text-primary">Open Notes <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
-            <a href="YOUR_CPP_DOWNLOAD_LINK" download class="inline-flex items-center gap-1 text-xs font-bold text-primary"><span class="material-symbols-outlined text-[16px]">download</span> Download</a>
-          </div>
-        </div>
-        <div class="rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/60 transition-all hover:-translate-y-1">
-          <div class="w-12 h-12 rounded-xl bg-surface-container-high border border-surface-container-highest flex items-center justify-center text-primary mb-4"><span class="material-symbols-outlined text-[26px]">layers</span></div>
-          <h4 class="font-headline-sm text-lg font-bold text-on-surface">OOPs</h4>
-          <p class="text-sm text-on-surface-variant mt-2">Object-Oriented Programming concepts and notes.</p>
-          <div class="mt-5 pt-4 border-t border-surface-container-highest/60 flex flex-wrap gap-3">
-            <a href="YOUR_OOPS_NOTES_LINK" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-bold text-primary">Open Notes <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
-            <a href="YOUR_OOPS_DOWNLOAD_LINK" download class="inline-flex items-center gap-1 text-xs font-bold text-primary"><span class="material-symbols-outlined text-[16px]">download</span> Download</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="max-w-[1280px] mx-auto px-6">
+<div class="rounded-3xl bg-surface-container-low border border-primary/30 p-6 sm:p-9 shadow-xl flex flex-col md:flex-row md:items-center justify-between gap-7">
+<div class="flex items-start gap-4 sm:gap-5">
+<div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[32px]">edit_note</span>
+</div>
+<div>
+<span class="font-label-mono-sm text-xs text-primary font-bold uppercase tracking-wider">Study Resources</span>
+<h2 class="font-headline-xl text-2xl sm:text-3xl font-extrabold text-on-surface mt-1 tracking-tight">Handwritten Notes</h2>
+<p class="text-sm sm:text-base text-on-surface-variant mt-2 leading-relaxed max-w-2xl">Easy-to-follow handwritten notes to revise important concepts, prepare for exams, and support your Java and DSA learning journey.</p>
+</div>
+</div>
+<button aria-controls="handwritten-notes-categories" aria-expanded="false" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-primary-container hover:bg-primary-fixed text-on-primary text-sm font-bold transition-all shadow-[0_0_18px_rgba(16,185,129,0.3)] shrink-0" id="explore-handwritten-notes" type="button">
+<span class="material-symbols-outlined text-[20px]">menu_book</span>
+<span>Explore Handwritten Notes</span>
+<span class="material-symbols-outlined text-[18px]" id="notes-toggle-icon">expand_more</span>
+</button>
+</div>
+<div aria-label="Explore Handwritten Notes categories" class="hidden mt-8" id="handwritten-notes-categories">
+<div class="text-center mb-6">
+<h3 class="font-headline-xl text-xl sm:text-2xl font-extrabold text-on-surface">Choose Your Notes Subject</h3>
+<p class="text-sm text-on-surface-variant mt-2">Select a subject to open its handwritten notes.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+<div class="rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/60 transition-all hover:-translate-y-1">
+<div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary mb-4"><span class="material-symbols-outlined text-[26px]">code</span></div>
+<h4 class="font-headline-sm text-lg font-bold text-on-surface">Java</h4>
+<p class="text-sm text-on-surface-variant mt-2">Java programming handwritten notes and examples.</p>
+<div class="mt-5 pt-4 border-t border-surface-container-highest/60 flex flex-wrap gap-3">
+<a class="inline-flex items-center gap-1 text-xs font-bold text-primary" href="https://drive.google.com/file/d/1woNwdmLzqyJfswiqGjIH4V__uuj1FClS/view?usp=sharing" rel="noopener noreferrer" target="_blank">Open Notes <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+<a class="inline-flex items-center gap-1 text-xs font-bold text-primary" download="" href="https://drive.google.com/uc?export=download&amp;id=1woNwdmLzqyJfswiqGjIH4V__uuj1FClS"><span class="material-symbols-outlined text-[16px]">download</span> Download</a>
+</div>
+</div>
+<div class="rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/60 transition-all hover:-translate-y-1">
+<div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary mb-4"><span class="material-symbols-outlined text-[26px]">account_tree</span></div>
+<h4 class="font-headline-sm text-lg font-bold text-on-surface">DSA</h4>
+<p class="text-sm text-on-surface-variant mt-2">Data Structures and Algorithms handwritten notes.</p>
+<div class="mt-5 pt-4 border-t border-surface-container-highest/60 flex flex-wrap gap-3">
+<a class="inline-flex items-center gap-1 text-xs font-bold text-primary" href="https://drive.google.com/file/d/1UhIyTriXeF4DulZSTpCyo1R4B9ywGBz9/view?usp=sharing" rel="noopener noreferrer" target="_blank">Open Notes <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+<a class="inline-flex items-center gap-1 text-xs font-bold text-primary" download="" href="https://drive.google.com/uc?export=download&amp;id=1UhIyTriXeF4DulZSTpCyo1R4B9ywGBz9"><span class="material-symbols-outlined text-[16px]">download</span> Download</a>
+</div>
+</div>
+<div class="rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/60 transition-all hover:-translate-y-1">
+<div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary mb-4"><span class="material-symbols-outlined text-[26px]">terminal</span></div>
+<h4 class="font-headline-sm text-lg font-bold text-on-surface">C Programming</h4>
+<p class="text-sm text-on-surface-variant mt-2">C language notes, syntax, and programming examples.</p>
+<div class="mt-5 pt-4 border-t border-surface-container-highest/60 flex flex-wrap gap-3">
+<a class="inline-flex items-center gap-1 text-xs font-bold text-primary" data-placeholder-link="true" href="#" rel="noopener noreferrer" target="_blank">Open Notes <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+<a class="inline-flex items-center gap-1 text-xs font-bold text-primary" data-placeholder-link="true" download="" href="#"><span class="material-symbols-outlined text-[16px]">download</span> Download</a>
+</div>
+</div>
+<div class="rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/60 transition-all hover:-translate-y-1">
+<div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary mb-4"><span class="material-symbols-outlined text-[26px]">integration_instructions</span></div>
+<h4 class="font-headline-sm text-lg font-bold text-on-surface">C++</h4>
+<p class="text-sm text-on-surface-variant mt-2">C++ programming notes and important concepts.</p>
+<div class="mt-5 pt-4 border-t border-surface-container-highest/60 flex flex-wrap gap-3">
+<a class="inline-flex items-center gap-1 text-xs font-bold text-primary" data-placeholder-link="true" href="#" rel="noopener noreferrer" target="_blank">Open Notes <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+<a class="inline-flex items-center gap-1 text-xs font-bold text-primary" data-placeholder-link="true" download="" href="#"><span class="material-symbols-outlined text-[16px]">download</span> Download</a>
+</div>
+</div>
+<div class="rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/60 transition-all hover:-translate-y-1">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high border border-surface-container-highest flex items-center justify-center text-primary mb-4"><span class="material-symbols-outlined text-[26px]">layers</span></div>
+<h4 class="font-headline-sm text-lg font-bold text-on-surface">OOPs</h4>
+<p class="text-sm text-on-surface-variant mt-2">Object-Oriented Programming concepts and notes.</p>
+<div class="mt-5 pt-4 border-t border-surface-container-highest/60 flex flex-wrap gap-3">
+<a class="inline-flex items-center gap-1 text-xs font-bold text-primary" data-placeholder-link="true" href="#" rel="noopener noreferrer" target="_blank">Open Notes <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+<a class="inline-flex items-center gap-1 text-xs font-bold text-primary" data-placeholder-link="true" download="" href="#"><span class="material-symbols-outlined text-[16px]">download</span> Download</a>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
+<!-- ONLINE NOTES SECTION (same expandable layout as Handwritten Notes) -->
+<section class="py-14 sm:py-16 border-b border-surface-container-highest/40 bg-surface" id="online-notes">
+<div class="max-w-[1280px] mx-auto px-6">
+<div class="rounded-3xl bg-surface-container-low border border-secondary/30 p-6 sm:p-9 shadow-xl flex flex-col md:flex-row md:items-center justify-between gap-7">
+<div class="flex items-start gap-4 sm:gap-5">
+<div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-secondary/10 border border-secondary/30 flex items-center justify-center text-secondary shrink-0"><span class="material-symbols-outlined text-[32px]">library_books</span></div>
+<div><span class="font-label-mono-sm text-xs text-secondary font-bold uppercase tracking-wider">Digital Study Resources</span>
+<h2 class="font-headline-xl text-2xl sm:text-3xl font-extrabold text-on-surface mt-1 tracking-tight">Online Notes</h2>
+<p class="text-sm sm:text-base text-on-surface-variant mt-2 leading-relaxed max-w-2xl">Open digital study material by subject. Choose a topic below to read online or download your notes.</p></div></div>
+<button aria-controls="online-notes-categories" aria-expanded="false" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-secondary-container hover:bg-secondary text-on-secondary text-sm font-bold transition-all shrink-0" id="explore-online-notes" type="button"><span class="material-symbols-outlined text-[20px]">menu_book</span><span>Explore Online Notes</span><span class="material-symbols-outlined text-[18px]" id="online-notes-toggle-icon">expand_more</span></button>
+</div>
+<div aria-label="Explore Online Notes categories" class="hidden mt-8" id="online-notes-categories">
+<div class="text-center mb-6"><h3 class="font-headline-xl text-xl sm:text-2xl font-extrabold text-on-surface">Choose Your Notes Subject</h3><p class="text-sm text-on-surface-variant mt-2">Select a subject to open its online study material.</p></div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+<div class="rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-secondary/60 transition-all hover:-translate-y-1"><div class="w-12 h-12 rounded-xl bg-secondary/10 border border-secondary/20 flex items-center justify-center text-secondary mb-4"><span class="material-symbols-outlined text-[26px]">code</span></div><h4 class="font-headline-sm text-lg font-bold text-on-surface">Java</h4><p class="text-sm text-on-surface-variant mt-2">Read Java concepts, syntax, and examples online.</p><div class="mt-5 pt-4 border-t border-surface-container-highest/60 flex flex-wrap gap-3"><a class="inline-flex items-center gap-1 text-xs font-bold text-secondary" href="#online-study-java" data-online-topic="java">Read Online <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a><a class="inline-flex items-center gap-1 text-xs font-bold text-secondary" href="https://drive.google.com/uc?export=download&amp;id=1woNwdmLzqyJfswiqGjIH4V__uuj1FClS" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined text-[16px]">download</span> Download PDF</a></div></div>
+<div class="rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-secondary/60 transition-all hover:-translate-y-1"><div class="w-12 h-12 rounded-xl bg-secondary/10 border border-secondary/20 flex items-center justify-center text-secondary mb-4"><span class="material-symbols-outlined text-[26px]">account_tree</span></div><h4 class="font-headline-sm text-lg font-bold text-on-surface">DSA</h4><p class="text-sm text-on-surface-variant mt-2">Revise data structures, algorithms, and problem-solving.</p><div class="mt-5 pt-4 border-t border-surface-container-highest/60 flex flex-wrap gap-3"><a class="inline-flex items-center gap-1 text-xs font-bold text-secondary" href="#online-study-dsa" data-online-topic="dsa">Read Online <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a><a class="inline-flex items-center gap-1 text-xs font-bold text-secondary" href="https://drive.google.com/uc?export=download&amp;id=1UhIyTriXeF4DulZSTpCyo1R4B9ywGBz9" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined text-[16px]">download</span> Download PDF</a></div></div>
+<div class="rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-secondary/60 transition-all hover:-translate-y-1"><div class="w-12 h-12 rounded-xl bg-secondary/10 border border-secondary/20 flex items-center justify-center text-secondary mb-4"><span class="material-symbols-outlined text-[26px]">terminal</span></div><h4 class="font-headline-sm text-lg font-bold text-on-surface">C / C++ / OOPs</h4><p class="text-sm text-on-surface-variant mt-2">Study programming fundamentals and object-oriented concepts.</p><div class="mt-5 pt-4 border-t border-surface-container-highest/60 flex flex-wrap gap-3"><a class="inline-flex items-center gap-1 text-xs font-bold text-secondary" data-placeholder-link="true" href="#">Read Online <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a><a class="inline-flex items-center gap-1 text-xs font-bold text-secondary" data-placeholder-link="true" href="#"><span class="material-symbols-outlined text-[16px]">download</span> Download</a></div></div>
+</div></div></div></section>
 <!-- FEATURED COURSES SECTION -->
-<section class="py-20 border-b border-surface-container-highest/40 bg-surface" id="featured-courses">
-  <div class="max-w-[1280px] mx-auto px-6">
-    <!-- Section Header -->
-    <div class="text-center max-w-2xl mx-auto mb-14">
-      <span class="font-label-mono-sm text-xs text-primary font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-primary/10 border border-primary/20 inline-block">
-        CURATED SPECIALIZATIONS
-      </span>
-      <h2 class="font-headline-xl text-3xl sm:text-4xl font-extrabold text-on-surface mt-3 tracking-tight">
-        Featured Masterclasses
-      </h2>
-      <p class="text-base text-on-surface-variant mt-3 leading-relaxed">
-        Comprehensive, placement-grade video courses designed for engineering students and aspiring software developers.
-      </p>
-    </div>
 
-    <!-- 3 Course Cards Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Course 1: Java Programming Basics -->
-      <div class="rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/50 transition-all duration-300 flex flex-col justify-between shadow-xl group hover:-translate-y-1">
-        <div>
-          <div class="flex items-center justify-between pb-4 border-b border-surface-container-highest/60">
-            <span class="px-2.5 py-1 rounded text-[11px] font-label-mono-sm font-semibold bg-primary/10 text-primary border border-primary/20 flex items-center gap-1">
-              <span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Free · Beginner
-            </span>
-            <span class="font-label-mono-sm text-xs text-on-surface-variant flex items-center gap-1">
-              <span class="material-symbols-outlined text-[14px] text-primary">schedule</span>
-              18+ Lectures · 12.5 Hrs
-            </span>
-          </div>
-          <div class="mt-5 flex items-center gap-3">
-            <div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
-              <span class="material-symbols-outlined text-[26px]">code</span>
-            </div>
-            <div>
-              <h3 class="font-headline-sm text-xl font-bold text-on-surface">Java Programming Basics</h3>
-              <span class="font-label-mono-sm text-[11px] text-secondary">Complete Core Java Track</span>
-            </div>
-          </div>
-          <p class="text-sm text-on-surface-variant mt-4 leading-relaxed">
-            Master the core syntax, memory model, and object-oriented principles with clean coding hygiene and zero fluff.
-          </p>
-          <!-- Topic Pills -->
-          <div class="flex flex-wrap gap-1.5 mt-5">
-            <span class="px-2.5 py-1 rounded-md bg-surface-container-high border border-surface-container-highest text-[11px] font-label-mono-sm text-on-surface-variant">JVM Architecture</span>
-            <span class="px-2.5 py-1 rounded-md bg-surface-container-high border border-surface-container-highest text-[11px] font-label-mono-sm text-on-surface-variant">Data Types &amp; Loops</span>
-            <span class="px-2.5 py-1 rounded-md bg-surface-container-high border border-surface-container-highest text-[11px] font-label-mono-sm text-on-surface-variant">OOP Fundamentals</span>
-            <span class="px-2.5 py-1 rounded-md bg-surface-container-high border border-surface-container-highest text-[11px] font-label-mono-sm text-on-surface-variant">Methods &amp; Scope</span>
-          </div>
-        </div>
-        <div class="pt-6 mt-6 border-t border-surface-container-highest/60 flex items-center justify-between">
-          <a class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-primary-container hover:bg-primary-fixed text-on-primary text-xs font-bold transition-all shadow-[0_0_18px_rgba(16,185,129,0.35)]" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank">
-            <span class="material-symbols-outlined text-[18px]">play_circle</span>
-            <span class="">Start Watching</span>
-          </a>
-        </div>
-      </div>
-
-      <!-- Course 2: Data Structures & Algorithms -->
-      <div class="rounded-2xl bg-surface-container-high p-6 border-2 border-primary/50 transition-all duration-300 flex flex-col justify-between shadow-2xl group hover:-translate-y-1 relative overflow-hidden">
-        <div class="absolute top-0 right-0 w-28 h-28 bg-primary/15 rounded-full blur-2xl pointer-events-none"></div>
-        <div>
-          <div class="flex items-center justify-between pb-4 border-b border-surface-container-highest">
-            <span class="px-2.5 py-1 rounded text-[11px] font-label-mono-sm font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20 flex items-center gap-1">
-              <span class="material-symbols-outlined text-[13px]">local_fire_department</span> Popular · Interview Ready
-            </span>
-            <span class="font-label-mono-sm text-xs text-primary font-semibold flex items-center gap-1">
-              <span class="material-symbols-outlined text-[14px]">schedule</span>
-              32+ Lectures · 24.0 Hrs
-            </span>
-          </div>
-          <div class="mt-5 flex items-center gap-3">
-            <div class="w-12 h-12 rounded-xl bg-secondary/10 border border-secondary/20 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
-              <span class="material-symbols-outlined text-[26px]">hub</span>
-            </div>
-            <div>
-              <h3 class="font-headline-sm text-xl font-bold text-on-surface">Data Structures &amp; DSA</h3>
-              <span class="font-label-mono-sm text-[11px] text-primary">Placement &amp; Coding Round Master</span>
-            </div>
-          </div>
-          <p class="text-sm text-on-surface-variant mt-4 leading-relaxed">
-            Build rock-solid algorithmic intuition and crack MAANG &amp; product-based placement coding rounds.
-          </p>
-          <!-- Topic Pills -->
-          <div class="flex flex-wrap gap-1.5 mt-5">
-            <span class="px-2.5 py-1 rounded-md bg-surface-container-lowest border border-surface-container-highest text-[11px] font-label-mono-sm text-secondary font-medium">Time &amp; Space Complexity</span>
-            <span class="px-2.5 py-1 rounded-md bg-surface-container-lowest border border-surface-container-highest text-[11px] font-label-mono-sm text-secondary font-medium">LinkedLists &amp; Trees</span>
-            <span class="px-2.5 py-1 rounded-md bg-surface-container-lowest border border-surface-container-highest text-[11px] font-label-mono-sm text-secondary font-medium">Graph BFS/DFS</span>
-            <span class="px-2.5 py-1 rounded-md bg-surface-container-lowest border border-surface-container-highest text-[11px] font-label-mono-sm text-secondary font-medium">Dynamic Programming</span>
-          </div>
-        </div>
-        <div class="pt-6 mt-6 border-t border-surface-container-highest flex items-center justify-between">
-          <a class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-[#dc2626] hover:bg-[#ef4444] text-white text-xs font-bold transition-all shadow-[0_0_18px_rgba(220,38,38,0.4)]" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank">
-            <span class="material-symbols-outlined text-[18px]">play_circle</span>
-            <span class="">Start Watching</span>
-          </a>
-        </div>
-      </div>
-
-      <!-- Course 3: Engineering C Programming -->
-      <div class="rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/50 transition-all duration-300 flex flex-col justify-between shadow-xl group hover:-translate-y-1">
-        <div>
-          <div class="flex items-center justify-between pb-4 border-b border-surface-container-highest/60">
-            <span class="px-2.5 py-1 rounded text-[11px] font-label-mono-sm font-semibold bg-secondary/10 text-secondary border border-secondary/20 flex items-center gap-1">
-              <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Foundational · University Core
-            </span>
-            <span class="font-label-mono-sm text-xs text-on-surface-variant flex items-center gap-1">
-              <span class="material-symbols-outlined text-[14px] text-secondary">schedule</span>
-              14+ Lectures · 9.0 Hrs
-            </span>
-          </div>
-          <div class="mt-5 flex items-center gap-3">
-            <div class="w-12 h-12 rounded-xl bg-secondary/10 border border-secondary/20 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
-              <span class="material-symbols-outlined text-[26px]">memory</span>
-            </div>
-            <div>
-              <h3 class="font-headline-sm text-xl font-bold text-on-surface">Engineering C Programming</h3>
-              <span class="font-label-mono-sm text-[11px] text-secondary">Low-Level Memory &amp; Systems</span>
-            </div>
-          </div>
-          <p class="text-sm text-on-surface-variant mt-4 leading-relaxed">
-            Deep-dive into pointers, system-level memory allocation, and semester exam fundamentals for B.Tech &amp; BCA.
-          </p>
-          <!-- Topic Pills -->
-          <div class="flex flex-wrap gap-1.5 mt-5">
-            <span class="px-2.5 py-1 rounded-md bg-surface-container-high border border-surface-container-highest text-[11px] font-label-mono-sm text-on-surface-variant">Pointers &amp; Memory</span>
-            <span class="px-2.5 py-1 rounded-md bg-surface-container-high border border-surface-container-highest text-[11px] font-label-mono-sm text-on-surface-variant">Structs &amp; Unions</span>
-            <span class="px-2.5 py-1 rounded-md bg-surface-container-high border border-surface-container-highest text-[11px] font-label-mono-sm text-on-surface-variant">Bit Manipulation</span>
-            <span class="px-2.5 py-1 rounded-md bg-surface-container-high border border-surface-container-highest text-[11px] font-label-mono-sm text-on-surface-variant">File I/O</span>
-          </div>
-        </div>
-        <div class="pt-6 mt-6 border-t border-surface-container-highest/60 flex items-center justify-between">
-          <a class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface text-xs font-bold border border-surface-variant transition-all" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank">
-            <span class="material-symbols-outlined text-[18px] text-secondary">play_circle</span>
-            <span class="">Start Watching</span>
-          </a>
-        </div>
-      </div>
-    </div>
+<!-- FEATURED COURSE DASHBOARD -->
+<section id="courses" class="py-16 border-b border-surface-container-highest/40">
+ <div class="max-w-[1280px] mx-auto px-6">
+  <div class="flex flex-wrap items-end justify-between gap-4 mb-8"><div><span class="text-xs font-bold uppercase tracking-widest text-primary">Choose your path</span><h2 class="text-3xl sm:text-4xl font-extrabold mt-2">Explore Courses</h2><p class="text-on-surface-variant mt-2">Learn step by step, practise regularly, and build strong programming fundamentals.</p></div><a href="#java-playlist" class="rounded-xl px-4 py-2 border border-primary/40 text-primary font-bold text-sm">Start Learning →</a></div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+   <article class="rounded-2xl p-6 border border-primary/30 bg-gradient-to-br from-primary/10 to-surface-container shadow-lg"><div class="text-3xl mb-4">☕</div><p class="text-xs uppercase tracking-widest text-primary font-bold">Beginner friendly</p><h3 class="text-2xl font-extrabold mt-2">Java Programming</h3><p class="text-sm text-on-surface-variant mt-3">Syntax, OOP fundamentals, examples and video lessons.</p><a href="#java-playlist" class="inline-flex mt-5 rounded-lg bg-primary text-black font-bold px-4 py-2 text-sm">Watch Java lessons</a></article>
+   <article class="rounded-2xl p-6 border border-secondary/30 bg-gradient-to-br from-secondary/10 to-surface-container shadow-lg"><div class="text-3xl mb-4">🌳</div><p class="text-xs uppercase tracking-widest text-secondary font-bold">Problem solving</p><h3 class="text-2xl font-extrabold mt-2">DSA</h3><p class="text-sm text-on-surface-variant mt-3">Data structures, algorithms, linked lists and logical thinking.</p><a href="#practice-quiz" class="inline-flex mt-5 rounded-lg border border-secondary/50 text-secondary font-bold px-4 py-2 text-sm">Practise DSA</a></article>
+   <article class="rounded-2xl p-6 border border-sky-400/30 bg-gradient-to-br from-sky-400/10 to-surface-container shadow-lg"><div class="text-3xl mb-4">⌨️</div><p class="text-xs uppercase tracking-widest text-sky-300 font-bold">Core concepts</p><h3 class="text-2xl font-extrabold mt-2">C / C++ / OOPs</h3><p class="text-sm text-on-surface-variant mt-3">Programming foundations and object-oriented concepts.</p><a href="#handwritten-notes" class="inline-flex mt-5 rounded-lg border border-sky-400/50 text-sky-300 font-bold px-4 py-2 text-sm">Explore resources</a></article>
   </div>
+ </div>
 </section>
+<!-- ONLINE QUICK NOTES: locally available starter notes -->
+<div id="online-study-java" class="hidden max-w-[1280px] mx-auto px-6 py-6"><div class="rounded-2xl border border-secondary/30 bg-surface-container p-6"><button class="float-right text-secondary font-bold" data-close-study>Close ✕</button><h3 class="text-xl font-bold">Java — Quick Online Notes</h3><p class="mt-3 text-sm">Java is a class-based, object-oriented programming language. A Java program commonly starts execution from <strong>public static void main(String[] args)</strong>.</p><pre class="mt-3 p-4 rounded-xl bg-black/30 overflow-auto text-sm"><code>class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello, Java!");
+  }
+}</code></pre><p class="mt-3 text-sm text-on-surface-variant">These are starter notes. Use the PDF link for the full handwritten notes.</p></div></div>
+<div id="online-study-dsa" class="hidden max-w-[1280px] mx-auto px-6 py-6"><div class="rounded-2xl border border-secondary/30 bg-surface-container p-6"><button class="float-right text-secondary font-bold" data-close-study>Close ✕</button><h3 class="text-xl font-bold">DSA — Quick Online Notes</h3><p class="mt-3 text-sm">A data structure organizes data for efficient use. In a singly linked list, each node stores data and a pointer to the next node; the last node points to NULL.</p><pre class="mt-3 p-4 rounded-xl bg-black/30 overflow-auto text-sm"><code>struct node {
+  int data;
+  struct node *next;
+};</code></pre><p class="mt-3 text-sm text-on-surface-variant">These are starter notes. Use the PDF link for the full handwritten notes.</p></div></div>
+<!-- LOCAL JAVASCRIPT QUIZ + SAVED PROGRESS -->
+<section id="practice-quiz" class="py-16 border-b border-surface-container-highest/40 bg-surface-container-low/30"><div class="max-w-[960px] mx-auto px-6"><span class="text-xs uppercase tracking-widest text-primary font-bold">Learn by doing</span><h2 class="text-3xl sm:text-4xl font-extrabold mt-2">Java &amp; DSA Quick Quiz</h2><p class="text-on-surface-variant mt-2">Try these questions and track your best score on this device.</p><div class="mt-6 rounded-2xl border border-primary/25 bg-surface-container p-6"><div class="flex justify-between gap-3 text-sm"><span id="quiz-count">Question 1 of 4</span><span id="quiz-best">Best score: 0/4</span></div><div class="h-2 rounded-full bg-black/30 mt-3 overflow-hidden"><div id="quiz-progress-bar" class="h-full bg-primary transition-all" style="width:0%"></div></div><h3 id="quiz-question" class="text-xl font-bold mt-6">Which method is the entry point of a standard Java application?</h3><div id="quiz-options" class="grid gap-3 mt-4"><button class="quiz-option text-left p-4 rounded-xl border border-surface-container-highest hover:border-primary" data-answer="0">main()</button><button class="quiz-option text-left p-4 rounded-xl border border-surface-container-highest hover:border-primary" data-answer="1">start()</button><button class="quiz-option text-left p-4 rounded-xl border border-surface-container-highest hover:border-primary" data-answer="2">runProgram()</button><button class="quiz-option text-left p-4 rounded-xl border border-surface-container-highest hover:border-primary" data-answer="3">init()</button></div><p id="quiz-feedback" class="mt-4 text-sm" aria-live="polite"></p><button id="quiz-next" class="mt-5 rounded-xl bg-primary text-black font-bold px-5 py-3" disabled>Next question</button><button id="quiz-restart" class="mt-5 ml-2 rounded-xl border border-surface-container-highest px-5 py-3 font-bold hidden">Try again</button></div><div class="mt-4 text-xs text-on-surface-variant">Progress is saved in this browser only; it does not sync across devices or accounts.</div></div></section>
 
 <!-- 3B. JAVA YOUTUBE PLAYLIST SHOWCASE -->
 <section class="py-20 border-b border-surface-container-highest/40 bg-surface-container-low/30" id="java-playlist">
-  <div class="max-w-[1280px] mx-auto px-6">
-    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-5 mb-10">
-      <div>
-        <span class="font-label-mono-sm text-xs text-[#ff7a73] font-bold uppercase tracking-wider">JAVA VIDEO SERIES</span>
-        <h2 class="font-headline-xl text-3xl sm:text-4xl font-extrabold text-on-surface mt-2 tracking-tight">Complete Java Tutorial in Hindi</h2>
-        <p class="text-sm sm:text-base text-on-surface-variant mt-3 max-w-2xl leading-relaxed">
+<div class="max-w-[1280px] mx-auto px-6">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-5 mb-10">
+<div>
+<span class="font-label-mono-sm text-xs text-[#ff7a73] font-bold uppercase tracking-wider">JAVA VIDEO SERIES</span>
+<h2 class="font-headline-xl text-3xl sm:text-4xl font-extrabold text-on-surface mt-2 tracking-tight">Complete Java Tutorial in Hindi</h2>
+<p class="text-sm sm:text-base text-on-surface-variant mt-3 max-w-2xl leading-relaxed">
           Watch the complete Learn With Anmol Java playlist. Every video thumbnail is clickable and opens the YouTube lesson.
         </p>
-      </div>
-      <a class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#dc2626] hover:bg-[#ef4444] text-white text-sm font-bold transition-all shadow-[0_0_20px_rgba(220,38,38,0.3)] shrink-0" href="https://youtube.com/playlist?list=PLGv1PVd5hYNQ&si=AlgKVB69Q7mbzN7-9" target="_blank" rel="noopener noreferrer">
-        <span class="material-symbols-outlined text-[19px]">playlist_play</span>
-        <span>Open Full Playlist</span>
-      </a>
-    </div>
-
-    <div class="grid grid-cols-1 lg:grid-cols-5 gap-7 items-stretch">
-      <!-- Uploaded playlist preview image -->
-      <a href="https://youtube.com/playlist?list=PLGv1PVd5hYNQ&si=AlgKVB69Q7mbzN7-9" target="_blank" rel="noopener noreferrer" class="lg:col-span-3 group relative overflow-hidden rounded-2xl border border-surface-container-highest bg-surface-container shadow-2xl">
-        <img src="java-playlist.png" alt="Learn With Anmol Complete Java Tutorial YouTube Playlist" class="w-full h-auto aspect-video object-contain object-center java-playlist-image transition-transform duration-500 group-hover:scale-[1.02]">
-        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent"></div>
-        <div class="absolute left-5 right-5 bottom-5 flex items-center justify-between gap-3">
-          <div>
-            <span class="text-[11px] uppercase tracking-wider font-bold text-white/70">Official Playlist</span>
-            <h3 class="text-lg font-bold text-white mt-1">Complete Java Tutorial</h3>
-          </div>
-          <span class="w-12 h-12 rounded-full bg-[#dc2626] text-white flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
-            <span class="material-symbols-outlined text-[27px]">play_arrow</span>
-          </span>
-        </div>
-      </a>
-
-      <!-- Playlist action card -->
-      <a href="https://youtube.com/playlist?list=PLGv1PVd5hYNQ&si=AlgKVB69Q7mbzN7-9" target="_blank" rel="noopener noreferrer" class="lg:col-span-2 rounded-2xl overflow-hidden border border-surface-container-highest bg-surface-container shadow-2xl group flex flex-col justify-between hover:border-primary/60 transition-all duration-300 hover:-translate-y-1">
-        <div class="p-6">
-          <span class="font-label-mono-sm text-xs text-[#ff7a73] font-bold uppercase tracking-wider">31 VIDEO PLAYLIST</span>
-          <h3 class="text-2xl font-extrabold text-on-surface mt-2">Learn With Anmol — Java Playlist</h3>
-          <p class="text-sm text-on-surface-variant mt-3 leading-relaxed">Watch Lecture 1 to Lecture 31 directly on YouTube. Click here to open the complete playlist.</p>
-          <div class="mt-6 inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#dc2626] text-white text-sm font-bold shadow-lg">
-            <span class="material-symbols-outlined text-[19px]">play_circle</span>
+</div>
+<a class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#dc2626] hover:bg-[#ef4444] text-white text-sm font-bold transition-all shadow-[0_0_20px_rgba(220,38,38,0.3)] shrink-0" href="https://youtube.com/playlist?list=PLGv1PVd5hYNQ&amp;si=AlgKVB69Q7mbzN7-9" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[19px]">playlist_play</span>
+<span>Open Full Playlist</span>
+</a>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-5 gap-7 items-stretch">
+<!-- Embedded YouTube playlist player: same 3-column, 16:9 size -->
+<div class="lg:col-span-3 relative overflow-hidden rounded-2xl border border-surface-container-highest bg-black shadow-2xl">
+<div class="relative w-full aspect-video">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" class="absolute inset-0 w-full h-full" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLGv1PVd5hYNQ" title="Learn With Anmol — Complete Java Tutorial Playlist">
+</iframe>
+</div>
+</div>
+<!-- Playlist action card -->
+<a class="lg:col-span-2 rounded-2xl overflow-hidden border border-surface-container-highest bg-surface-container shadow-2xl group flex flex-col justify-between hover:border-primary/60 transition-all duration-300 hover:-translate-y-1" href="https://youtube.com/playlist?list=PLGv1PVd5hYNQ&amp;si=AlgKVB69Q7mbzN7-9" rel="noopener noreferrer" target="_blank">
+<div class="p-6">
+<span class="font-label-mono-sm text-xs text-[#ff7a73] font-bold uppercase tracking-wider">31 VIDEO PLAYLIST</span>
+<h3 class="text-2xl font-extrabold text-on-surface mt-2">Learn With Anmol — Java Playlist</h3>
+<p class="text-sm text-on-surface-variant mt-3 leading-relaxed">Watch Lecture 1 to Lecture 31 directly on YouTube. Click here to open the complete playlist.</p>
+<div class="mt-6 inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#dc2626] text-white text-sm font-bold shadow-lg">
+<span class="material-symbols-outlined text-[19px]">play_circle</span>
             Open Java Playlist
           </div>
-        </div>
-        <div class="px-6 py-4 border-t border-surface-container-highest bg-surface-container-low flex items-center justify-between">
-          <span class="text-xs text-on-surface-variant">Complete Java Tutorial in Hindi</span>
-          <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
-        </div>
-      </a>
-    </div>
-  </div>
+</div>
+<div class="px-6 py-4 border-t border-surface-container-highest bg-surface-container-low flex items-center justify-between">
+<span class="text-xs text-on-surface-variant">Complete Java Tutorial in Hindi</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+</div>
+</div>
 </section>
-    <!-- JAVA ONE SHOT SECTION -->
+<!-- JAVA ONE SHOT SECTION -->
 <section class="py-20 border-b border-surface-container-highest/40 bg-surface-container-low/30" id="java-oneshot">
-  <div class="max-w-[1280px] mx-auto px-6">
-
-    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-5 mb-10">
-      <div>
-        <span class="font-label-mono-sm text-xs text-[#ff7a73] font-bold uppercase tracking-wider">
+<div class="max-w-[1280px] mx-auto px-6">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-5 mb-10">
+<div>
+<span class="font-label-mono-sm text-xs text-[#ff7a73] font-bold uppercase tracking-wider">
           JAVA ONE SHOT
         </span>
-
-        <h2 class="font-headline-xl text-3xl sm:text-4xl font-extrabold text-on-surface mt-2 tracking-tight">
+<h2 class="font-headline-xl text-3xl sm:text-4xl font-extrabold text-on-surface mt-2 tracking-tight">
           Java One Shot in Hindi
         </h2>
-
-        <p class="text-sm sm:text-base text-on-surface-variant mt-3 max-w-2xl leading-relaxed">
+<p class="text-sm sm:text-base text-on-surface-variant mt-3 max-w-2xl leading-relaxed">
           Learn Java programming with this One Shot video by Learn With Anmol.
         </p>
-      </div>
-
-      <a
-        class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#dc2626] hover:bg-[#ef4444] text-white text-sm font-bold transition-all shadow-[0_0_20px_rgba(220,38,38,0.3)] shrink-0"
-        href="https://youtu.be/Ev1ESxeJs0s?si=--Vcu87-97C4PXrm"
-        target="_blank"
-        rel="noopener noreferrer">
-        <span class="material-symbols-outlined text-[19px]">play_circle</span>
-        <span>Watch One Shot</span>
-      </a>
-    </div>
-
-    <div class="grid grid-cols-1 lg:grid-cols-5 gap-7 items-stretch">
-
-      <!-- One Shot Thumbnail -->
-      <a
-        href="https://youtu.be/Ev1ESxeJs0s?si=--Vcu87-97C4PXrm"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="lg:col-span-3 group relative overflow-hidden rounded-2xl border border-surface-container-highest bg-surface-container shadow-2xl">
-
-        <img
-          src="java-oneshot.png"
-          alt="Java One Shot in Hindi by Learn With Anmol"
-          class="w-full h-auto aspect-video object-contain object-center java-playlist-image transition-transform duration-500 group-hover:scale-[1.02]">
-
-        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent"></div>
-
-        <div class="absolute left-5 right-5 bottom-5 flex items-center justify-between gap-3">
-          <div>
-            <span class="text-[11px] uppercase tracking-wider font-bold text-white/70">
-              Java One Shot
-            </span>
-            <h3 class="text-lg font-bold text-white mt-1">
-              Java One Shot in Hindi
-            </h3>
-          </div>
-
-          <span class="w-12 h-12 rounded-full bg-[#dc2626] text-white flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
-            <span class="material-symbols-outlined text-[27px]">play_arrow</span>
-          </span>
-        </div>
-      </a>
-
-      <!-- One Shot Action Card -->
-      <a
-        href="https://youtu.be/Ev1ESxeJs0s?si=--Vcu87-97C4PXrm"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="lg:col-span-2 rounded-2xl overflow-hidden border border-surface-container-highest bg-surface-container shadow-2xl group flex flex-col justify-between hover:border-primary/60 transition-all duration-300 hover:-translate-y-1">
-
-        <div class="p-6">
-          <span class="font-label-mono-sm text-xs text-[#ff7a73] font-bold uppercase tracking-wider">
+</div>
+<a class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#dc2626] hover:bg-[#ef4444] text-white text-sm font-bold transition-all shadow-[0_0_20px_rgba(220,38,38,0.3)] shrink-0" href="https://youtu.be/Ev1ESxeJs0s?si=--Vcu87-97C4PXrm" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[19px]">play_circle</span>
+<span>Watch One Shot</span>
+</a>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-5 gap-7 items-stretch">
+<!-- Embedded Java One Shot player: same 3-column, 16:9 size -->
+<div class="lg:col-span-3 relative overflow-hidden rounded-2xl border border-surface-container-highest bg-black shadow-2xl">
+<div class="relative w-full aspect-video">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" class="absolute inset-0 w-full h-full" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/Ev1ESxeJs0s" title="Java One Shot in Hindi — Learn With Anmol">
+</iframe>
+</div>
+</div>
+<!-- One Shot Action Card -->
+<a class="lg:col-span-2 rounded-2xl overflow-hidden border border-surface-container-highest bg-surface-container shadow-2xl group flex flex-col justify-between hover:border-primary/60 transition-all duration-300 hover:-translate-y-1" href="https://youtu.be/Ev1ESxeJs0s?si=--Vcu87-97C4PXrm" rel="noopener noreferrer" target="_blank">
+<div class="p-6">
+<span class="font-label-mono-sm text-xs text-[#ff7a73] font-bold uppercase tracking-wider">
             ONE SHOT VIDEO
           </span>
-
-          <h3 class="text-2xl font-extrabold text-on-surface mt-2">
+<h3 class="text-2xl font-extrabold text-on-surface mt-2">
             Learn With Anmol — Java One Shot
           </h3>
-
-          <p class="text-sm text-on-surface-variant mt-3 leading-relaxed">
+<p class="text-sm text-on-surface-variant mt-3 leading-relaxed">
             Watch the Java One Shot video directly on YouTube. Click here to start learning.
           </p>
-
-          <div class="mt-6 inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#dc2626] text-white text-sm font-bold shadow-lg">
-            <span class="material-symbols-outlined text-[19px]">play_circle</span>
+<div class="mt-6 inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#dc2626] text-white text-sm font-bold shadow-lg">
+<span class="material-symbols-outlined text-[19px]">play_circle</span>
             Watch Java One Shot
           </div>
-        </div>
-
-        <div class="px-6 py-4 border-t border-surface-container-highest bg-surface-container-low flex items-center justify-between">
-          <span class="text-xs text-on-surface-variant">Java One Shot in Hindi</span>
-          <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
-        </div>
-      </a>
-
-    </div>
-  </div>
+</div>
+<div class="px-6 py-4 border-t border-surface-container-highest bg-surface-container-low flex items-center justify-between">
+<span class="text-xs text-on-surface-variant">Java One Shot in Hindi</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+</div>
+</div>
 </section>
-
 <!-- INTERACTIVE ROADMAP & MODULES SECTION -->
-<section class="py-20 border-b border-surface-container-highest/40 bg-surface-container-lowest/50" id="interactive-roadmap">
-  <div class="max-w-[1280px] mx-auto px-6">
-    <!-- Header -->
-    <div class="text-center max-w-2xl mx-auto mb-14">
-      <span class="font-label-mono-sm text-xs text-secondary font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-secondary/10 border border-secondary/20 inline-block">
-        STEP-BY-STEP LEARNING PATHWAY
-      </span>
-      <h2 class="font-headline-xl text-3xl sm:text-4xl font-extrabold text-on-surface mt-3 tracking-tight">
-        Interactive Curriculum Roadmap
-      </h2>
-      <p class="text-base text-on-surface-variant mt-3 leading-relaxed">
-        Follow our battle-tested progressive roadmap from syntax fundamentals to placement-ready algorithmic problem solving.
-      </p>
-    </div>
 
-    <!-- Milestone Step Sequence -->
-    <div class="relative">
-      <!-- Top Connector Line (Desktop) -->
-      <div class="hidden lg:block absolute top-7 left-12 right-12 h-1 bg-gradient-to-r from-primary via-secondary to-surface-container-highest rounded-full z-0"></div>
-
-      <!-- Steps Grid -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 relative z-10">
-        <!-- Step 01 -->
-        <div class="rounded-2xl bg-surface-container p-6 border border-primary/40 shadow-xl flex flex-col justify-between relative overflow-hidden">
-          <div class="absolute top-0 right-0 w-20 h-20 bg-primary/10 rounded-full blur-xl pointer-events-none"></div>
-          <div>
-            <!-- Step Pin -->
-            <div class="flex items-center justify-between mb-4">
-              <div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm font-bold text-base shadow-[0_0_16px_rgba(78,222,163,0.4)] ring-4 ring-surface">
-                01
-              </div>
-              <span class="px-2.5 py-1 rounded-full text-[11px] font-label-mono-sm font-bold bg-primary/15 text-primary border border-primary/30 flex items-center gap-1">
-                <span class="material-symbols-outlined text-[13px]">check_circle</span> Completed / Foundation
-              </span>
-            </div>
-            <h3 class="font-headline-sm text-lg font-bold text-on-surface mt-2">
-              Module 1 — Basics &amp; Control Statements
-            </h3>
-            <p class="text-xs text-on-surface-variant mt-1 font-label-mono-sm text-secondary">
-              Est. Duration: 6.5 Hours · 8 Lectures
-            </p>
-            <!-- Progress Meter -->
-            <div class="mt-4">
-              <div class="flex items-center justify-between text-[11px] font-label-mono-sm mb-1.5">
-                <span class="text-on-surface-variant">Progress Complete</span>
-                <span class="text-primary font-bold">100%</span>
-              </div>
-              <div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
-                <div class="bg-primary h-full rounded-full w-full"></div>
-              </div>
-            </div>
-            <!-- Key Milestones -->
-            <div class="mt-5 pt-4 border-t border-surface-container-highest/60">
-              <span class="font-label-mono-sm text-[11px] text-primary font-bold uppercase tracking-wider block mb-2">Key Milestones</span>
-              <ul class="space-y-1.5 text-xs text-on-surface-variant">
-                <li class="flex items-center gap-2">
-                  <span class="material-symbols-outlined text-primary text-[15px]">done</span> Variables, Data Types &amp; Operators
-                </li>
-                <li class="flex items-center gap-2">
-                  <span class="material-symbols-outlined text-primary text-[15px]">done</span> If-Else Conditionals &amp; Switch
-                </li>
-                <li class="flex items-center gap-2">
-                  <span class="material-symbols-outlined text-primary text-[15px]">done</span> While &amp; For Loops, Nested Flow
-                </li>
-                <li class="flex items-center gap-2">
-                  <span class="material-symbols-outlined text-primary text-[15px]">done</span> Star &amp; Number Pattern Printing
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="pt-5 mt-4 border-t border-surface-container-highest/60">
-            <a class="text-xs font-label-mono-sm text-primary flex items-center gap-1.5 hover:underline font-semibold" href="#curriculum">
-              <span class="">Explore Module 1 Lectures</span>
-              <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- Step 02 -->
-        <div class="rounded-2xl bg-surface-container p-6 border border-secondary/40 shadow-xl flex flex-col justify-between relative overflow-hidden">
-          <div class="absolute top-0 right-0 w-20 h-20 bg-secondary/10 rounded-full blur-xl pointer-events-none"></div>
-          <div>
-            <!-- Step Pin -->
-            <div class="flex items-center justify-between mb-4">
-              <div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-headline-sm font-bold text-base shadow-[0_0_16px_rgba(137,206,255,0.4)] ring-4 ring-surface">
-                02
-              </div>
-              <span class="px-2.5 py-1 rounded-full text-[11px] font-label-mono-sm font-bold bg-secondary/15 text-secondary border border-secondary/30 flex items-center gap-1">
-                <span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span> In Progress / Core
-              </span>
-            </div>
-            <h3 class="font-headline-sm text-lg font-bold text-on-surface mt-2">
-              Module 2 — Arrays &amp; Strings
-            </h3>
-            <p class="text-xs text-on-surface-variant mt-1 font-label-mono-sm text-secondary">
-              Est. Duration: 7.0 Hours · 8 Lectures
-            </p>
-            <!-- Progress Meter -->
-            <div class="mt-4">
-              <div class="flex items-center justify-between text-[11px] font-label-mono-sm mb-1.5">
-                <span class="text-on-surface-variant">Active Progress</span>
-                <span class="text-secondary font-bold">65%</span>
-              </div>
-              <div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
-                <div class="bg-secondary h-full rounded-full" style="width: 65%;"></div>
-              </div>
-            </div>
-            <!-- Key Milestones -->
-            <div class="mt-5 pt-4 border-t border-surface-container-highest/60">
-              <span class="font-label-mono-sm text-[11px] text-secondary font-bold uppercase tracking-wider block mb-2">Key Milestones</span>
-              <ul class="space-y-1.5 text-xs text-on-surface-variant">
-                <li class="flex items-center gap-2">
-                  <span class="material-symbols-outlined text-secondary text-[15px]">play_arrow</span> 1D &amp; 2D Array Traversals
-                </li>
-                <li class="flex items-center gap-2">
-                  <span class="material-symbols-outlined text-secondary text-[15px]">play_arrow</span> Stack vs Heap Memory Layout
-                </li>
-                <li class="flex items-center gap-2">
-                  <span class="material-symbols-outlined text-secondary text-[15px]">play_arrow</span> Substrings &amp; Two-Pointer Technique
-                </li>
-                <li class="flex items-center gap-2">
-                  <span class="material-symbols-outlined text-secondary text-[15px]">play_arrow</span> String Pool &amp; Immutability
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="pt-5 mt-4 border-t border-surface-container-highest/60">
-            <a class="text-xs font-label-mono-sm text-secondary flex items-center gap-1.5 hover:underline font-semibold" href="#curriculum">
-              <span class="">Explore Module 2 Lectures</span>
-              <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- Step 03 -->
-        <div class="rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/40 shadow-xl flex flex-col justify-between relative overflow-hidden">
-          <div>
-            <!-- Step Pin -->
-            <div class="flex items-center justify-between mb-4">
-              <div class="w-12 h-12 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-headline-sm font-bold text-base border border-surface-container-highest ring-4 ring-surface">
-                03
-              </div>
-              <span class="px-2.5 py-1 rounded-full text-[11px] font-label-mono-sm font-bold bg-surface-container-highest text-tertiary border border-surface-variant flex items-center gap-1">
-                <span class="material-symbols-outlined text-[13px]">flag</span> Upcoming / Advanced
-              </span>
-            </div>
-            <h3 class="font-headline-sm text-lg font-bold text-on-surface mt-2">
-              Module 3 — Trees, Graphs &amp; Advanced DSA
-            </h3>
-            <p class="text-xs text-on-surface-variant mt-1 font-label-mono-sm">
-              Est. Duration: 10.0 Hours · 16 Lectures
-            </p>
-            <!-- Progress Meter -->
-            <div class="mt-4">
-              <div class="flex items-center justify-between text-[11px] font-label-mono-sm mb-1.5">
-                <span class="text-on-surface-variant">Target Milestones</span>
-                <span class="text-on-surface-variant font-bold">20%</span>
-              </div>
-              <div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
-                <div class="bg-primary/50 h-full rounded-full" style="width: 20%;"></div>
-              </div>
-            </div>
-            <!-- Key Milestones -->
-            <div class="mt-5 pt-4 border-t border-surface-container-highest/60">
-              <span class="font-label-mono-sm text-[11px] text-tertiary font-bold uppercase tracking-wider block mb-2">Key Milestones</span>
-              <ul class="space-y-1.5 text-xs text-on-surface-variant">
-                <li class="flex items-center gap-2">
-                  <span class="material-symbols-outlined text-outline text-[15px]">radio_button_unchecked</span> Binary Search Trees (BST) &amp; Heap
-                </li>
-                <li class="flex items-center gap-2">
-                  <span class="material-symbols-outlined text-outline text-[15px]">radio_button_unchecked</span> BFS/DFS Graph Traversals
-                </li>
-                <li class="flex items-center gap-2">
-                  <span class="material-symbols-outlined text-outline text-[15px]">radio_button_unchecked</span> Dijkstra &amp; Shortest Paths
-                </li>
-                <li class="flex items-center gap-2">
-                  <span class="material-symbols-outlined text-outline text-[15px]">radio_button_unchecked</span> Recursion &amp; Top-Down Memoized DP
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="pt-5 mt-4 border-t border-surface-container-highest/60">
-            <a class="text-xs font-label-mono-sm text-on-surface-variant hover:text-primary flex items-center gap-1.5 transition-colors font-semibold" href="#curriculum">
-              <span class="">Explore Module 3 Lectures</span>
-              <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 <!-- 4. STUDENT PROGRESS & LIVE SEARCH BAR -->
-<section class="py-12 border-b border-surface-container-highest/40 bg-surface">
-<div class="max-w-[1280px] mx-auto px-6 flex flex-col gap-6">
-<!-- Search Bar -->
-<div class="relative w-full">
-<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-on-surface-variant">
-<span class="material-symbols-outlined text-[22px]">search</span>
-</div>
-<input class="w-full pl-12 pr-28 py-3.5 bg-surface-container-low rounded-xl border border-surface-container-highest font-body-md text-sm text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none focus:border-primary transition-all" id="lecture-search-input" placeholder="Search Java lectures, topics and algorithms (e.g., ArrayList, LinkedList, Binary Search, Dijkstra, OOP)..." type="text">
-<div class="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none">
-<kbd class="px-2.5 py-1 rounded bg-surface-container-highest text-on-surface-variant font-label-mono-sm text-xs border border-surface-variant">⌘K</kbd>
-</div>
-</div>
-<!-- Progress Tracker Banner -->
-<div class="rounded-2xl bg-surface-container-low p-6 border border-surface-container-highest">
-<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4">
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
-<span class="material-symbols-outlined text-[22px]">trending_up</span>
-</div>
-<div>
-<h3 class="font-headline-sm text-base font-bold text-on-surface">Curriculum Completion Tracker</h3>
-<p class="text-xs text-on-surface-variant">Java Programming &amp; Complete DSA Masterclass Series</p>
-</div>
-</div>
-<div class="flex items-center gap-3">
-<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container border border-surface-variant">
-<span class="text-[#f59e0b] material-symbols-outlined text-[16px]">local_fire_department</span>
-<span class="font-label-mono-sm text-xs text-on-surface font-bold">5-Day Active Streak</span>
-</div>
-<span class="font-label-mono-sm text-xs text-primary font-semibold px-3 py-1 rounded-full bg-primary/10 border border-primary/20">
-                Lecture 30 of 50+ (60%)
-              </span>
-</div>
-</div>
-<!-- Progress Bar -->
-<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
-<div class="bg-gradient-to-r from-primary to-secondary h-full rounded-full" style="width: 60%;"></div>
-</div>
-</div>
-</div>
-</section>
+
 <!-- 5. CURATED QUICK-ACCESS MODULES (MODULE 1 TO 6) -->
-<section class="py-20 border-b border-surface-container-highest/40" id="curriculum">
-<div class="max-w-[1280px] mx-auto px-6">
-<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
-<div>
-<span class="font-label-mono-sm text-xs text-primary font-bold uppercase tracking-wider">CURRICULUM ARCHITECTURE</span>
-<h2 class="font-headline-xl text-3xl font-extrabold text-on-surface mt-1">
-              Java &amp; DSA — 6 Core Modules
-            </h2>
-<p class="text-sm text-on-surface-variant mt-1.5 max-w-2xl">
-              From first principles to advanced algorithmic thinking. Step-by-step videos organized to deliver maximum clarity.
-            </p>
-</div>
-<a class="text-xs font-label-mono-sm text-primary hover:underline flex items-center gap-1 shrink-0" href="https://youtube.com/playlist?list=PLGv1PVd5hYNQ&si=AlgKVB69Q7mbzN7-9" rel="noopener noreferrer" target="_blank">
-<span class="">Open Java Playlist on YouTube</span>
-<span class="material-symbols-outlined text-[16px]">open_in_new</span>
-</a>
-</div>
-<!-- 6 Modules Grid -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-<!-- Module 1 -->
-<div class="rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/40 transition-all flex flex-col justify-between">
-<div>
-<div class="flex items-center justify-between pb-3 border-b border-surface-container-highest/60">
-<span class="font-label-mono-sm text-xs text-primary font-bold">MODULE 01</span>
-<span class="font-label-mono-sm text-xs text-on-surface-variant">Lectures 1–8</span>
-</div>
-<h3 class="font-headline-sm text-lg font-bold text-on-surface mt-3">Java Basics &amp; Syntax</h3>
-<p class="text-xs text-on-surface-variant mt-2 leading-relaxed">
-                JVM vs JRE vs JDK architecture, primitive types, operators, conditionals, scanner input, and loop structures.
-              </p>
-</div>
-<div class="pt-4 flex items-center justify-between">
-<span class="text-xs font-label-mono-sm text-secondary font-medium">8 Lectures • 6.5 Hrs</span>
-<a class="text-xs font-label-mono-sm text-primary flex items-center gap-1 hover:underline" href="#lectures">
-<span class="">View</span>
-<span class="material-symbols-outlined text-[14px]">chevron_right</span>
-</a>
-</div>
-</div>
-<!-- Module 2 -->
-<div class="rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/40 transition-all flex flex-col justify-between">
-<div>
-<div class="flex items-center justify-between pb-3 border-b border-surface-container-highest/60">
-<span class="font-label-mono-sm text-xs text-primary font-bold">MODULE 02</span>
-<span class="font-label-mono-sm text-xs text-on-surface-variant">Lectures 9–16</span>
-</div>
-<h3 class="font-headline-sm text-lg font-bold text-on-surface mt-3">Arrays &amp; Methods</h3>
-<p class="text-xs text-on-surface-variant mt-2 leading-relaxed">
-                Stack vs Heap memory, 1D/2D arrays, pass-by-value semantics, String immutability, and StringBuilder internals.
-              </p>
-</div>
-<div class="pt-4 flex items-center justify-between">
-<span class="text-xs font-label-mono-sm text-secondary font-medium">8 Lectures • 7.0 Hrs</span>
-<a class="text-xs font-label-mono-sm text-primary flex items-center gap-1 hover:underline" href="#lectures">
-<span class="">View</span>
-<span class="material-symbols-outlined text-[14px]">chevron_right</span>
-</a>
-</div>
-</div>
-<!-- Module 3 -->
-<div class="rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/40 transition-all flex flex-col justify-between">
-<div>
-<div class="flex items-center justify-between pb-3 border-b border-surface-container-highest/60">
-<span class="font-label-mono-sm text-xs text-primary font-bold">MODULE 03</span>
-<span class="font-label-mono-sm text-xs text-on-surface-variant">Lectures 17–25</span>
-</div>
-<h3 class="font-headline-sm text-lg font-bold text-on-surface mt-3">OOP in Java</h3>
-<p class="text-xs text-on-surface-variant mt-2 leading-relaxed">
-                Classes, objects, constructor chaining, Encapsulation, Inheritance, runtime Polymorphism, and Interfaces.
-              </p>
-</div>
-<div class="pt-4 flex items-center justify-between">
-<span class="text-xs font-label-mono-sm text-secondary font-medium">9 Lectures • 8.0 Hrs</span>
-<a class="text-xs font-label-mono-sm text-primary flex items-center gap-1 hover:underline" href="#lectures">
-<span class="">View</span>
-<span class="material-symbols-outlined text-[14px]">chevron_right</span>
-</a>
-</div>
-</div>
-<!-- Module 4 -->
-<div class="rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/40 transition-all flex flex-col justify-between">
-<div>
-<div class="flex items-center justify-between pb-3 border-b border-surface-container-highest/60">
-<span class="font-label-mono-sm text-xs text-primary font-bold">MODULE 04</span>
-<span class="font-label-mono-sm text-xs text-on-surface-variant">Lectures 26–29</span>
-</div>
-<h3 class="font-headline-sm text-lg font-bold text-on-surface mt-3">Collections Framework</h3>
-<p class="text-xs text-on-surface-variant mt-2 leading-relaxed">
-                ArrayList, LinkedList, HashMap collision handling, HashSet, PriorityQueue, Comparable, and Comparator.
-              </p>
-</div>
-<div class="pt-4 flex items-center justify-between">
-<span class="text-xs font-label-mono-sm text-secondary font-medium">4 Lectures • 4.5 Hrs</span>
-<a class="text-xs font-label-mono-sm text-primary flex items-center gap-1 hover:underline" href="#lectures">
-<span class="">View</span>
-<span class="material-symbols-outlined text-[14px]">chevron_right</span>
-</a>
-</div>
-</div>
-<!-- Module 5 (Active Highlight) -->
-<div class="rounded-2xl bg-surface-container-high p-6 border-2 border-primary/50 shadow-xl flex flex-col justify-between relative overflow-hidden">
-<div class="absolute top-0 right-0 w-28 h-28 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
-<div>
-<div class="flex items-center justify-between pb-3 border-b border-surface-container-highest">
-<span class="font-label-mono-sm text-xs text-primary font-bold">MODULE 05 • CURRENT</span>
-<span class="font-label-mono-sm text-xs text-secondary font-bold">Lectures 30–42</span>
-</div>
-<h3 class="font-headline-sm text-lg font-bold text-on-surface mt-3">Data Structures</h3>
-<p class="text-xs text-on-surface-variant mt-2 leading-relaxed">
-                Custom LinkedLists, Stacks, Queues, Binary Trees, Binary Search Trees (BST), and Graph Representations.
-              </p>
-</div>
-<div class="pt-4 flex items-center justify-between">
-<span class="text-xs font-label-mono-sm text-secondary font-medium">13 Lectures • 12.0 Hrs</span>
-<a class="text-xs font-label-mono-sm text-primary font-bold flex items-center gap-1 hover:underline" href="#spotlight">
-<span class="">Go to Lecture 30</span>
-<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
-</a>
-</div>
-</div>
-<!-- Module 6 -->
-<div class="rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/40 transition-all flex flex-col justify-between">
-<div>
-<div class="flex items-center justify-between pb-3 border-b border-surface-container-highest/60">
-<span class="font-label-mono-sm text-xs text-primary font-bold">MODULE 06</span>
-<span class="font-label-mono-sm text-xs text-on-surface-variant">Lectures 43–50+</span>
-</div>
-<h3 class="font-headline-sm text-lg font-bold text-on-surface mt-3">Algorithms &amp; DP</h3>
-<p class="text-xs text-on-surface-variant mt-2 leading-relaxed">
-                Binary Search, Merge Sort, Quick Sort, BFS/DFS, Dijkstra, and Dynamic Programming top-down memoization.
-              </p>
-</div>
-<div class="pt-4 flex items-center justify-between">
-<span class="text-xs font-label-mono-sm text-secondary font-medium">8+ Lectures • 9.0 Hrs</span>
-<a class="text-xs font-label-mono-sm text-primary flex items-center gap-1 hover:underline" href="#lectures">
-<span class="">View</span>
-<span class="material-symbols-outlined text-[14px]">chevron_right</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</section>
+
 <!-- 6. LECTURE 30 SPOTLIGHT PREVIEW -->
-<section class="py-20 border-b border-surface-container-highest/40 bg-surface-container-low/40" id="spotlight">
-<div class="max-w-[1280px] mx-auto px-6">
-<div class="rounded-2xl bg-surface-container p-8 border border-surface-container-highest shadow-2xl">
-<div class="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-surface-container-highest/60">
-<div class="flex items-center gap-3">
-<span class="px-3 py-1 rounded bg-primary text-on-primary font-label-mono-sm text-xs font-bold uppercase">
-                Featured Spotlight
-              </span>
-<h3 class="font-headline-sm text-base sm:text-lg font-bold text-on-surface">
-                Lecture 30 — Singly LinkedList Implementation in Java
-              </h3>
-</div>
-<span class="font-label-mono-sm text-xs text-primary">Duration: 42:18 • Module 5</span>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-6">
-<!-- Video Mockup Shell with Official Logo Overlay -->
-<div class="lg:col-span-7 lg:order-2 flex flex-col gap-4">
-<a href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank" aria-label="Watch Lecture 30 — Singly LinkedList Implementation in Java on YouTube" class="relative aspect-video w-full rounded-xl bg-surface-container-lowest border border-surface-container-highest overflow-hidden shadow-2xl flex items-center justify-center group">
-<img src="lecture30-linkedlist.png" alt="Lecture 30 — Singly LinkedList Implementation in Java" class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-[1.01]">
-<div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors"></div>
-</a>
-<!-- Topics Covered Pill Grid -->
-<div class="p-4 rounded-xl bg-surface-container-low border border-surface-container-highest/60">
-<span class="text-xs font-label-mono-sm text-primary uppercase font-bold">Key Lecture Insights</span>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2 text-xs text-on-surface-variant">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
-<span class="">Node allocation in Java heap</span>
-</div>
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
-<span class="">Head pointer manipulation</span>
-</div>
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
-<span class="">O(1) Insertion at head</span>
-</div>
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
-<span class="">Traversing null-terminated pointers</span>
-</div>
-</div>
-</div>
-</div>
-<!-- Code Implementation Snippet -->
-<div class="lg:col-span-5 lg:order-1 flex flex-col justify-between">
-<div class="rounded-xl bg-surface-container-lowest border border-surface-container-highest overflow-hidden shadow-md flex-1 flex flex-col">
-<div class="flex items-center justify-between px-4 py-2.5 bg-surface-container-high border-b border-surface-container-highest">
-<span class="font-label-mono-sm text-xs text-on-surface font-semibold">Node.java</span>
-<span class="font-label-mono-sm text-[11px] text-primary">Lecture 30 Code</span>
-</div>
-<div class="p-4 font-code-block text-[12px] text-on-surface overflow-x-auto leading-relaxed flex-1 space-y-1">
-<p class="text-on-surface-variant/70">// Singly Linked List Node</p>
-<p class=""><span class="text-primary font-bold">class</span> <span class="text-secondary font-semibold">Node</span> {</p>
-<p class="pl-4"><span class="text-primary">int</span> data;</p>
-<p class="pl-4"><span class="text-secondary">Node</span> next;</p>
-<br>
-<p class="pl-4"><span class="text-secondary">Node</span>(<span class="text-primary">int</span> data) {</p>
-<p class="pl-8"><span class="text-primary font-bold">this</span>.data = data;</p>
-<p class="pl-8"><span class="text-primary font-bold">this</span>.next = <span class="text-secondary">null</span>;</p>
-<p class="pl-4">}</p>
-<p class="">}</p>
-<br>
-<p class="text-on-surface-variant/70">// Insert at head O(1)</p>
-<p class=""><span class="text-primary font-bold">public static</span> <span class="text-secondary">Node</span> <span class="text-secondary">insertHead</span>(<span class="text-secondary">Node</span> head, <span class="text-primary">int</span> val) {</p>
-<p class="pl-4"><span class="text-secondary">Node</span> temp = <span class="text-primary">new</span> <span class="text-secondary">Node</span>(val);</p>
-<p class="pl-4">temp.next = head;</p>
-<p class="pl-4"><span class="text-primary font-bold">return</span> temp;</p>
-<p class="">}</p>
-</div>
-<div class="px-4 py-2.5 bg-surface-container-high border-t border-surface-container-highest flex items-center justify-between">
-<span class="font-label-mono-sm text-[11px] text-on-surface-variant">Time: O(1) | Space: O(1)</span>
-<a class="text-xs font-label-mono-sm text-primary hover:underline" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank">
-                    Watch Full Lesson →
-                  </a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+
 <!-- 7. PRACTICE JAVA & DSA CHECKPOINTS -->
-<section class="py-20 border-b border-surface-container-highest/40" id="practice">
-<div class="max-w-[1280px] mx-auto px-6">
-<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
-<div>
-<span class="font-label-mono-sm text-xs text-primary font-bold uppercase tracking-wider">PRACTICE TRACK</span>
-<h2 class="font-headline-xl text-3xl font-extrabold text-on-surface mt-1">
-              Curated Practice Problems
-            </h2>
-<p class="text-sm text-on-surface-variant mt-1.5">
-              Hand-picked interview questions with detailed video solutions on our YouTube channel.
-            </p>
-</div>
-<div class="flex flex-wrap gap-2">
-<span class="px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary font-label-mono-sm text-xs">Arrays</span>
-<span class="px-3 py-1 rounded-full bg-surface-container border border-surface-container-highest text-secondary font-label-mono-sm text-xs">Linked List</span>
-<span class="px-3 py-1 rounded-full bg-surface-container border border-surface-container-highest text-on-surface-variant font-label-mono-sm text-xs">Trees</span>
-<span class="px-3 py-1 rounded-full bg-surface-container border border-surface-container-highest text-on-surface-variant font-label-mono-sm text-xs">DP</span>
-</div>
-</div>
-<!-- Problems List -->
-<div class="flex flex-col gap-3">
-<!-- Problem 1 -->
-<div class="p-4 rounded-xl bg-surface-container border border-surface-container-highest flex flex-col md:flex-row md:items-center justify-between gap-4 hover:border-primary/40 transition-all">
-<div class="flex items-center gap-4">
-<span class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center font-label-mono-sm text-xs text-on-surface font-bold shrink-0">01</span>
-<div>
-<div class="flex items-center gap-2">
-<h4 class="font-headline-sm text-sm font-bold text-on-surface">Reverse a Singly Linked List</h4>
-<span class="px-2 py-0.5 rounded text-[10px] font-label-mono-sm bg-amber-500/10 text-amber-400 border border-amber-500/20">Medium</span>
-</div>
-<p class="text-xs text-on-surface-variant mt-0.5">Pointer reversal with O(1) auxiliary space using iterative three-pointer technique.</p>
-</div>
-</div>
-<a class="px-4 py-2 rounded-lg bg-surface-container-high hover:bg-[#dc2626] hover:text-white text-on-surface text-xs font-label-mono-sm font-semibold flex items-center gap-1.5 transition-colors shrink-0" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-[16px]">smart_display</span>
-<span class="">Watch Video Solution</span>
-</a>
-</div>
-<!-- Problem 2 -->
-<div class="p-4 rounded-xl bg-surface-container border border-surface-container-highest flex flex-col md:flex-row md:items-center justify-between gap-4 hover:border-primary/40 transition-all">
-<div class="flex items-center gap-4">
-<span class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center font-label-mono-sm text-xs text-on-surface font-bold shrink-0">02</span>
-<div>
-<div class="flex items-center gap-2">
-<h4 class="font-headline-sm text-sm font-bold text-on-surface">Two Sum via Hash Map</h4>
-<span class="px-2 py-0.5 rounded text-[10px] font-label-mono-sm bg-primary/10 text-primary border border-primary/20">Easy</span>
-</div>
-<p class="text-xs text-on-surface-variant mt-0.5">Optimal single-pass complement hashing reducing time complexity from O(n²) to O(n).</p>
-</div>
-</div>
-<a class="px-4 py-2 rounded-lg bg-surface-container-high hover:bg-[#dc2626] hover:text-white text-on-surface text-xs font-label-mono-sm font-semibold flex items-center gap-1.5 transition-colors shrink-0" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-[16px]">smart_display</span>
-<span class="">Watch Video Solution</span>
-</a>
-</div>
-<!-- Problem 3 -->
-<div class="p-4 rounded-xl bg-surface-container border border-surface-container-highest flex flex-col md:flex-row md:items-center justify-between gap-4 hover:border-primary/40 transition-all">
-<div class="flex items-center gap-4">
-<span class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center font-label-mono-sm text-xs text-on-surface font-bold shrink-0">03</span>
-<div>
-<div class="flex items-center gap-2">
-<h4 class="font-headline-sm text-sm font-bold text-on-surface">Binary Tree Level Order Traversal (BFS)</h4>
-<span class="px-2 py-0.5 rounded text-[10px] font-label-mono-sm bg-amber-500/10 text-amber-400 border border-amber-500/20">Medium</span>
-</div>
-<p class="text-xs text-on-surface-variant mt-0.5">Queue-based breadth-first iterative exploration printing nodes level-by-level.</p>
-</div>
-</div>
-<a class="px-4 py-2 rounded-lg bg-surface-container-high hover:bg-[#dc2626] hover:text-white text-on-surface text-xs font-label-mono-sm font-semibold flex items-center gap-1.5 transition-colors shrink-0" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-[16px]">smart_display</span>
-<span class="">Watch Video Solution</span>
-</a>
-</div>
-</div>
-</div>
-</section>
+
 <!-- 8. CAREER ROADMAP & YOUTUBE CTA BANNER -->
 <section class="py-20" id="roadmap">
 <div class="max-w-[1280px] mx-auto px-6">
@@ -1225,15 +487,13 @@
 <span class="material-symbols-outlined text-[20px]">subscriptions</span>
 <span class="">Subscribe to @LEARNWITHANMOL-q3i</span>
 </a>
-<a class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-surface-container border border-surface-variant text-on-surface font-headline-sm text-sm font-semibold hover:bg-surface-container-high transition-all" href="#curriculum">
-<span class="">Explore Modules</span>
-</a>
+
 </div>
 </div>
 <!-- Emblem Badge Box -->
 <div class="lg:col-span-4 flex justify-center">
 <div class="relative p-6 rounded-2xl bg-surface-container-lowest/80 border border-primary/30 flex flex-col items-center text-center shadow-xl">
-<img alt="Official Seal" class="w-28 h-28 rounded-full object-cover ring-4 ring-primary/40 shadow-[0_0_30px_rgba(78,222,163,0.3)] mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ-qOO1ByZR12BHMy1ztBK-mywSNzDR3gu5hDSmBGWNGuNCK6ml8Nni2XWDM_pH17bsQ41eoDhukg0q9NA69rBnQPtI71ElXpIzltx2JKPtrMZ_DQg9dYFknRX_1uMknXnrQ8nd8CPg4IkSsSCC3lt6BG9PK9o4NNznKMXoO4jm8QlywJCMssJCZ0dth6qaeotYY3nbS3aEUSv22PUBTX-7PNJEmx07DZpbi5V-v9BV0FIrO4x5meA1258is_lYLJ50p8">
+<img alt="Official Seal" class="w-28 h-28 rounded-full object-cover ring-4 ring-primary/40 shadow-[0_0_30px_rgba(78,222,163,0.3)] mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ-qOO1ByZR12BHMy1ztBK-mywSNzDR3gu5hDSmBGWNGuNCK6ml8Nni2XWDM_pH17bsQ41eoDhukg0q9NA69rBnQPtI71ElXpIzltx2JKPtrMZ_DQg9dYFknRX_1uMknXnrQ8nd8CPg4IkSsSCC3lt6BG9PK9o4NNznKMXoO4jm8QlywJCMssJCZ0dth6qaeotYY3nbS3aEUSv22PUBTX-7PNJEmx07DZpbi5V-v9BV0FIrO4x5meA1258is_lYLJ50p8"/>
 <span class="font-headline-sm text-sm font-bold text-on-surface">LEARN WITH ANMOL</span>
 <span class="font-label-mono-sm text-[11px] text-primary mt-1">Official Masterclass Seal</span>
 <p class="text-[11px] text-on-surface-variant mt-2">50+ In-Depth Lectures • Zero Fees</p>
@@ -1243,6 +503,38 @@
 </div>
 </div>
 </section>
+<!-- Contact / Ask Your Doubt form -->
+<section id="contact-form" class="max-w-4xl mx-auto px-5 sm:px-6 py-12 scroll-mt-24">
+  <div class="rounded-3xl border border-primary/30 bg-surface-container-low p-6 sm:p-8 md:p-10 shadow-xl">
+    <div class="max-w-2xl">
+      <p class="text-primary text-sm font-bold tracking-widest uppercase">Let’s Connect</p>
+      <h2 class="mt-2 text-3xl sm:text-4xl font-bold text-on-surface">Ask Your Doubt</h2>
+      <p class="mt-3 text-on-surface-variant">Java, DSA ya programming se related apna question bhejiye. Aapka message Google Sheet mein save hoga aur configured email par notification bheji jayegi.</p>
+    </div>
+    <form id="contactForm" class="mt-7 grid grid-cols-1 gap-5" novalidate>
+      <div>
+        <label for="contactName" class="block mb-2 text-sm font-semibold text-on-surface">Your Name</label>
+        <input id="contactName" name="name" type="text" maxlength="100" autocomplete="name" required class="w-full rounded-xl border border-outline-variant bg-surface p-3.5 text-on-surface placeholder:text-on-surface-variant focus:border-primary focus:ring-2 focus:ring-primary/30" placeholder="Enter your name">
+      </div>
+      <div>
+        <label for="contactEmail" class="block mb-2 text-sm font-semibold text-on-surface">Email Address</label>
+        <input id="contactEmail" name="email" type="email" maxlength="254" autocomplete="email" required class="w-full rounded-xl border border-outline-variant bg-surface p-3.5 text-on-surface placeholder:text-on-surface-variant focus:border-primary focus:ring-2 focus:ring-primary/30" placeholder="you@example.com">
+      </div>
+      <div>
+        <label for="contactMessage" class="block mb-2 text-sm font-semibold text-on-surface">Message / Doubt</label>
+        <textarea id="contactMessage" name="message" rows="5" maxlength="5000" required class="w-full rounded-xl border border-outline-variant bg-surface p-3.5 text-on-surface placeholder:text-on-surface-variant focus:border-primary focus:ring-2 focus:ring-primary/30" placeholder="Write your question here..."></textarea>
+      </div>
+      <div class="hidden" aria-hidden="true">
+        <label for="contactWebsite">Leave this field blank</label>
+        <input id="contactWebsite" name="website" tabindex="-1" autocomplete="off">
+      </div>
+      <button id="contactSubmit" type="submit" class="inline-flex items-center justify-center rounded-xl bg-primary px-6 py-3.5 font-bold text-on-primary transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60">Send Doubt</button>
+      <p id="contactStatus" role="status" aria-live="polite" class="text-sm text-on-surface-variant"></p>
+      <p class="text-xs text-on-surface-variant">Please do not include passwords or other sensitive personal information.</p>
+    </form>
+  </div>
+</section>
+
 </main>
 <!-- 9. CLEAN PROFESSIONAL FOOTER -->
 <footer class="w-full bg-surface-container-lowest border-t border-surface-container-highest/60 text-on-surface-variant">
@@ -1251,7 +543,7 @@
 <!-- Brand Info Column -->
 <div class="lg:col-span-4 flex flex-col gap-4">
 <div class="flex items-center gap-3">
-<img alt="LEARN WITH ANMOL Official Logo" class="h-10 w-10 rounded-full object-cover ring-2 ring-primary/60 shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkTnWN6DbIhCjOhkTBr5d_8ZsT_kJ__1b1NiLsdNyIq9Q6kOYx7cqyADaCJ3A-uGZnAxAlcDmKhf7BzryuXei9emOZjcsEZBLpw99qb1mzliIqPMpspAYTHgzGrEK_pnmgL0DUfKJNpV7nzgjAmRpAM3k_AWA9ZNkp5jwT5jvLDJYVtfQPViv7wkTPo7Dg52bMowluAEnoXRS-CR2aoxc7PhL4E3bJN-oD-R9qoPlhRzCd7Xs5c_-Ri5k4yTE2iibm1-4">
+<img alt="LEARN WITH ANMOL Official Logo" class="h-10 w-10 rounded-full object-cover ring-2 ring-primary/60 shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkTnWN6DbIhCjOhkTBr5d_8ZsT_kJ__1b1NiLsdNyIq9Q6kOYx7cqyADaCJ3A-uGZnAxAlcDmKhf7BzryuXei9emOZjcsEZBLpw99qb1mzliIqPMpspAYTHgzGrEK_pnmgL0DUfKJNpV7nzgjAmRpAM3k_AWA9ZNkp5jwT5jvLDJYVtfQPViv7wkTPo7Dg52bMowluAEnoXRS-CR2aoxc7PhL4E3bJN-oD-R9qoPlhRzCd7Xs5c_-Ri5k4yTE2iibm1-4"/>
 <span class="font-headline-sm text-lg font-bold text-on-surface tracking-tight">LEARN WITH ANMOL</span>
 </div>
 <p class="font-label-mono-md text-xs text-primary font-semibold tracking-wide uppercase">
@@ -1265,29 +557,29 @@
 <div class="lg:col-span-2 flex flex-col gap-3">
 <h4 class="font-headline-sm text-sm font-bold text-on-surface uppercase tracking-wider">Curriculum</h4>
 <ul class="flex flex-col gap-2 text-xs">
-<li class=""><a class="hover:text-primary transition-colors" href="#curriculum">Module 01: Java Basics</a></li>
-<li class=""><a class="hover:text-primary transition-colors" href="#curriculum">Module 02: Arrays &amp; Memory</a></li>
-<li class=""><a class="hover:text-primary transition-colors" href="#curriculum">Module 03: OOP Principles</a></li>
-<li class=""><a class="hover:text-primary transition-colors" href="#curriculum">Module 04: Collections</a></li>
-<li class=""><a class="hover:text-primary transition-colors" href="#curriculum">Module 05: Data Structures</a></li>
-<li class=""><a class="hover:text-primary transition-colors" href="#curriculum">Module 06: Algorithms &amp; DP</a></li>
+<li class=""></li>
+<li class=""></li>
+<li class=""></li>
+<li class=""></li>
+<li class=""></li>
+<li class=""></li>
 </ul>
 </div>
 <!-- Practice Column -->
 <div class="lg:col-span-2 flex flex-col gap-3">
 <h4 class="font-headline-sm text-sm font-bold text-on-surface uppercase tracking-wider">Practice</h4>
 <ul class="flex flex-col gap-2 text-xs">
-<li class=""><a class="hover:text-primary transition-colors" href="#practice">Arrays &amp; Two Pointers</a></li>
-<li class=""><a class="hover:text-primary transition-colors" href="#practice">LinkedList Problems</a></li>
-<li class=""><a class="hover:text-primary transition-colors" href="#practice">Stack &amp; Queue</a></li>
-<li class=""><a class="hover:text-primary transition-colors" href="#practice">Tree Traversals</a></li>
-<li class=""><a class="hover:text-primary transition-colors" href="#practice">Sorting Algorithms</a></li>
+<li class=""></li>
+<li class=""></li>
+<li class=""></li>
+<li class=""></li>
+<li class=""></li>
 </ul>
 </div>
 <!-- Community Column -->
 <div class="lg:col-span-2 flex flex-col gap-3">
 <h4 class="font-headline-sm text-sm font-bold text-on-surface uppercase tracking-wider">Community</h4>
-<ul class="flex flex-col gap-2 text-xs"><li class=""><a class="hover:text-primary transition-colors flex items-center justify-between group" href="https://whatsapp.com/channel/0029Vb8fc4Y1t90hknWrql2Z" target="_blank" rel="noopener noreferrer" title="Join WhatsApp Channel"><span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 fill-current text-primary" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.186 8.186 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3z"></path></svg><span class="">WhatsApp Channel</span></span><span class="px-1.5 py-0.5 rounded text-[9px] font-label-mono-sm bg-primary/15 text-primary border border-primary/30">New</span></a></li><li class=""><a class="hover:text-primary transition-colors flex items-center justify-between group" href="https://linkedin.com/in/anmol-singh-8b6641308?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer" title="Connect on LinkedIn"><span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 fill-current text-secondary" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path></svg><span class="">LinkedIn Profile</span></span><span class="px-1.5 py-0.5 rounded text-[9px] font-label-mono-sm bg-secondary/15 text-secondary border border-secondary/30">Connect</span></a></li><li><a class="hover:text-[#f472b6] transition-colors flex items-center gap-1.5" href="https://www.instagram.com/learn.with.anmol/reels/?hl=en" target="_blank" rel="noopener noreferrer" title="Connect with Instagram"><svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"></circle></svg><span>Connect with Instagram</span></a></li><li class=""><a class="hover:text-[#ff7a73] transition-colors flex items-center gap-1.5" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[14px]">smart_display</span><span class="">YouTube Channel</span></a></li><li class=""><a class="hover:text-primary transition-colors" href="#">Discord Server</a></li><li class=""><a class="hover:text-primary transition-colors" href="#">Telegram Discussion</a></li><li class=""><a class="hover:text-primary transition-colors" href="#">GitHub Repository</a></li></ul>
+<ul class="flex flex-col gap-2 text-xs"><li class=""><a class="hover:text-primary transition-colors flex items-center justify-between group" href="https://whatsapp.com/channel/0029Vb8fc4Y1t90hknWrql2Z" rel="noopener noreferrer" target="_blank" title="Join WhatsApp Channel"><span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 fill-current text-primary" viewbox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.186 8.186 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3z"></path></svg><span class="">WhatsApp Channel</span></span><span class="px-1.5 py-0.5 rounded text-[9px] font-label-mono-sm bg-primary/15 text-primary border border-primary/30">New</span></a></li><li class=""><a class="hover:text-primary transition-colors flex items-center justify-between group" href="https://linkedin.com/in/anmol-singh-8b6641308?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" rel="noopener noreferrer" target="_blank" title="Connect on LinkedIn"><span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 fill-current text-secondary" viewbox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path></svg><span class="">LinkedIn Profile</span></span><span class="px-1.5 py-0.5 rounded text-[9px] font-label-mono-sm bg-secondary/15 text-secondary border border-secondary/30">Connect</span></a></li><li><a class="hover:text-[#f472b6] transition-colors flex items-center gap-1.5" href="https://www.instagram.com/learn.with.anmol/reels/?hl=en" rel="noopener noreferrer" target="_blank" title="Connect with Instagram"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><rect height="18" rx="5" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" fill="currentColor" r="0.8"></circle></svg><span>Connect with Instagram</span></a></li><li class=""><a class="hover:text-[#ff7a73] transition-colors flex items-center gap-1.5" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[14px]">smart_display</span><span class="">YouTube Channel</span></a></li><li class=""><a class="hover:text-primary transition-colors" href="#">Discord Server</a></li><li class=""><a class="hover:text-primary transition-colors" href="#">Telegram Discussion</a></li><li class=""><a class="hover:text-primary transition-colors" href="#">GitHub Repository</a></li></ul>
 </div>
 <!-- Connect Column -->
 <div class="lg:col-span-2 flex flex-col gap-3">
@@ -1300,26 +592,15 @@
 <a aria-label="GitHub" class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#">
 <span class="material-symbols-outlined text-[18px]">terminal</span>
 </a>
-<a aria-label="Follow on LinkedIn" title="Follow on LinkedIn" class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary hover:bg-surface-container-high hover:text-primary transition-colors" href="https://linkedin.com/in/anmol-singh-8b6641308?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer"><svg class="w-[16px] h-[16px] fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path></svg></a>
-
-<a aria-label="Instagram"
-   title="Follow on Instagram"
-   class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-tertiary hover:bg-surface-container-high transition-colors"
-   href="https://www.instagram.com/learn.with.anmol/reels/?hl=en"
-   target="_blank"
-   rel="noopener noreferrer">
-  <svg class="w-[18px] h-[18px] fill-current"
-       viewBox="0 0 24 24"
-       xmlns="http://www.w3.org/2000/svg">
-    <rect x="3" y="3" width="18" height="18" rx="5"
-          fill="none" stroke="currentColor" stroke-width="2"/>
-    <circle cx="12" cy="12" r="4"
-            fill="none" stroke="currentColor" stroke-width="2"/>
-    <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/>
-  </svg>
+<a aria-label="Follow on LinkedIn" class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary hover:bg-surface-container-high hover:text-primary transition-colors" href="https://linkedin.com/in/anmol-singh-8b6641308?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" rel="noopener noreferrer" target="_blank" title="Follow on LinkedIn"><svg class="w-[16px] h-[16px] fill-current" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path></svg></a>
+<a aria-label="Instagram" class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-tertiary hover:bg-surface-container-high transition-colors" href="https://www.instagram.com/learn.with.anmol/reels/?hl=en" rel="noopener noreferrer" target="_blank" title="Follow on Instagram">
+<svg class="w-[18px] h-[18px] fill-current" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<rect fill="none" height="18" rx="5" stroke="currentColor" stroke-width="2" width="18" x="3" y="3"></rect>
+<circle cx="12" cy="12" fill="none" r="4" stroke="currentColor" stroke-width="2"></circle>
+<circle cx="17.5" cy="6.5" fill="currentColor" r="1.2"></circle>
+</svg>
 </a>
-
-<a aria-label="Join WhatsApp Channel" title="Join WhatsApp Channel" class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary hover:bg-surface-container-high transition-colors" href="https://whatsapp.com/channel/0029Vb8fc4Y1t90hknWrql2Z" target="_blank" rel="noopener noreferrer"><svg class="w-[18px] h-[18px] fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.186 8.186 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3z"></path></svg></a></div>
+<a aria-label="Join WhatsApp Channel" class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary hover:bg-surface-container-high transition-colors" href="https://whatsapp.com/channel/0029Vb8fc4Y1t90hknWrql2Z" rel="noopener noreferrer" target="_blank" title="Join WhatsApp Channel"><svg class="w-[18px] h-[18px] fill-current" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.186 8.186 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3z"></path></svg></a></div>
 </div>
 </div>
 <!-- Copyright Bar -->
@@ -1330,6 +611,32 @@
 </div>
 </footer>
 <script>
+    
+    // Local quick notes open/close
+    document.querySelectorAll('[data-online-topic]').forEach(link => link.addEventListener('click', e => {
+      e.preventDefault(); const target = document.getElementById('online-study-' + link.dataset.onlineTopic);
+      if (target) { target.classList.remove('hidden'); target.scrollIntoView({behavior:'smooth', block:'start'}); }
+    }));
+    document.querySelectorAll('[data-close-study]').forEach(btn => btn.addEventListener('click', () => btn.closest('[id^="online-study-"]').classList.add('hidden')));
+
+    // Java + DSA quiz; best score persists locally.
+    const quizItems = [
+      {q:'Which method is the entry point of a standard Java application?',o:['main()','start()','runProgram()','init()'],a:0,why:'The JVM starts a standard Java application by calling the main method with the appropriate signature.'},
+      {q:'In a singly linked list, what should the last node’s next pointer contain?',o:['The first node','A random address','NULL','The node data'],a:2,why:'NULL indicates there is no next node after the final node.'},
+      {q:'Which Java keyword is used to create an object?',o:['class','new','this','void'],a:1,why:'The new keyword allocates and constructs an object.'},
+      {q:'What does a pointer in a linked-list node store for the next field?',o:['The next node’s address','Only the node’s integer data','The list length automatically','Always the previous node'],a:0,why:'The next pointer holds the address/reference of the next node.'}
+    ];
+    let quizIndex=0, quizScore=0, quizLocked=false;
+    const qEl=document.getElementById('quiz-question'), optsEl=document.getElementById('quiz-options'), feedEl=document.getElementById('quiz-feedback'), nextEl=document.getElementById('quiz-next'), restartEl=document.getElementById('quiz-restart');
+    const bestEl=document.getElementById('quiz-best'), countEl=document.getElementById('quiz-count'), barEl=document.getElementById('quiz-progress-bar');
+    let bestScore=0; try { bestScore=Number(localStorage.getItem('lwa-quiz-best')||0); } catch(e) {}
+    if(bestEl) bestEl.textContent='Best score: '+bestScore+'/4';
+    function renderQuestion(){ const item=quizItems[quizIndex]; quizLocked=false; qEl.textContent=item.q; countEl.textContent='Question '+(quizIndex+1)+' of '+quizItems.length; barEl.style.width=(quizIndex/quizItems.length*100)+'%'; feedEl.textContent=''; nextEl.disabled=true; nextEl.classList.remove('hidden'); restartEl.classList.add('hidden'); optsEl.innerHTML=''; item.o.forEach((label,i)=>{const b=document.createElement('button');b.className='quiz-option text-left p-4 rounded-xl border border-surface-container-highest hover:border-primary';b.textContent=label;b.addEventListener('click',()=>answerQuestion(i,b));optsEl.appendChild(b);}); }
+    function answerQuestion(choice,button){if(quizLocked)return;quizLocked=true;const item=quizItems[quizIndex];const buttons=optsEl.querySelectorAll('button');buttons.forEach(b=>b.disabled=true);if(choice===item.a){quizScore++;button.classList.add('border-primary');feedEl.textContent='Correct! '+item.why;}else{button.classList.add('border-red-400');buttons[item.a].classList.add('border-primary');feedEl.textContent='Not quite. '+item.why;}nextEl.disabled=false;barEl.style.width=((quizIndex+1)/quizItems.length*100)+'%';}
+    if(nextEl) nextEl.addEventListener('click',()=>{if(!quizLocked)return;if(quizIndex<quizItems.length-1){quizIndex++;renderQuestion();}else{qEl.textContent='Quiz complete! Your score: '+quizScore+'/'+quizItems.length;optsEl.innerHTML='';feedEl.textContent='Keep practising to improve your score.';countEl.textContent='Completed';nextEl.classList.add('hidden');restartEl.classList.remove('hidden');barEl.style.width='100%';if(quizScore>bestScore){bestScore=quizScore;try{localStorage.setItem('lwa-quiz-best',String(bestScore));}catch(e){}bestEl.textContent='Best score: '+bestScore+'/4';}}});
+    if(restartEl) restartEl.addEventListener('click',()=>{quizIndex=0;quizScore=0;renderQuestion();});
+    if(qEl && optsEl && nextEl) renderQuestion();
+
     // Handwritten notes subject menu toggle
     const notesExploreButton = document.getElementById('explore-handwritten-notes');
     const notesCategories = document.getElementById('handwritten-notes-categories');
@@ -1362,11 +669,60 @@
         }
       });
     }
-  </script>
+  
+    // Online Notes expand/collapse, matching the Handwritten Notes interaction.
+    const onlineNotesButton = document.getElementById('explore-online-notes');
+    const onlineNotesCategories = document.getElementById('online-notes-categories');
+    const onlineNotesIcon = document.getElementById('online-notes-toggle-icon');
+    if (onlineNotesButton && onlineNotesCategories) {
+      onlineNotesButton.addEventListener('click', () => {
+        const willOpen = onlineNotesCategories.classList.contains('hidden');
+        onlineNotesCategories.classList.toggle('hidden', !willOpen);
+        onlineNotesButton.setAttribute('aria-expanded', String(willOpen));
+        if (onlineNotesIcon) onlineNotesIcon.textContent = willOpen ? 'expand_less' : 'expand_more';
+      });
+    }
 
-
-
-
-
+    // Prevent placeholder resource links from jumping to the top of the page.
+    document.querySelectorAll('[data-placeholder-link="true"]').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        alert('Is subject ke liye actual notes link abhi add nahi kiya gaya hai.');
+      });
+    });
+</script>
+<script>
+(() => {
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx-ssPGpQkp4bE_e8ApjEVzaTApOd6g56Yhdk2lWtF2SI0CNNwrZwtQZvuzJ30ilnqaow/exec';
+  const form = document.getElementById('contactForm');
+  if (!form) return;
+  const button = document.getElementById('contactSubmit');
+  const status = document.getElementById('contactStatus');
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    if (document.getElementById('contactWebsite').value) return;
+    const name = form.elements.name.value.trim();
+    const email = form.elements.email.value.trim();
+    const message = form.elements.message.value.trim();
+    if (!name || !email || !message) { status.textContent = 'Please fill in all fields.'; return; }
+    button.disabled = true;
+    button.textContent = 'Sending...';
+    status.textContent = 'Submitting your doubt...';
+    const data = new URLSearchParams({ name, email, message });
+    try {
+      // Apps Script cross-origin responses are opaque in this static-site flow.
+      await fetch(scriptURL, { method: 'POST', mode: 'no-cors', body: data });
+      status.textContent = 'Your request was sent from this browser. Please check the Google Sheet and notification email to confirm it arrived.';
+      form.reset();
+    } catch (error) {
+      status.textContent = 'Could not send the request. Check your internet connection and try again.';
+    } finally {
+      button.disabled = false;
+      button.textContent = 'Send Doubt';
+    }
+  });
+})();
+</script>
 
 </body></html>
