@@ -68,13 +68,6 @@
       color: #003824;
     }
 
-    /* YouTube playlist player: large, readable playlist panel like the reference screenshot */
-    .playlist-frame-wrap { width: 100%; height: min(78vh, 720px); min-height: 500px; background: #0f0f0f; }
-    .playlist-frame { width: 100%; height: 100%; display: block; border: 0; }
-    @media (max-width: 640px) {
-      .playlist-frame-wrap { height: 68vh; min-height: 430px; }
-    }
-
     /* Responsive fixes for phones and tablets */
     html, body {
       width: 100%;
@@ -104,74 +97,6 @@
         max-width: 100%;
       }
     }
-
-
-    /* LEARN WITH ANMOL — premium polish layer */
-    :root { color-scheme: dark; scroll-behavior: smooth; }
-    html { scroll-padding-top: 92px; }
-    body {
-      background-image: radial-gradient(ellipse at 50% -12%, rgba(16,185,129,.11), transparent 38%),
-                        linear-gradient(180deg, #061525 0%, #051424 44%, #030e1b 100%);
-      -webkit-font-smoothing: antialiased;
-    }
-    a, button { -webkit-tap-highlight-color: transparent; }
-    a:focus-visible, button:focus-visible, input:focus-visible {
-      outline: 2px solid #4edea3; outline-offset: 4px;
-    }
-    main section { scroll-margin-top: 92px; }
-    main section h2 { text-wrap: balance; }
-    main section p { text-wrap: pretty; }
-    .group, [class*="rounded-2xl"], [class*="rounded-3xl"] { transition-property: border-color, box-shadow, transform, background-color; }
-    .java-playlist-card, #handwritten-notes .rounded-3xl, #roadmap > div > .rounded-3xl {
-      box-shadow: 0 18px 55px rgba(0,0,0,.22), 0 0 32px rgba(16,185,129,.055);
-    }
-    #handwritten-notes-categories [href^="YOUR_"], a[href^="YOUR_"] { cursor: not-allowed; }
-    .mobile-menu-toggle { display: none; }
-    .mobile-navigation { display: none; }
-    .roadmap-steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-top: 22px; }
-    .roadmap-step {
-      min-width: 0; padding: 20px; border-radius: 18px; border: 1px solid rgba(60,74,66,.8);
-      background: linear-gradient(145deg, rgba(18,33,49,.92), rgba(5,20,36,.94));
-      transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
-    }
-    .roadmap-step:hover { transform: translateY(-3px); border-color: rgba(78,222,163,.6); box-shadow: 0 12px 30px rgba(0,0,0,.18); }
-    .roadmap-step label { display: flex; align-items: flex-start; gap: 10px; cursor: pointer; line-height: 1.45; }
-    .roadmap-step input { accent-color: #10b981; width: 17px; height: 17px; margin-top: 2px; flex: 0 0 auto; }
-    .roadmap-step.is-complete { border-color: rgba(78,222,163,.7); background: linear-gradient(145deg, rgba(16,185,129,.12), rgba(5,20,36,.94)); }
-    .roadmap-progress { height: 7px; overflow: hidden; border-radius: 999px; background: #1c2b3c; }
-    .roadmap-progress > span { display:block; height:100%; width:0; border-radius:inherit; background:linear-gradient(90deg,#10b981,#6ffbbe); transition:width .25s ease; }
-    .resource-status { display:inline-flex; align-items:center; gap:6px; margin-top:10px; padding:5px 8px; border-radius:8px; font-size:11px; color:#ffd18a; background:rgba(245,158,11,.08); border:1px solid rgba(245,158,11,.22); }
-    @media (max-width: 1023px) {
-      .mobile-menu-toggle { display: inline-flex; }
-      .mobile-navigation.is-open { display: grid; }
-      .mobile-navigation { gap: 5px; padding: 10px 18px 16px; border-top: 1px solid rgba(60,74,66,.55); background: rgba(5,20,36,.98); }
-      .mobile-navigation a { display:block; padding: 12px 13px; border-radius: 10px; color:#bbcabf; font-size:14px; }
-      .mobile-navigation a:hover, .mobile-navigation a:focus-visible { background:#122131; color:#4edea3; }
-      .roadmap-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    }
-    @media (max-width: 640px) {
-      html { scroll-padding-top: 78px; }
-      header > div:first-child { min-height: 72px; height: auto; padding: 12px 14px; gap: 10px; }
-      header a[href="#"] img { width: 36px; height: 36px; }
-      header a[href="#"] span:first-child { font-size: 14px; }
-      header a[href="#"] span:last-child { font-size: 8px; }
-      #header-actions { gap: 7px !important; }
-      #header-actions > a:nth-child(1), #header-actions > a:nth-child(2), #header-actions > a:nth-child(3), #header-actions > a:nth-child(4) { display:none !important; }
-      #header-actions > a { padding: 9px 10px !important; font-size: 11px !important; }
-      #header-actions > a .material-symbols-outlined { display:none; }
-      .mobile-menu-toggle { width: 38px; height: 38px; padding: 0; flex: 0 0 auto; }
-      .roadmap-steps { grid-template-columns: 1fr; }
-      .roadmap-step { padding: 17px; }
-      #handwritten-notes .rounded-3xl { padding: 20px; }
-      section.py-20 { padding-top: 3.5rem; padding-bottom: 3.5rem; }
-      section .max-w-\[1280px\] { padding-left: 16px; padding-right: 16px; }
-      .java-playlist-card img { border-radius: 12px 12px 0 0; }
-      .mobile-navigation { padding-left: 14px; padding-right: 14px; }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
-    }
-
   </style>
 <!-- Playlist image is embedded directly so it works on GitHub Pages and Netlify without a separate image upload. -->
 </head>
@@ -195,39 +120,27 @@
 </a>
 <!-- Navigation Links -->
 <nav class="hidden lg:flex items-center gap-1 xl:gap-2 text-[14px] font-medium text-on-surface-variant">
-<a class="px-3 py-2 rounded-lg text-primary font-semibold hover:bg-surface-container-high transition-colors" href="#">Home</a>
-<a class="px-3 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#java-playlist">Java Videos</a>
-<a class="px-3 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#handwritten-notes">Handwritten Notes</a>
-<a class="px-3 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#online-notes">Online Notes</a>
-<a class="px-3 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#roadmap">Roadmap</a>
-<a class="px-3 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#practice">Practice</a>
-<a class="px-3 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#about">About</a>
+<a class="px-3.5 py-2 rounded-lg text-primary font-semibold hover:bg-surface-container-high transition-colors" href="#">Home</a>
+<a class="px-3.5 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#curriculum">Java Course</a>
+<a class="px-3.5 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#java-playlist">Videos</a>
+<a class="px-3.5 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#lectures">50+ Lectures</a>
+<a class="px-3.5 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#roadmap">DSA Roadmap</a>
+<a class="px-3.5 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#practice">Practice</a>
+<a class="px-3.5 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#about">About</a>
 </nav>
-<button type="button" class="mobile-menu-toggle inline-flex items-center justify-center rounded-xl border border-primary/30 bg-primary/10 text-primary" id="mobile-menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-navigation">
-  <span class="material-symbols-outlined" id="mobile-menu-icon">menu</span>
-</button>
 <!-- Right CTAs -->
-<div id="header-actions" class="flex items-center gap-3 shrink-0"><a aria-label="WhatsApp Channel" title="Join WhatsApp Channel" class="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-primary/10 border border-primary/30 hover:bg-primary/20 text-primary transition-all duration-200 shadow-sm" href="https://whatsapp.com/channel/0029Vb8fc4Y1t90hknWrql2Z" target="_blank" rel="noopener noreferrer"><svg class="w-[18px] h-[18px] fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.186 8.186 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3z"></path></svg></a><a aria-label="LinkedIn Profile" title="Connect on LinkedIn" class="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-secondary/10 border border-secondary/30 hover:bg-secondary/20 text-secondary transition-all duration-200 shadow-sm" href="https://linkedin.com/in/anmol-singh-8b6641308?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer"><svg class="w-[16px] h-[16px] fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path></svg></a>
+<div class="flex items-center gap-3 shrink-0"><a aria-label="WhatsApp Channel" title="Join WhatsApp Channel" class="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-primary/10 border border-primary/30 hover:bg-primary/20 text-primary transition-all duration-200 shadow-sm" href="https://whatsapp.com/channel/0029Vb8fc4Y1t90hknWrql2Z" target="_blank" rel="noopener noreferrer"><svg class="w-[18px] h-[18px] fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.186 8.186 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3z"></path></svg></a><a aria-label="LinkedIn Profile" title="Connect on LinkedIn" class="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-secondary/10 border border-secondary/30 hover:bg-secondary/20 text-secondary transition-all duration-200 shadow-sm" href="https://linkedin.com/in/anmol-singh-8b6641308?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer"><svg class="w-[16px] h-[16px] fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path></svg></a>
 <a aria-label="Instagram Profile" title="Follow on Instagram" class="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-[#ec4899]/10 border border-[#ec4899]/30 hover:bg-[#ec4899]/20 text-[#f472b6] transition-all duration-200 shadow-sm" href="https://www.instagram.com/learn.with.anmol/reels/?hl=en" target="_blank" rel="noopener noreferrer"><svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"></circle></svg></a>
 <a class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-[#dc2626] hover:bg-[#ef4444] text-white text-[13px] font-semibold transition-all duration-200 shadow-[0_0_16px_rgba(220,38,38,0.35)]" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank">
 <span class="material-symbols-outlined text-[18px]">smart_display</span>
 <span class="">YouTube</span>
 </a>
-<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-primary-container hover:bg-primary-fixed text-on-primary text-[13px] font-bold transition-all duration-200 shadow-[0_0_18px_rgba(16,185,129,0.35)]" href="#java-playlist">
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-primary-container hover:bg-primary-fixed text-on-primary text-[13px] font-bold transition-all duration-200 shadow-[0_0_18px_rgba(16,185,129,0.35)]" href="#curriculum">
 <span class="material-symbols-outlined text-[18px]">code</span>
 <span class="">Start Learning</span>
 </a>
 </div>
 </div>
-<nav id="mobile-navigation" class="mobile-navigation" aria-label="Mobile navigation">
-  <a href="#">Home</a>
-  <a href="#java-playlist">Java Videos</a>
-  <a href="#handwritten-notes">Handwritten Notes</a>
-  <a href="#online-notes">Online Notes</a>
-  <a href="#roadmap">DSA Roadmap</a>
-  <a href="#practice">Practice</a>
-  <a href="#about">About</a>
-</nav>
 </header>
 <main class="flex-1 w-full">
 <!-- 2. HERO SECTION -->
@@ -255,7 +168,7 @@
             </p>
 <!-- Buttons -->
 <div class="flex flex-wrap items-center gap-4 pt-1">
-<a class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary-container text-on-primary font-headline-sm text-sm font-bold hover:bg-primary-fixed transition-all shadow-[0_0_24px_rgba(16,185,129,0.4)]" href="#java-playlist">
+<a class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary-container text-on-primary font-headline-sm text-sm font-bold hover:bg-primary-fixed transition-all shadow-[0_0_24px_rgba(16,185,129,0.4)]" href="#curriculum">
 <span class="">Start Learning</span>
 <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
 </a>
@@ -464,139 +377,759 @@
     </div>
   </div>
 </section>
+<!-- FEATURED COURSES SECTION -->
+<section class="py-20 border-b border-surface-container-highest/40 bg-surface" id="featured-courses">
+  <div class="max-w-[1280px] mx-auto px-6">
+    <!-- Section Header -->
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <span class="font-label-mono-sm text-xs text-primary font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-primary/10 border border-primary/20 inline-block">
+        CURATED SPECIALIZATIONS
+      </span>
+      <h2 class="font-headline-xl text-3xl sm:text-4xl font-extrabold text-on-surface mt-3 tracking-tight">
+        Featured Masterclasses
+      </h2>
+      <p class="text-base text-on-surface-variant mt-3 leading-relaxed">
+        Comprehensive, placement-grade video courses designed for engineering students and aspiring software developers.
+      </p>
+    </div>
 
-<!-- ONLINE NOTES SECTION: replace YOUR_*_ONLINE_NOTES_LINK with each published notes URL. -->
-<section class="py-14 sm:py-16 border-b border-surface-container-highest/40 bg-surface-container-lowest/40" id="online-notes">
-  <div class="max-w-[1280px] mx-auto px-5 sm:px-6">
-    <div class="rounded-3xl bg-surface-container-low border border-secondary/30 p-6 sm:p-9 shadow-xl flex flex-col md:flex-row md:items-center justify-between gap-7">
-      <div class="flex items-start gap-4 sm:gap-5">
-        <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-secondary/10 border border-secondary/30 flex items-center justify-center text-secondary shrink-0">
-          <span class="material-symbols-outlined text-[32px]">language</span>
-        </div>
+    <!-- 3 Course Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Course 1: Java Programming Basics -->
+      <div class="rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/50 transition-all duration-300 flex flex-col justify-between shadow-xl group hover:-translate-y-1">
         <div>
-          <span class="font-label-mono-sm text-xs text-secondary font-bold uppercase tracking-wider">Digital Study Library</span>
-          <h2 class="font-headline-xl text-2xl sm:text-3xl font-extrabold text-on-surface mt-1 tracking-tight">Online Notes</h2>
-          <p class="text-sm sm:text-base text-on-surface-variant mt-2 leading-relaxed max-w-2xl">Topic-wise digital notes, typed explanations, code examples aur quick revision material. Explore par click karke apne subject ke online notes open karein.</p>
+          <div class="flex items-center justify-between pb-4 border-b border-surface-container-highest/60">
+            <span class="px-2.5 py-1 rounded text-[11px] font-label-mono-sm font-semibold bg-primary/10 text-primary border border-primary/20 flex items-center gap-1">
+              <span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Free · Beginner
+            </span>
+            <span class="font-label-mono-sm text-xs text-on-surface-variant flex items-center gap-1">
+              <span class="material-symbols-outlined text-[14px] text-primary">schedule</span>
+              18+ Lectures · 12.5 Hrs
+            </span>
+          </div>
+          <div class="mt-5 flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-[26px]">code</span>
+            </div>
+            <div>
+              <h3 class="font-headline-sm text-xl font-bold text-on-surface">Java Programming Basics</h3>
+              <span class="font-label-mono-sm text-[11px] text-secondary">Complete Core Java Track</span>
+            </div>
+          </div>
+          <p class="text-sm text-on-surface-variant mt-4 leading-relaxed">
+            Master the core syntax, memory model, and object-oriented principles with clean coding hygiene and zero fluff.
+          </p>
+          <!-- Topic Pills -->
+          <div class="flex flex-wrap gap-1.5 mt-5">
+            <span class="px-2.5 py-1 rounded-md bg-surface-container-high border border-surface-container-highest text-[11px] font-label-mono-sm text-on-surface-variant">JVM Architecture</span>
+            <span class="px-2.5 py-1 rounded-md bg-surface-container-high border border-surface-container-highest text-[11px] font-label-mono-sm text-on-surface-variant">Data Types &amp; Loops</span>
+            <span class="px-2.5 py-1 rounded-md bg-surface-container-high border border-surface-container-highest text-[11px] font-label-mono-sm text-on-surface-variant">OOP Fundamentals</span>
+            <span class="px-2.5 py-1 rounded-md bg-surface-container-high border border-surface-container-highest text-[11px] font-label-mono-sm text-on-surface-variant">Methods &amp; Scope</span>
+          </div>
+        </div>
+        <div class="pt-6 mt-6 border-t border-surface-container-highest/60 flex items-center justify-between">
+          <a class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-primary-container hover:bg-primary-fixed text-on-primary text-xs font-bold transition-all shadow-[0_0_18px_rgba(16,185,129,0.35)]" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-[18px]">play_circle</span>
+            <span class="">Start Watching</span>
+          </a>
         </div>
       </div>
-      <button type="button" id="explore-online-notes" aria-expanded="false" aria-controls="online-notes-categories" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-primary-container hover:bg-primary-fixed text-on-primary text-sm font-bold transition-all shadow-[0_0_18px_rgba(16,185,129,0.3)] shrink-0">
-        <span class="material-symbols-outlined text-[20px]">menu_book</span>
-        <span>Explore Online Notes</span>
-        <span class="material-symbols-outlined text-[18px]" id="online-notes-toggle-icon">expand_more</span>
-      </button>
-    </div>
 
-    <div id="online-notes-categories" class="hidden mt-8" aria-label="Explore Online Notes categories">
-      <div class="text-center mb-6">
-        <h3 class="font-headline-xl text-xl sm:text-2xl font-extrabold text-on-surface">Choose Your Online Notes Subject</h3>
-        <p class="text-sm text-on-surface-variant mt-2">Select a subject to open its digital notes.</p>
+      <!-- Course 2: Data Structures & Algorithms -->
+      <div class="rounded-2xl bg-surface-container-high p-6 border-2 border-primary/50 transition-all duration-300 flex flex-col justify-between shadow-2xl group hover:-translate-y-1 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-28 h-28 bg-primary/15 rounded-full blur-2xl pointer-events-none"></div>
+        <div>
+          <div class="flex items-center justify-between pb-4 border-b border-surface-container-highest">
+            <span class="px-2.5 py-1 rounded text-[11px] font-label-mono-sm font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20 flex items-center gap-1">
+              <span class="material-symbols-outlined text-[13px]">local_fire_department</span> Popular · Interview Ready
+            </span>
+            <span class="font-label-mono-sm text-xs text-primary font-semibold flex items-center gap-1">
+              <span class="material-symbols-outlined text-[14px]">schedule</span>
+              32+ Lectures · 24.0 Hrs
+            </span>
+          </div>
+          <div class="mt-5 flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-secondary/10 border border-secondary/20 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-[26px]">hub</span>
+            </div>
+            <div>
+              <h3 class="font-headline-sm text-xl font-bold text-on-surface">Data Structures &amp; DSA</h3>
+              <span class="font-label-mono-sm text-[11px] text-primary">Placement &amp; Coding Round Master</span>
+            </div>
+          </div>
+          <p class="text-sm text-on-surface-variant mt-4 leading-relaxed">
+            Build rock-solid algorithmic intuition and crack MAANG &amp; product-based placement coding rounds.
+          </p>
+          <!-- Topic Pills -->
+          <div class="flex flex-wrap gap-1.5 mt-5">
+            <span class="px-2.5 py-1 rounded-md bg-surface-container-lowest border border-surface-container-highest text-[11px] font-label-mono-sm text-secondary font-medium">Time &amp; Space Complexity</span>
+            <span class="px-2.5 py-1 rounded-md bg-surface-container-lowest border border-surface-container-highest text-[11px] font-label-mono-sm text-secondary font-medium">LinkedLists &amp; Trees</span>
+            <span class="px-2.5 py-1 rounded-md bg-surface-container-lowest border border-surface-container-highest text-[11px] font-label-mono-sm text-secondary font-medium">Graph BFS/DFS</span>
+            <span class="px-2.5 py-1 rounded-md bg-surface-container-lowest border border-surface-container-highest text-[11px] font-label-mono-sm text-secondary font-medium">Dynamic Programming</span>
+          </div>
+        </div>
+        <div class="pt-6 mt-6 border-t border-surface-container-highest flex items-center justify-between">
+          <a class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-[#dc2626] hover:bg-[#ef4444] text-white text-xs font-bold transition-all shadow-[0_0_18px_rgba(220,38,38,0.4)]" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-[18px]">play_circle</span>
+            <span class="">Start Watching</span>
+          </a>
+        </div>
       </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
-      <article class="rounded-2xl border border-primary/25 bg-surface-container p-5 sm:p-6 hover:border-primary/60 hover:-translate-y-1 transition-all">
-        <div class="w-11 h-11 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[25px]">code</span></div>
-        <h3 class="font-headline-sm text-lg font-bold text-on-surface mt-4">Java Online Notes</h3>
-        <p class="text-sm text-on-surface-variant mt-2 leading-relaxed">Java basics, OOP concepts, syntax, code examples aur quick revision notes.</p>
-        <a href="YOUR_JAVA_ONLINE_NOTES_LINK" target="_blank" rel="noopener noreferrer" class="mt-5 w-full inline-flex items-center justify-center gap-2 rounded-xl border border-primary/25 bg-primary/10 px-4 py-3 text-sm font-bold text-primary hover:bg-primary/15 transition-colors"><span class="material-symbols-outlined text-[18px]">open_in_new</span> Open Online Notes</a>
-      </article>
 
-      <article class="rounded-2xl border border-secondary/25 bg-surface-container p-5 sm:p-6 hover:border-secondary/60 hover:-translate-y-1 transition-all">
-        <div class="w-11 h-11 rounded-xl bg-secondary/10 border border-secondary/20 flex items-center justify-center text-secondary"><span class="material-symbols-outlined text-[25px]">account_tree</span></div>
-        <h3 class="font-headline-sm text-lg font-bold text-on-surface mt-4">DSA Online Notes</h3>
-        <p class="text-sm text-on-surface-variant mt-2 leading-relaxed">Arrays, strings, linked lists, trees, graphs, algorithms aur complexity.</p>
-        <a href="YOUR_DSA_ONLINE_NOTES_LINK" target="_blank" rel="noopener noreferrer" class="mt-5 w-full inline-flex items-center justify-center gap-2 rounded-xl border border-secondary/25 bg-secondary/10 px-4 py-3 text-sm font-bold text-secondary hover:bg-secondary/15 transition-colors"><span class="material-symbols-outlined text-[18px]">open_in_new</span> Open Online Notes</a>
-      </article>
-
-      <article class="rounded-2xl border border-surface-container-highest bg-surface-container p-5 sm:p-6 hover:border-primary/40 hover:-translate-y-1 transition-all">
-        <div class="w-11 h-11 rounded-xl bg-surface-container-high border border-surface-container-highest flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[25px]">layers</span></div>
-        <h3 class="font-headline-sm text-lg font-bold text-on-surface mt-4">OOPs Online Notes</h3>
-        <p class="text-sm text-on-surface-variant mt-2 leading-relaxed">Classes, objects, inheritance, polymorphism, abstraction aur encapsulation.</p>
-        <a href="YOUR_OOPS_ONLINE_NOTES_LINK" target="_blank" rel="noopener noreferrer" class="mt-5 w-full inline-flex items-center justify-center gap-2 rounded-xl border border-surface-container-highest bg-surface-container-low px-4 py-3 text-sm font-bold text-on-surface-variant hover:border-primary/40 transition-colors"><span class="material-symbols-outlined text-[18px]">open_in_new</span> Open Online Notes</a>
-      </article>
-
-      <article class="rounded-2xl border border-surface-container-highest bg-surface-container p-5 sm:p-6 hover:border-primary/40 hover:-translate-y-1 transition-all">
-        <div class="w-11 h-11 rounded-xl bg-surface-container-high border border-surface-container-highest flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[25px]">terminal</span></div>
-        <h3 class="font-headline-sm text-lg font-bold text-on-surface mt-4">C Programming Notes</h3>
-        <p class="text-sm text-on-surface-variant mt-2 leading-relaxed">C language fundamentals, functions, arrays, pointers aur examples.</p>
-        <a href="YOUR_C_ONLINE_NOTES_LINK" target="_blank" rel="noopener noreferrer" class="mt-5 w-full inline-flex items-center justify-center gap-2 rounded-xl border border-surface-container-highest bg-surface-container-low px-4 py-3 text-sm font-bold text-on-surface-variant hover:border-primary/40 transition-colors"><span class="material-symbols-outlined text-[18px]">open_in_new</span> Open Online Notes</a>
-      </article>
-
-      <article class="rounded-2xl border border-surface-container-highest bg-surface-container p-5 sm:p-6 hover:border-primary/40 hover:-translate-y-1 transition-all">
-        <div class="w-11 h-11 rounded-xl bg-surface-container-high border border-surface-container-highest flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[25px]">integration_instructions</span></div>
-        <h3 class="font-headline-sm text-lg font-bold text-on-surface mt-4">C++ Online Notes</h3>
-        <p class="text-sm text-on-surface-variant mt-2 leading-relaxed">C++ syntax, STL, functions, classes aur important programming concepts.</p>
-        <a href="YOUR_CPP_ONLINE_NOTES_LINK" target="_blank" rel="noopener noreferrer" class="mt-5 w-full inline-flex items-center justify-center gap-2 rounded-xl border border-surface-container-highest bg-surface-container-low px-4 py-3 text-sm font-bold text-on-surface-variant hover:border-primary/40 transition-colors"><span class="material-symbols-outlined text-[18px]">open_in_new</span> Open Online Notes</a>
-      </article>
-
-      <article class="rounded-2xl border border-surface-container-highest bg-surface-container p-5 sm:p-6 hover:border-primary/40 hover:-translate-y-1 transition-all">
-        <div class="w-11 h-11 rounded-xl bg-surface-container-high border border-surface-container-highest flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[25px]">library_books</span></div>
-        <h3 class="font-headline-sm text-lg font-bold text-on-surface mt-4">Other Online Resources</h3>
-        <p class="text-sm text-on-surface-variant mt-2 leading-relaxed">Extra subjects, interview preparation, cheat sheets aur future study material.</p>
-        <a href="YOUR_OTHER_ONLINE_NOTES_LINK" target="_blank" rel="noopener noreferrer" class="mt-5 w-full inline-flex items-center justify-center gap-2 rounded-xl border border-surface-container-highest bg-surface-container-low px-4 py-3 text-sm font-bold text-on-surface-variant hover:border-primary/40 transition-colors"><span class="material-symbols-outlined text-[18px]">open_in_new</span> Open Online Notes</a>
-      </article>
-    </div>
-    <p class="mt-5 text-xs text-on-surface-variant">Notes links are ready to configure. Add your published Google Docs, Notion pages or website URLs in the matching YOUR_*_ONLINE_NOTES_LINK value in index.html.</p>
+      <!-- Course 3: Engineering C Programming -->
+      <div class="rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/50 transition-all duration-300 flex flex-col justify-between shadow-xl group hover:-translate-y-1">
+        <div>
+          <div class="flex items-center justify-between pb-4 border-b border-surface-container-highest/60">
+            <span class="px-2.5 py-1 rounded text-[11px] font-label-mono-sm font-semibold bg-secondary/10 text-secondary border border-secondary/20 flex items-center gap-1">
+              <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Foundational · University Core
+            </span>
+            <span class="font-label-mono-sm text-xs text-on-surface-variant flex items-center gap-1">
+              <span class="material-symbols-outlined text-[14px] text-secondary">schedule</span>
+              14+ Lectures · 9.0 Hrs
+            </span>
+          </div>
+          <div class="mt-5 flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-secondary/10 border border-secondary/20 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-[26px]">memory</span>
+            </div>
+            <div>
+              <h3 class="font-headline-sm text-xl font-bold text-on-surface">Engineering C Programming</h3>
+              <span class="font-label-mono-sm text-[11px] text-secondary">Low-Level Memory &amp; Systems</span>
+            </div>
+          </div>
+          <p class="text-sm text-on-surface-variant mt-4 leading-relaxed">
+            Deep-dive into pointers, system-level memory allocation, and semester exam fundamentals for B.Tech &amp; BCA.
+          </p>
+          <!-- Topic Pills -->
+          <div class="flex flex-wrap gap-1.5 mt-5">
+            <span class="px-2.5 py-1 rounded-md bg-surface-container-high border border-surface-container-highest text-[11px] font-label-mono-sm text-on-surface-variant">Pointers &amp; Memory</span>
+            <span class="px-2.5 py-1 rounded-md bg-surface-container-high border border-surface-container-highest text-[11px] font-label-mono-sm text-on-surface-variant">Structs &amp; Unions</span>
+            <span class="px-2.5 py-1 rounded-md bg-surface-container-high border border-surface-container-highest text-[11px] font-label-mono-sm text-on-surface-variant">Bit Manipulation</span>
+            <span class="px-2.5 py-1 rounded-md bg-surface-container-high border border-surface-container-highest text-[11px] font-label-mono-sm text-on-surface-variant">File I/O</span>
+          </div>
+        </div>
+        <div class="pt-6 mt-6 border-t border-surface-container-highest/60 flex items-center justify-between">
+          <a class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface text-xs font-bold border border-surface-variant transition-all" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-[18px] text-secondary">play_circle</span>
+            <span class="">Start Watching</span>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-<!-- FEATURED COURSES SECTION REMOVED: duplicate course cards consolidated into the playlist -->
-
 
 <!-- 3B. JAVA YOUTUBE PLAYLIST SHOWCASE -->
-<section class="py-10 sm:py-14 border-b border-surface-container-highest/40 bg-surface-container-low/30" id="java-playlist">
-  <div class="max-w-[1100px] mx-auto px-4 sm:px-6">
-    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6">
+<section class="py-20 border-b border-surface-container-highest/40 bg-surface-container-low/30" id="java-playlist">
+  <div class="max-w-[1280px] mx-auto px-6">
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-5 mb-10">
       <div>
-        <span class="inline-flex items-center gap-2 rounded-full border border-[#dc2626]/30 bg-[#dc2626]/10 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-[#ff7a73]">YouTube Playlist</span>
-        <h2 class="font-headline-xl text-2xl sm:text-3xl font-extrabold text-on-surface mt-3 tracking-tight">Complete Java Tutorial in Hindi</h2>
-        <p class="text-sm text-on-surface-variant mt-2 max-w-2xl leading-relaxed">Saare lectures ek hi playlist mein. Video list se lecture select karein, ya full playlist YouTube par kholein.</p>
+        <span class="font-label-mono-sm text-xs text-[#ff7a73] font-bold uppercase tracking-wider">JAVA VIDEO SERIES</span>
+        <h2 class="font-headline-xl text-3xl sm:text-4xl font-extrabold text-on-surface mt-2 tracking-tight">Complete Java Tutorial in Hindi</h2>
+        <p class="text-sm sm:text-base text-on-surface-variant mt-3 max-w-2xl leading-relaxed">
+          Watch the complete Learn With Anmol Java playlist. Every video thumbnail is clickable and opens the YouTube lesson.
+        </p>
       </div>
-      <a class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-[#dc2626] hover:bg-[#ef4444] text-white text-sm font-bold transition-all shrink-0" href="https://youtube.com/playlist?list=PLGv1PVd5hYNQ&si=AlgKVB69Q7mbzN7-9" target="_blank" rel="noopener noreferrer">
-        <span class="material-symbols-outlined text-[19px]">playlist_play</span> YouTube par playlist kholein
+      <a class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#dc2626] hover:bg-[#ef4444] text-white text-sm font-bold transition-all shadow-[0_0_20px_rgba(220,38,38,0.3)] shrink-0" href="https://youtube.com/playlist?list=PLGv1PVd5hYNQ&si=AlgKVB69Q7mbzN7-9" target="_blank" rel="noopener noreferrer">
+        <span class="material-symbols-outlined text-[19px]">playlist_play</span>
+        <span>Open Full Playlist</span>
       </a>
     </div>
-    <div class="rounded-xl sm:rounded-2xl overflow-hidden border border-white/10 bg-[#0f0f0f] shadow-[0_16px_50px_rgba(0,0,0,0.35)]">
-      <div class="playlist-frame-wrap">
-        <iframe class="playlist-frame" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLGv1PVd5hYNQ" title="Learn With Anmol Java tutorial playlist" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 px-4 py-3 bg-[#181818] border-t border-white/10">
-        <div><p class="text-sm font-bold text-white">LEARN WITH ANMOL · Java Series</p><p class="text-xs text-gray-400 mt-1">Player ke playlist/list controls se koi bhi lecture choose karein.</p></div>
-        <a class="inline-flex items-center justify-center gap-2 px-3 py-2 rounded-lg border border-white/15 text-gray-200 text-xs font-semibold hover:bg-white/5" href="https://youtube.com/playlist?list=PLGv1PVd5hYNQ&si=AlgKVB69Q7mbzN7-9" target="_blank" rel="noopener noreferrer">Open full playlist <span class="material-symbols-outlined text-sm">open_in_new</span></a>
-      </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-7 items-stretch">
+      <!-- Uploaded playlist preview image -->
+      <a href="https://youtube.com/playlist?list=PLGv1PVd5hYNQ&si=AlgKVB69Q7mbzN7-9" target="_blank" rel="noopener noreferrer" class="lg:col-span-3 group relative overflow-hidden rounded-2xl border border-surface-container-highest bg-surface-container shadow-2xl">
+        <img src="java-playlist.png" alt="Learn With Anmol Complete Java Tutorial YouTube Playlist" class="w-full h-auto aspect-video object-contain object-center java-playlist-image transition-transform duration-500 group-hover:scale-[1.02]">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent"></div>
+        <div class="absolute left-5 right-5 bottom-5 flex items-center justify-between gap-3">
+          <div>
+            <span class="text-[11px] uppercase tracking-wider font-bold text-white/70">Official Playlist</span>
+            <h3 class="text-lg font-bold text-white mt-1">Complete Java Tutorial</h3>
+          </div>
+          <span class="w-12 h-12 rounded-full bg-[#dc2626] text-white flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined text-[27px]">play_arrow</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- Playlist action card -->
+      <a href="https://youtube.com/playlist?list=PLGv1PVd5hYNQ&si=AlgKVB69Q7mbzN7-9" target="_blank" rel="noopener noreferrer" class="lg:col-span-2 rounded-2xl overflow-hidden border border-surface-container-highest bg-surface-container shadow-2xl group flex flex-col justify-between hover:border-primary/60 transition-all duration-300 hover:-translate-y-1">
+        <div class="p-6">
+          <span class="font-label-mono-sm text-xs text-[#ff7a73] font-bold uppercase tracking-wider">31 VIDEO PLAYLIST</span>
+          <h3 class="text-2xl font-extrabold text-on-surface mt-2">Learn With Anmol — Java Playlist</h3>
+          <p class="text-sm text-on-surface-variant mt-3 leading-relaxed">Watch Lecture 1 to Lecture 31 directly on YouTube. Click here to open the complete playlist.</p>
+          <div class="mt-6 inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#dc2626] text-white text-sm font-bold shadow-lg">
+            <span class="material-symbols-outlined text-[19px]">play_circle</span>
+            Open Java Playlist
+          </div>
+        </div>
+        <div class="px-6 py-4 border-t border-surface-container-highest bg-surface-container-low flex items-center justify-between">
+          <span class="text-xs text-on-surface-variant">Complete Java Tutorial in Hindi</span>
+          <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </div>
+      </a>
     </div>
   </div>
 </section>
     <!-- JAVA ONE SHOT SECTION -->
-<section class="py-10 sm:py-14 border-b border-surface-container-highest/40" id="java-one-shot">
-  <div class="max-w-[1100px] mx-auto px-4 sm:px-6">
-    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6">
+<section class="py-20 border-b border-surface-container-highest/40 bg-surface-container-low/30" id="java-oneshot">
+  <div class="max-w-[1280px] mx-auto px-6">
+
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-5 mb-10">
       <div>
-        <span class="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-primary">One Shot Class</span>
-        <h2 class="font-headline-xl text-2xl sm:text-3xl font-extrabold text-on-surface mt-3 tracking-tight">Java One Shot</h2>
-        <p class="text-sm text-on-surface-variant mt-2 max-w-2xl leading-relaxed">Java One Shot video yahin website par dekhein, ya YouTube par kholein.</p>
+        <span class="font-label-mono-sm text-xs text-[#ff7a73] font-bold uppercase tracking-wider">
+          JAVA ONE SHOT
+        </span>
+
+        <h2 class="font-headline-xl text-3xl sm:text-4xl font-extrabold text-on-surface mt-2 tracking-tight">
+          Java One Shot in Hindi
+        </h2>
+
+        <p class="text-sm sm:text-base text-on-surface-variant mt-3 max-w-2xl leading-relaxed">
+          Learn Java programming with this One Shot video by Learn With Anmol.
+        </p>
       </div>
-      <a class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-[#dc2626] hover:bg-[#ef4444] text-white text-sm font-bold transition-all shrink-0" href="https://youtu.be/Ev1ESxeJs0s" target="_blank" rel="noopener noreferrer">
-        <span class="material-symbols-outlined text-[19px]">smart_display</span> YouTube par dekhein
+
+      <a
+        class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#dc2626] hover:bg-[#ef4444] text-white text-sm font-bold transition-all shadow-[0_0_20px_rgba(220,38,38,0.3)] shrink-0"
+        href="https://youtu.be/Ev1ESxeJs0s?si=--Vcu87-97C4PXrm"
+        target="_blank"
+        rel="noopener noreferrer">
+        <span class="material-symbols-outlined text-[19px]">play_circle</span>
+        <span>Watch One Shot</span>
       </a>
     </div>
-    <div class="rounded-xl sm:rounded-2xl overflow-hidden border border-primary/20 bg-[#0f0f0f] shadow-[0_16px_50px_rgba(0,0,0,0.35)]">
-      <div class="w-full aspect-video">
-        <iframe class="w-full h-full block border-0" src="https://www.youtube-nocookie.com/embed/Ev1ESxeJs0s" title="LEARN WITH ANMOL Java One Shot" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-      <div class="px-4 py-3 bg-[#181818] border-t border-white/10">
-        <p class="text-sm font-bold text-white">LEARN WITH ANMOL · Java One Shot</p>
-        <p class="text-xs text-gray-400 mt-1">Video play karne ke liye player par click karein.</p>
-      </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-7 items-stretch">
+
+      <!-- One Shot Thumbnail -->
+      <a
+        href="https://youtu.be/Ev1ESxeJs0s?si=--Vcu87-97C4PXrm"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="lg:col-span-3 group relative overflow-hidden rounded-2xl border border-surface-container-highest bg-surface-container shadow-2xl">
+
+        <img
+          src="java-oneshot.png"
+          alt="Java One Shot in Hindi by Learn With Anmol"
+          class="w-full h-auto aspect-video object-contain object-center java-playlist-image transition-transform duration-500 group-hover:scale-[1.02]">
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent"></div>
+
+        <div class="absolute left-5 right-5 bottom-5 flex items-center justify-between gap-3">
+          <div>
+            <span class="text-[11px] uppercase tracking-wider font-bold text-white/70">
+              Java One Shot
+            </span>
+            <h3 class="text-lg font-bold text-white mt-1">
+              Java One Shot in Hindi
+            </h3>
+          </div>
+
+          <span class="w-12 h-12 rounded-full bg-[#dc2626] text-white flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined text-[27px]">play_arrow</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- One Shot Action Card -->
+      <a
+        href="https://youtu.be/Ev1ESxeJs0s?si=--Vcu87-97C4PXrm"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="lg:col-span-2 rounded-2xl overflow-hidden border border-surface-container-highest bg-surface-container shadow-2xl group flex flex-col justify-between hover:border-primary/60 transition-all duration-300 hover:-translate-y-1">
+
+        <div class="p-6">
+          <span class="font-label-mono-sm text-xs text-[#ff7a73] font-bold uppercase tracking-wider">
+            ONE SHOT VIDEO
+          </span>
+
+          <h3 class="text-2xl font-extrabold text-on-surface mt-2">
+            Learn With Anmol — Java One Shot
+          </h3>
+
+          <p class="text-sm text-on-surface-variant mt-3 leading-relaxed">
+            Watch the Java One Shot video directly on YouTube. Click here to start learning.
+          </p>
+
+          <div class="mt-6 inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#dc2626] text-white text-sm font-bold shadow-lg">
+            <span class="material-symbols-outlined text-[19px]">play_circle</span>
+            Watch Java One Shot
+          </div>
+        </div>
+
+        <div class="px-6 py-4 border-t border-surface-container-highest bg-surface-container-low flex items-center justify-between">
+          <span class="text-xs text-on-surface-variant">Java One Shot in Hindi</span>
+          <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </div>
+      </a>
+
     </div>
   </div>
 </section>
 
 <!-- INTERACTIVE ROADMAP & MODULES SECTION -->
+<section class="py-20 border-b border-surface-container-highest/40 bg-surface-container-lowest/50" id="interactive-roadmap">
+  <div class="max-w-[1280px] mx-auto px-6">
+    <!-- Header -->
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <span class="font-label-mono-sm text-xs text-secondary font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-secondary/10 border border-secondary/20 inline-block">
+        STEP-BY-STEP LEARNING PATHWAY
+      </span>
+      <h2 class="font-headline-xl text-3xl sm:text-4xl font-extrabold text-on-surface mt-3 tracking-tight">
+        Interactive Curriculum Roadmap
+      </h2>
+      <p class="text-base text-on-surface-variant mt-3 leading-relaxed">
+        Follow our battle-tested progressive roadmap from syntax fundamentals to placement-ready algorithmic problem solving.
+      </p>
+    </div>
 
+    <!-- Milestone Step Sequence -->
+    <div class="relative">
+      <!-- Top Connector Line (Desktop) -->
+      <div class="hidden lg:block absolute top-7 left-12 right-12 h-1 bg-gradient-to-r from-primary via-secondary to-surface-container-highest rounded-full z-0"></div>
 
+      <!-- Steps Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 relative z-10">
+        <!-- Step 01 -->
+        <div class="rounded-2xl bg-surface-container p-6 border border-primary/40 shadow-xl flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-20 h-20 bg-primary/10 rounded-full blur-xl pointer-events-none"></div>
+          <div>
+            <!-- Step Pin -->
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm font-bold text-base shadow-[0_0_16px_rgba(78,222,163,0.4)] ring-4 ring-surface">
+                01
+              </div>
+              <span class="px-2.5 py-1 rounded-full text-[11px] font-label-mono-sm font-bold bg-primary/15 text-primary border border-primary/30 flex items-center gap-1">
+                <span class="material-symbols-outlined text-[13px]">check_circle</span> Completed / Foundation
+              </span>
+            </div>
+            <h3 class="font-headline-sm text-lg font-bold text-on-surface mt-2">
+              Module 1 — Basics &amp; Control Statements
+            </h3>
+            <p class="text-xs text-on-surface-variant mt-1 font-label-mono-sm text-secondary">
+              Est. Duration: 6.5 Hours · 8 Lectures
+            </p>
+            <!-- Progress Meter -->
+            <div class="mt-4">
+              <div class="flex items-center justify-between text-[11px] font-label-mono-sm mb-1.5">
+                <span class="text-on-surface-variant">Progress Complete</span>
+                <span class="text-primary font-bold">100%</span>
+              </div>
+              <div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+                <div class="bg-primary h-full rounded-full w-full"></div>
+              </div>
+            </div>
+            <!-- Key Milestones -->
+            <div class="mt-5 pt-4 border-t border-surface-container-highest/60">
+              <span class="font-label-mono-sm text-[11px] text-primary font-bold uppercase tracking-wider block mb-2">Key Milestones</span>
+              <ul class="space-y-1.5 text-xs text-on-surface-variant">
+                <li class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-[15px]">done</span> Variables, Data Types &amp; Operators
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-[15px]">done</span> If-Else Conditionals &amp; Switch
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-[15px]">done</span> While &amp; For Loops, Nested Flow
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-[15px]">done</span> Star &amp; Number Pattern Printing
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="pt-5 mt-4 border-t border-surface-container-highest/60">
+            <a class="text-xs font-label-mono-sm text-primary flex items-center gap-1.5 hover:underline font-semibold" href="#curriculum">
+              <span class="">Explore Module 1 Lectures</span>
+              <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Step 02 -->
+        <div class="rounded-2xl bg-surface-container p-6 border border-secondary/40 shadow-xl flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-20 h-20 bg-secondary/10 rounded-full blur-xl pointer-events-none"></div>
+          <div>
+            <!-- Step Pin -->
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-headline-sm font-bold text-base shadow-[0_0_16px_rgba(137,206,255,0.4)] ring-4 ring-surface">
+                02
+              </div>
+              <span class="px-2.5 py-1 rounded-full text-[11px] font-label-mono-sm font-bold bg-secondary/15 text-secondary border border-secondary/30 flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span> In Progress / Core
+              </span>
+            </div>
+            <h3 class="font-headline-sm text-lg font-bold text-on-surface mt-2">
+              Module 2 — Arrays &amp; Strings
+            </h3>
+            <p class="text-xs text-on-surface-variant mt-1 font-label-mono-sm text-secondary">
+              Est. Duration: 7.0 Hours · 8 Lectures
+            </p>
+            <!-- Progress Meter -->
+            <div class="mt-4">
+              <div class="flex items-center justify-between text-[11px] font-label-mono-sm mb-1.5">
+                <span class="text-on-surface-variant">Active Progress</span>
+                <span class="text-secondary font-bold">65%</span>
+              </div>
+              <div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+                <div class="bg-secondary h-full rounded-full" style="width: 65%;"></div>
+              </div>
+            </div>
+            <!-- Key Milestones -->
+            <div class="mt-5 pt-4 border-t border-surface-container-highest/60">
+              <span class="font-label-mono-sm text-[11px] text-secondary font-bold uppercase tracking-wider block mb-2">Key Milestones</span>
+              <ul class="space-y-1.5 text-xs text-on-surface-variant">
+                <li class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-secondary text-[15px]">play_arrow</span> 1D &amp; 2D Array Traversals
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-secondary text-[15px]">play_arrow</span> Stack vs Heap Memory Layout
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-secondary text-[15px]">play_arrow</span> Substrings &amp; Two-Pointer Technique
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-secondary text-[15px]">play_arrow</span> String Pool &amp; Immutability
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="pt-5 mt-4 border-t border-surface-container-highest/60">
+            <a class="text-xs font-label-mono-sm text-secondary flex items-center gap-1.5 hover:underline font-semibold" href="#curriculum">
+              <span class="">Explore Module 2 Lectures</span>
+              <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Step 03 -->
+        <div class="rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/40 shadow-xl flex flex-col justify-between relative overflow-hidden">
+          <div>
+            <!-- Step Pin -->
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-headline-sm font-bold text-base border border-surface-container-highest ring-4 ring-surface">
+                03
+              </div>
+              <span class="px-2.5 py-1 rounded-full text-[11px] font-label-mono-sm font-bold bg-surface-container-highest text-tertiary border border-surface-variant flex items-center gap-1">
+                <span class="material-symbols-outlined text-[13px]">flag</span> Upcoming / Advanced
+              </span>
+            </div>
+            <h3 class="font-headline-sm text-lg font-bold text-on-surface mt-2">
+              Module 3 — Trees, Graphs &amp; Advanced DSA
+            </h3>
+            <p class="text-xs text-on-surface-variant mt-1 font-label-mono-sm">
+              Est. Duration: 10.0 Hours · 16 Lectures
+            </p>
+            <!-- Progress Meter -->
+            <div class="mt-4">
+              <div class="flex items-center justify-between text-[11px] font-label-mono-sm mb-1.5">
+                <span class="text-on-surface-variant">Target Milestones</span>
+                <span class="text-on-surface-variant font-bold">20%</span>
+              </div>
+              <div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+                <div class="bg-primary/50 h-full rounded-full" style="width: 20%;"></div>
+              </div>
+            </div>
+            <!-- Key Milestones -->
+            <div class="mt-5 pt-4 border-t border-surface-container-highest/60">
+              <span class="font-label-mono-sm text-[11px] text-tertiary font-bold uppercase tracking-wider block mb-2">Key Milestones</span>
+              <ul class="space-y-1.5 text-xs text-on-surface-variant">
+                <li class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-outline text-[15px]">radio_button_unchecked</span> Binary Search Trees (BST) &amp; Heap
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-outline text-[15px]">radio_button_unchecked</span> BFS/DFS Graph Traversals
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-outline text-[15px]">radio_button_unchecked</span> Dijkstra &amp; Shortest Paths
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-outline text-[15px]">radio_button_unchecked</span> Recursion &amp; Top-Down Memoized DP
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="pt-5 mt-4 border-t border-surface-container-highest/60">
+            <a class="text-xs font-label-mono-sm text-on-surface-variant hover:text-primary flex items-center gap-1.5 transition-colors font-semibold" href="#curriculum">
+              <span class="">Explore Module 3 Lectures</span>
+              <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 4. STUDENT PROGRESS & LIVE SEARCH BAR -->
+<section class="py-12 border-b border-surface-container-highest/40 bg-surface">
+<div class="max-w-[1280px] mx-auto px-6 flex flex-col gap-6">
+<!-- Search Bar -->
+<div class="relative w-full">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-[22px]">search</span>
+</div>
+<input class="w-full pl-12 pr-28 py-3.5 bg-surface-container-low rounded-xl border border-surface-container-highest font-body-md text-sm text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none focus:border-primary transition-all" id="lecture-search-input" placeholder="Search Java lectures, topics and algorithms (e.g., ArrayList, LinkedList, Binary Search, Dijkstra, OOP)..." type="text">
+<div class="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none">
+<kbd class="px-2.5 py-1 rounded bg-surface-container-highest text-on-surface-variant font-label-mono-sm text-xs border border-surface-variant">⌘K</kbd>
+</div>
+</div>
+<!-- Progress Tracker Banner -->
+<div class="rounded-2xl bg-surface-container-low p-6 border border-surface-container-highest">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">trending_up</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-base font-bold text-on-surface">Curriculum Completion Tracker</h3>
+<p class="text-xs text-on-surface-variant">Java Programming &amp; Complete DSA Masterclass Series</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container border border-surface-variant">
+<span class="text-[#f59e0b] material-symbols-outlined text-[16px]">local_fire_department</span>
+<span class="font-label-mono-sm text-xs text-on-surface font-bold">5-Day Active Streak</span>
+</div>
+<span class="font-label-mono-sm text-xs text-primary font-semibold px-3 py-1 rounded-full bg-primary/10 border border-primary/20">
+                Lecture 30 of 50+ (60%)
+              </span>
+</div>
+</div>
+<!-- Progress Bar -->
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-gradient-to-r from-primary to-secondary h-full rounded-full" style="width: 60%;"></div>
+</div>
+</div>
+</div>
+</section>
 <!-- 5. CURATED QUICK-ACCESS MODULES (MODULE 1 TO 6) -->
-
+<section class="py-20 border-b border-surface-container-highest/40" id="curriculum">
+<div class="max-w-[1280px] mx-auto px-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+<div>
+<span class="font-label-mono-sm text-xs text-primary font-bold uppercase tracking-wider">CURRICULUM ARCHITECTURE</span>
+<h2 class="font-headline-xl text-3xl font-extrabold text-on-surface mt-1">
+              Java &amp; DSA — 6 Core Modules
+            </h2>
+<p class="text-sm text-on-surface-variant mt-1.5 max-w-2xl">
+              From first principles to advanced algorithmic thinking. Step-by-step videos organized to deliver maximum clarity.
+            </p>
+</div>
+<a class="text-xs font-label-mono-sm text-primary hover:underline flex items-center gap-1 shrink-0" href="https://youtube.com/playlist?list=PLGv1PVd5hYNQ&si=AlgKVB69Q7mbzN7-9" rel="noopener noreferrer" target="_blank">
+<span class="">Open Java Playlist on YouTube</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+<!-- 6 Modules Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Module 1 -->
+<div class="rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/40 transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-3 border-b border-surface-container-highest/60">
+<span class="font-label-mono-sm text-xs text-primary font-bold">MODULE 01</span>
+<span class="font-label-mono-sm text-xs text-on-surface-variant">Lectures 1–8</span>
+</div>
+<h3 class="font-headline-sm text-lg font-bold text-on-surface mt-3">Java Basics &amp; Syntax</h3>
+<p class="text-xs text-on-surface-variant mt-2 leading-relaxed">
+                JVM vs JRE vs JDK architecture, primitive types, operators, conditionals, scanner input, and loop structures.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<span class="text-xs font-label-mono-sm text-secondary font-medium">8 Lectures • 6.5 Hrs</span>
+<a class="text-xs font-label-mono-sm text-primary flex items-center gap-1 hover:underline" href="#lectures">
+<span class="">View</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Module 2 -->
+<div class="rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/40 transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-3 border-b border-surface-container-highest/60">
+<span class="font-label-mono-sm text-xs text-primary font-bold">MODULE 02</span>
+<span class="font-label-mono-sm text-xs text-on-surface-variant">Lectures 9–16</span>
+</div>
+<h3 class="font-headline-sm text-lg font-bold text-on-surface mt-3">Arrays &amp; Methods</h3>
+<p class="text-xs text-on-surface-variant mt-2 leading-relaxed">
+                Stack vs Heap memory, 1D/2D arrays, pass-by-value semantics, String immutability, and StringBuilder internals.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<span class="text-xs font-label-mono-sm text-secondary font-medium">8 Lectures • 7.0 Hrs</span>
+<a class="text-xs font-label-mono-sm text-primary flex items-center gap-1 hover:underline" href="#lectures">
+<span class="">View</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Module 3 -->
+<div class="rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/40 transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-3 border-b border-surface-container-highest/60">
+<span class="font-label-mono-sm text-xs text-primary font-bold">MODULE 03</span>
+<span class="font-label-mono-sm text-xs text-on-surface-variant">Lectures 17–25</span>
+</div>
+<h3 class="font-headline-sm text-lg font-bold text-on-surface mt-3">OOP in Java</h3>
+<p class="text-xs text-on-surface-variant mt-2 leading-relaxed">
+                Classes, objects, constructor chaining, Encapsulation, Inheritance, runtime Polymorphism, and Interfaces.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<span class="text-xs font-label-mono-sm text-secondary font-medium">9 Lectures • 8.0 Hrs</span>
+<a class="text-xs font-label-mono-sm text-primary flex items-center gap-1 hover:underline" href="#lectures">
+<span class="">View</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Module 4 -->
+<div class="rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/40 transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-3 border-b border-surface-container-highest/60">
+<span class="font-label-mono-sm text-xs text-primary font-bold">MODULE 04</span>
+<span class="font-label-mono-sm text-xs text-on-surface-variant">Lectures 26–29</span>
+</div>
+<h3 class="font-headline-sm text-lg font-bold text-on-surface mt-3">Collections Framework</h3>
+<p class="text-xs text-on-surface-variant mt-2 leading-relaxed">
+                ArrayList, LinkedList, HashMap collision handling, HashSet, PriorityQueue, Comparable, and Comparator.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<span class="text-xs font-label-mono-sm text-secondary font-medium">4 Lectures • 4.5 Hrs</span>
+<a class="text-xs font-label-mono-sm text-primary flex items-center gap-1 hover:underline" href="#lectures">
+<span class="">View</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Module 5 (Active Highlight) -->
+<div class="rounded-2xl bg-surface-container-high p-6 border-2 border-primary/50 shadow-xl flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 right-0 w-28 h-28 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between pb-3 border-b border-surface-container-highest">
+<span class="font-label-mono-sm text-xs text-primary font-bold">MODULE 05 • CURRENT</span>
+<span class="font-label-mono-sm text-xs text-secondary font-bold">Lectures 30–42</span>
+</div>
+<h3 class="font-headline-sm text-lg font-bold text-on-surface mt-3">Data Structures</h3>
+<p class="text-xs text-on-surface-variant mt-2 leading-relaxed">
+                Custom LinkedLists, Stacks, Queues, Binary Trees, Binary Search Trees (BST), and Graph Representations.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<span class="text-xs font-label-mono-sm text-secondary font-medium">13 Lectures • 12.0 Hrs</span>
+<a class="text-xs font-label-mono-sm text-primary font-bold flex items-center gap-1 hover:underline" href="#spotlight">
+<span class="">Go to Lecture 30</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Module 6 -->
+<div class="rounded-2xl bg-surface-container p-6 border border-surface-container-highest hover:border-primary/40 transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-3 border-b border-surface-container-highest/60">
+<span class="font-label-mono-sm text-xs text-primary font-bold">MODULE 06</span>
+<span class="font-label-mono-sm text-xs text-on-surface-variant">Lectures 43–50+</span>
+</div>
+<h3 class="font-headline-sm text-lg font-bold text-on-surface mt-3">Algorithms &amp; DP</h3>
+<p class="text-xs text-on-surface-variant mt-2 leading-relaxed">
+                Binary Search, Merge Sort, Quick Sort, BFS/DFS, Dijkstra, and Dynamic Programming top-down memoization.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<span class="text-xs font-label-mono-sm text-secondary font-medium">8+ Lectures • 9.0 Hrs</span>
+<a class="text-xs font-label-mono-sm text-primary flex items-center gap-1 hover:underline" href="#lectures">
+<span class="">View</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
 <!-- 6. LECTURE 30 SPOTLIGHT PREVIEW -->
-
+<section class="py-20 border-b border-surface-container-highest/40 bg-surface-container-low/40" id="spotlight">
+<div class="max-w-[1280px] mx-auto px-6">
+<div class="rounded-2xl bg-surface-container p-8 border border-surface-container-highest shadow-2xl">
+<div class="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-surface-container-highest/60">
+<div class="flex items-center gap-3">
+<span class="px-3 py-1 rounded bg-primary text-on-primary font-label-mono-sm text-xs font-bold uppercase">
+                Featured Spotlight
+              </span>
+<h3 class="font-headline-sm text-base sm:text-lg font-bold text-on-surface">
+                Lecture 30 — Singly LinkedList Implementation in Java
+              </h3>
+</div>
+<span class="font-label-mono-sm text-xs text-primary">Duration: 42:18 • Module 5</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-6">
+<!-- Video Mockup Shell with Official Logo Overlay -->
+<div class="lg:col-span-7 lg:order-2 flex flex-col gap-4">
+<a href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank" aria-label="Watch Lecture 30 — Singly LinkedList Implementation in Java on YouTube" class="relative aspect-video w-full rounded-xl bg-surface-container-lowest border border-surface-container-highest overflow-hidden shadow-2xl flex items-center justify-center group">
+<img src="lecture30-linkedlist.png" alt="Lecture 30 — Singly LinkedList Implementation in Java" class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-[1.01]">
+<div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors"></div>
+</a>
+<!-- Topics Covered Pill Grid -->
+<div class="p-4 rounded-xl bg-surface-container-low border border-surface-container-highest/60">
+<span class="text-xs font-label-mono-sm text-primary uppercase font-bold">Key Lecture Insights</span>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2 text-xs text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+<span class="">Node allocation in Java heap</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+<span class="">Head pointer manipulation</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+<span class="">O(1) Insertion at head</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+<span class="">Traversing null-terminated pointers</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Code Implementation Snippet -->
+<div class="lg:col-span-5 lg:order-1 flex flex-col justify-between">
+<div class="rounded-xl bg-surface-container-lowest border border-surface-container-highest overflow-hidden shadow-md flex-1 flex flex-col">
+<div class="flex items-center justify-between px-4 py-2.5 bg-surface-container-high border-b border-surface-container-highest">
+<span class="font-label-mono-sm text-xs text-on-surface font-semibold">Node.java</span>
+<span class="font-label-mono-sm text-[11px] text-primary">Lecture 30 Code</span>
+</div>
+<div class="p-4 font-code-block text-[12px] text-on-surface overflow-x-auto leading-relaxed flex-1 space-y-1">
+<p class="text-on-surface-variant/70">// Singly Linked List Node</p>
+<p class=""><span class="text-primary font-bold">class</span> <span class="text-secondary font-semibold">Node</span> {</p>
+<p class="pl-4"><span class="text-primary">int</span> data;</p>
+<p class="pl-4"><span class="text-secondary">Node</span> next;</p>
+<br>
+<p class="pl-4"><span class="text-secondary">Node</span>(<span class="text-primary">int</span> data) {</p>
+<p class="pl-8"><span class="text-primary font-bold">this</span>.data = data;</p>
+<p class="pl-8"><span class="text-primary font-bold">this</span>.next = <span class="text-secondary">null</span>;</p>
+<p class="pl-4">}</p>
+<p class="">}</p>
+<br>
+<p class="text-on-surface-variant/70">// Insert at head O(1)</p>
+<p class=""><span class="text-primary font-bold">public static</span> <span class="text-secondary">Node</span> <span class="text-secondary">insertHead</span>(<span class="text-secondary">Node</span> head, <span class="text-primary">int</span> val) {</p>
+<p class="pl-4"><span class="text-secondary">Node</span> temp = <span class="text-primary">new</span> <span class="text-secondary">Node</span>(val);</p>
+<p class="pl-4">temp.next = head;</p>
+<p class="pl-4"><span class="text-primary font-bold">return</span> temp;</p>
+<p class="">}</p>
+</div>
+<div class="px-4 py-2.5 bg-surface-container-high border-t border-surface-container-highest flex items-center justify-between">
+<span class="font-label-mono-sm text-[11px] text-on-surface-variant">Time: O(1) | Space: O(1)</span>
+<a class="text-xs font-label-mono-sm text-primary hover:underline" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank">
+                    Watch Full Lesson →
+                  </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
 <!-- 7. PRACTICE JAVA & DSA CHECKPOINTS -->
 <section class="py-20 border-b border-surface-container-highest/40" id="practice">
 <div class="max-w-[1280px] mx-auto px-6">
@@ -692,8 +1225,8 @@
 <span class="material-symbols-outlined text-[20px]">subscriptions</span>
 <span class="">Subscribe to @LEARNWITHANMOL-q3i</span>
 </a>
-<a class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-surface-container border border-surface-variant text-on-surface font-headline-sm text-sm font-semibold hover:bg-surface-container-high transition-all" href="#java-playlist">
-<span class="">Explore Java Playlist</span>
+<a class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-surface-container border border-surface-variant text-on-surface font-headline-sm text-sm font-semibold hover:bg-surface-container-high transition-all" href="#curriculum">
+<span class="">Explore Modules</span>
 </a>
 </div>
 </div>
@@ -707,49 +1240,6 @@
 </div>
 </div>
 </div>
-</div>
-<div class="mt-8 rounded-2xl border border-surface-container-highest/70 bg-surface-container-low/70 p-5 sm:p-7">
-  <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-5">
-    <div>
-      <span class="font-label-mono-sm text-xs text-primary font-bold uppercase tracking-wider">Your learning path</span>
-      <h3 class="font-headline-xl text-xl sm:text-2xl font-extrabold text-on-surface mt-1">Java to DSA Roadmap</h3>
-      <p class="text-sm text-on-surface-variant mt-2">Mark stages as you complete them. Your progress is saved in this browser on this device.</p>
-    </div>
-    <div class="min-w-[145px] sm:text-right">
-      <p class="text-xs text-on-surface-variant mb-2"><span id="roadmap-completed-count">0</span> of 4 stages complete</p>
-      <div class="roadmap-progress" role="progressbar" aria-label="Roadmap progress" aria-valuemin="0" aria-valuemax="4" aria-valuenow="0" id="roadmap-progress"><span id="roadmap-progress-fill"></span></div>
-    </div>
-  </div>
-  <div class="roadmap-steps">
-    <article class="roadmap-step" data-roadmap-step="java-foundations">
-      <span class="font-label-mono-sm text-xs text-primary font-bold">STAGE 01</span>
-      <h4 class="font-headline-sm text-base font-bold text-on-surface mt-2">Java Foundations</h4>
-      <p class="text-sm text-on-surface-variant mt-2 mb-4">Syntax, variables, data types, conditions, loops and methods.</p>
-      <label><input type="checkbox" data-roadmap-check="java-foundations"><span class="text-sm text-on-surface-variant">Mark foundations complete</span></label>
-      <a class="inline-flex items-center gap-1 text-xs font-bold text-primary mt-4" href="#java-playlist">Explore Java course <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
-    </article>
-    <article class="roadmap-step" data-roadmap-step="oop-arrays">
-      <span class="font-label-mono-sm text-xs text-primary font-bold">STAGE 02</span>
-      <h4 class="font-headline-sm text-base font-bold text-on-surface mt-2">OOP, Arrays &amp; Collections</h4>
-      <p class="text-sm text-on-surface-variant mt-2 mb-4">Build object-oriented thinking and learn common data containers.</p>
-      <label><input type="checkbox" data-roadmap-check="oop-arrays"><span class="text-sm text-on-surface-variant">Mark core concepts complete</span></label>
-      <a class="inline-flex items-center gap-1 text-xs font-bold text-primary mt-4" href="#java-playlist">View modules <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
-    </article>
-    <article class="roadmap-step" data-roadmap-step="dsa-basics">
-      <span class="font-label-mono-sm text-xs text-primary font-bold">STAGE 03</span>
-      <h4 class="font-headline-sm text-base font-bold text-on-surface mt-2">DSA Fundamentals</h4>
-      <p class="text-sm text-on-surface-variant mt-2 mb-4">Practice arrays, linked lists, stacks, queues, trees and sorting.</p>
-      <label><input type="checkbox" data-roadmap-check="dsa-basics"><span class="text-sm text-on-surface-variant">Mark DSA basics complete</span></label>
-      <a class="inline-flex items-center gap-1 text-xs font-bold text-primary mt-4" href="#practice">Open practice <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
-    </article>
-    <article class="roadmap-step" data-roadmap-step="problem-solving">
-      <span class="font-label-mono-sm text-xs text-primary font-bold">STAGE 04</span>
-      <h4 class="font-headline-sm text-base font-bold text-on-surface mt-2">Problem Solving</h4>
-      <p class="text-sm text-on-surface-variant mt-2 mb-4">Revise patterns, solve problems consistently and revisit weak topics.</p>
-      <label><input type="checkbox" data-roadmap-check="problem-solving"><span class="text-sm text-on-surface-variant">Mark practice stage complete</span></label>
-      <a class="inline-flex items-center gap-1 text-xs font-bold text-primary mt-4" href="#java-playlist">Continue with videos <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
-    </article>
-  </div>
 </div>
 </div>
 </section>
@@ -775,12 +1265,12 @@
 <div class="lg:col-span-2 flex flex-col gap-3">
 <h4 class="font-headline-sm text-sm font-bold text-on-surface uppercase tracking-wider">Curriculum</h4>
 <ul class="flex flex-col gap-2 text-xs">
-<li class=""><a class="hover:text-primary transition-colors" href="#java-playlist">Module 01: Java Basics</a></li>
-<li class=""><a class="hover:text-primary transition-colors" href="#java-playlist">Module 02: Arrays &amp; Memory</a></li>
-<li class=""><a class="hover:text-primary transition-colors" href="#java-playlist">Module 03: OOP Principles</a></li>
-<li class=""><a class="hover:text-primary transition-colors" href="#java-playlist">Module 04: Collections</a></li>
-<li class=""><a class="hover:text-primary transition-colors" href="#java-playlist">Module 05: Data Structures</a></li>
-<li class=""><a class="hover:text-primary transition-colors" href="#java-playlist">Module 06: Algorithms &amp; DP</a></li>
+<li class=""><a class="hover:text-primary transition-colors" href="#curriculum">Module 01: Java Basics</a></li>
+<li class=""><a class="hover:text-primary transition-colors" href="#curriculum">Module 02: Arrays &amp; Memory</a></li>
+<li class=""><a class="hover:text-primary transition-colors" href="#curriculum">Module 03: OOP Principles</a></li>
+<li class=""><a class="hover:text-primary transition-colors" href="#curriculum">Module 04: Collections</a></li>
+<li class=""><a class="hover:text-primary transition-colors" href="#curriculum">Module 05: Data Structures</a></li>
+<li class=""><a class="hover:text-primary transition-colors" href="#curriculum">Module 06: Algorithms &amp; DP</a></li>
 </ul>
 </div>
 <!-- Practice Column -->
@@ -853,80 +1343,6 @@
         if (!isExpanded) notesCategories.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     }
-
-    // Online notes subject menu toggle (matches the Handwritten Notes interaction)
-    const onlineNotesExploreButton = document.getElementById('explore-online-notes');
-    const onlineNotesCategories = document.getElementById('online-notes-categories');
-    const onlineNotesToggleIcon = document.getElementById('online-notes-toggle-icon');
-    if (onlineNotesExploreButton && onlineNotesCategories) {
-      onlineNotesExploreButton.addEventListener('click', () => {
-        const isExpanded = onlineNotesExploreButton.getAttribute('aria-expanded') === 'true';
-        onlineNotesExploreButton.setAttribute('aria-expanded', String(!isExpanded));
-        onlineNotesCategories.classList.toggle('hidden', isExpanded);
-        if (onlineNotesToggleIcon) onlineNotesToggleIcon.textContent = isExpanded ? 'expand_more' : 'expand_less';
-        if (!isExpanded) onlineNotesCategories.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      });
-    }
-
-    // Mobile navigation toggle
-    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
-    const mobileNavigation = document.getElementById('mobile-navigation');
-    const mobileMenuIcon = document.getElementById('mobile-menu-icon');
-    if (mobileMenuToggle && mobileNavigation) {
-      mobileMenuToggle.addEventListener('click', () => {
-        const open = mobileMenuToggle.getAttribute('aria-expanded') === 'true';
-        mobileMenuToggle.setAttribute('aria-expanded', String(!open));
-        mobileMenuToggle.setAttribute('aria-label', open ? 'Open navigation menu' : 'Close navigation menu');
-        mobileNavigation.classList.toggle('is-open', !open);
-        if (mobileMenuIcon) mobileMenuIcon.textContent = open ? 'menu' : 'close';
-      });
-      mobileNavigation.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-        mobileNavigation.classList.remove('is-open');
-        mobileMenuToggle.setAttribute('aria-expanded', 'false');
-        mobileMenuToggle.setAttribute('aria-label', 'Open navigation menu');
-        if (mobileMenuIcon) mobileMenuIcon.textContent = 'menu';
-      }));
-    }
-
-    // Keep placeholder resource URLs unchanged, but stop them from navigating to fake destinations.
-    document.querySelectorAll('a[href^="YOUR_"]').forEach(link => {
-      link.setAttribute('aria-disabled', 'true');
-      link.setAttribute('title', 'This resource link has not been configured yet');
-      link.addEventListener('click', event => {
-        event.preventDefault();
-        alert('This notes/download link has not been added yet. Please add the correct resource URL first.');
-      });
-    });
-
-
-    // Roadmap completion persists locally in this browser only.
-    const roadmapChecks = Array.from(document.querySelectorAll('[data-roadmap-check]'));
-    const roadmapStorageKey = 'learn-with-anmol-roadmap-v1';
-    let savedRoadmap = {};
-    try { savedRoadmap = JSON.parse(localStorage.getItem(roadmapStorageKey) || '{}'); } catch (_) { savedRoadmap = {}; }
-    const updateRoadmapProgress = () => {
-      let completed = 0;
-      roadmapChecks.forEach(check => {
-        const step = check.closest('.roadmap-step');
-        if (check.checked) completed += 1;
-        if (step) step.classList.toggle('is-complete', check.checked);
-      });
-      const count = document.getElementById('roadmap-completed-count');
-      const fill = document.getElementById('roadmap-progress-fill');
-      const bar = document.getElementById('roadmap-progress');
-      if (count) count.textContent = String(completed);
-      if (fill) fill.style.width = `${(completed / Math.max(roadmapChecks.length, 1)) * 100}%`;
-      if (bar) bar.setAttribute('aria-valuenow', String(completed));
-    };
-    roadmapChecks.forEach(check => {
-      check.checked = Boolean(savedRoadmap[check.dataset.roadmapCheck]);
-      check.addEventListener('change', () => {
-        savedRoadmap[check.dataset.roadmapCheck] = check.checked;
-        try { localStorage.setItem(roadmapStorageKey, JSON.stringify(savedRoadmap)); } catch (_) { /* Storage may be unavailable in private browsing. */ }
-        updateRoadmapProgress();
-      });
-    });
-    updateRoadmapProgress();
 
     // Live search interaction
     const searchInput = document.getElementById('lecture-search-input');
