@@ -14,31 +14,16 @@
       theme: {
         extend: {
           colors: {
-            "surface": "#051424",
-            "surface-dim": "#051424",
-            "surface-container-lowest": "#010f1f",
-            "surface-container-low": "#0d1c2d",
-            "surface-container": "#122131",
-            "surface-container-high": "#1c2b3c",
-            "surface-container-highest": "#273647",
-            "surface-bright": "#2c3a4c",
-            "on-surface": "#d4e4fa",
-            "on-surface-variant": "#bbcabf",
-            "primary": "#4edea3",
-            "primary-container": "#10b981",
-            "primary-fixed": "#6ffbbe",
-            "on-primary": "#003824",
-            "secondary": "#89ceff",
-            "secondary-container": "#00a2e6",
-            "on-secondary": "#00344d",
-            "tertiary": "#ffb3ad",
-            "tertiary-container": "#ff7a73",
-            "on-tertiary": "#68000a",
-            "on-tertiary-container": "#79000e",
-            "outline": "#86948a",
-            "outline-variant": "#3c4a42",
-            "error": "#ffb4ab",
-            "error-container": "#93000a"
+            "surface": "#08080a", "surface-dim": "#08080a",
+            "surface-container-lowest": "#050505", "surface-container-low": "#0f0e0c",
+            "surface-container": "#151412", "surface-container-high": "#1d1b17",
+            "surface-container-highest": "#2a2720", "surface-bright": "#343026",
+            "on-surface": "#f1ece0", "on-surface-variant": "#b9b3a3",
+            "primary": "#f5c451", "primary-container": "#d4a017", "primary-fixed": "#ffe08a", "on-primary": "#2b1d00",
+            "secondary": "#d5dbe5", "secondary-container": "#aab4c4", "on-secondary": "#0f172a",
+            "tertiary": "#ffb3ad", "tertiary-container": "#ff7a73", "on-tertiary": "#68000a", "on-tertiary-container": "#79000e",
+            "outline": "#8a8575", "outline-variant": "#3a372f", "error": "#ffb4ab", "error-container": "#93000a",
+            "sky": {"300": "#e2e8f0", "400": "#cbd5e1"}
           },
           fontFamily: {
             "display-hero": ["Plus Jakarta Sans", "sans-serif"],
@@ -60,13 +45,13 @@
   </script>
 <style>
     body {
-      background-color: #051424;
-      color: #d4e4fa;
+      background-color: #08080a;
+      color: #f1ece0;
       font-family: 'Inter', sans-serif;
     }
     ::selection {
-      background-color: #10b981;
-      color: #003824;
+      background-color: #f5c451;
+      color: #2b1d00;
     }
 
     /* Responsive fixes for phones and tablets */
@@ -104,32 +89,216 @@
 /* Premium visual refresh */
 :root { color-scheme: dark; }
 html { scroll-behavior: smooth; }
-body { background: radial-gradient(ellipse at 50% -10%, rgba(16,185,129,.13), transparent 42%), #06111f !important; }
-header { background: rgba(4,16,30,.88) !important; border-color: rgba(52,211,153,.22) !important; }
+body { background: radial-gradient(ellipse at 50% -10%, rgba(212,160,23,.13), transparent 42%), #08080a !important; }
+header { background: rgba(8,8,10,.88) !important; border-color: rgba(245,196,81,.22) !important; }
 section { scroll-margin-top: 90px; }
 section:first-of-type { position:relative; }
 section:first-of-type h1 { letter-spacing:-.045em; text-wrap:balance; }
 section:first-of-type p { line-height:1.8; }
 section:first-of-type a, section:first-of-type button { transition:transform .2s ease, box-shadow .2s ease; }
-section:first-of-type a:hover, section:first-of-type button:hover { transform:translateY(-2px); box-shadow:0 10px 35px rgba(16,185,129,.2); }
+section:first-of-type a:hover, section:first-of-type button:hover { transform:translateY(-2px); box-shadow:0 10px 35px rgba(212,160,23,.2); }
 #handwritten-notes, #online-notes, #java-playlist, #java-oneshot { position:relative; }
-#handwritten-notes, #online-notes { background:linear-gradient(145deg, rgba(12,31,48,.92), rgba(5,18,32,.96)) !important; }
-#java-playlist, #java-oneshot { background:linear-gradient(145deg, rgba(8,29,45,.88), rgba(5,17,30,.96)) !important; }
+#handwritten-notes, #online-notes { background:linear-gradient(145deg, rgba(22,20,15,.92), rgba(8,8,10,.96)) !important; }
+#java-playlist, #java-oneshot { background:linear-gradient(145deg, rgba(20,18,13,.88), rgba(8,8,10,.96)) !important; }
 #handwritten-notes h2, #online-notes h2, #java-playlist h2, #java-oneshot h2 { letter-spacing:-.035em; }
 #handwritten-notes [class*="rounded"], #online-notes [class*="rounded"], #java-playlist [class*="rounded"], #java-oneshot [class*="rounded"] { transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease; }
-#handwritten-notes [class*="rounded"]:hover, #online-notes [class*="rounded"]:hover { border-color:rgba(52,211,153,.55) !important; box-shadow:0 12px 35px rgba(0,0,0,.22); }
-iframe { display:block; width:100%; aspect-ratio:16/9; height:auto; border:0; border-radius:16px; background:#02070d; box-shadow:0 16px 45px rgba(0,0,0,.32); }
-footer { background:#030b14 !important; }
+#handwritten-notes [class*="rounded"]:hover, #online-notes [class*="rounded"]:hover { border-color:rgba(245,196,81,.55) !important; box-shadow:0 12px 35px rgba(0,0,0,.22); }
+iframe { display:block; width:100%; aspect-ratio:16/9; height:auto; border:0; border-radius:16px; background:#050505; box-shadow:0 16px 45px rgba(0,0,0,.32); }
+footer { background:#050505 !important; }
 @media (max-width:640px) { section { padding-top:3.5rem !important; padding-bottom:3.5rem !important; } header { backdrop-filter:blur(18px); } }
-</style></head>
+</style><style id="glow-up">
+/* ===== GLOW-UP: sirf visual layer. Content, IDs, links aur JS bilkul same ===== */
+:root{--em:#f5c451;--em2:#d4a017;--sky:#e2e8f0;--gold:#ffe9a8;--edge:rgba(226,232,240,.16);
+--glass:linear-gradient(160deg,rgba(28,25,18,.78),rgba(9,9,10,.88));--ease:cubic-bezier(.2,.7,.2,1)}
+html{scrollbar-color:#d4a017 #08080a}
+::-webkit-scrollbar{width:11px}::-webkit-scrollbar-track{background:#08080a}
+::-webkit-scrollbar-thumb{background:linear-gradient(#d4a017,#e2e8f0);border-radius:9px;border:2px solid #08080a}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--em);outline-offset:3px}
+
+/* background aurora + scroll progress */
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+background:radial-gradient(40vmax 40vmax at 10% 6%,rgba(212,160,23,.18),transparent 60%),
+radial-gradient(38vmax 38vmax at 92% 18%,rgba(203,213,225,.14),transparent 60%),
+radial-gradient(46vmax 46vmax at 70% 96%,rgba(255,224,138,.07),transparent 60%);
+animation:drift 28s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translate3d(-3%,2%,0) scale(1.08)}}
+body::after{content:"";position:fixed;left:0;top:0;height:3px;width:100%;z-index:100;pointer-events:none;
+background:linear-gradient(90deg,#d4a017,#f5c451,#e2e8f0);transform-origin:0 50%;transform:scaleX(0)}
+@supports (animation-timeline:scroll()){body::after{animation:prog linear both;animation-timeline:scroll(root)}}
+@keyframes prog{to{transform:scaleX(1)}}
+
+/* header */
+body > header{background:rgba(4,14,26,.72)!important;backdrop-filter:blur(20px) saturate(1.4)}
+body > header::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;
+background:linear-gradient(90deg,transparent,var(--em),var(--sky),var(--gold),transparent);opacity:.55}
+body > header a[href="#"] img{box-shadow:0 0 0 2px rgba(255,224,138,.6),0 0 24px rgba(255,224,138,.35)!important}
+header nav a{position:relative}
+header nav a::after{content:"";position:absolute;left:50%;bottom:3px;width:0;height:2px;border-radius:2px;
+background:linear-gradient(90deg,var(--em),var(--sky));transform:translateX(-50%);transition:width .25s var(--ease)}
+header nav a:hover::after{width:62%}header nav a[class*="text-primary"]::after{width:42%}
+header a[aria-label]{transition:transform .2s,box-shadow .2s}
+header a[aria-label]:hover{transform:translateY(-3px);box-shadow:0 8px 20px -6px currentColor}
+
+/* hero */
+main > section:first-of-type::before{content:"";position:absolute;inset:0;pointer-events:none;
+background-image:linear-gradient(rgba(226,232,240,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(226,232,240,.06) 1px,transparent 1px);
+background-size:44px 44px;-webkit-mask-image:radial-gradient(ellipse at 50% 0%,#000 25%,transparent 72%);mask-image:radial-gradient(ellipse at 50% 0%,#000 25%,transparent 72%)}
+main > section:first-of-type h1{font-size:clamp(2.5rem,5.4vw,4.1rem)!important;line-height:1.04!important;font-weight:800;letter-spacing:-.045em}
+main > section:first-of-type h1 span{background:linear-gradient(100deg,#f5c451,#fff1c2,#e2e8f0,#f5c451)!important;background-size:250% 100%!important;
+-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important;animation:shine 7s linear infinite;
+filter:drop-shadow(0 0 26px rgba(245,196,81,.35))}
+@keyframes shine{to{background-position:-250% 0}}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+main > section:first-of-type .lg\:col-span-5 > *{animation:rise .8s var(--ease) backwards}
+main > section:first-of-type .lg\:col-span-5 > :nth-child(1){animation-delay:.05s}
+main > section:first-of-type .lg\:col-span-5 > :nth-child(2){animation-delay:.12s}
+main > section:first-of-type .lg\:col-span-5 > :nth-child(3){animation-delay:.2s}
+main > section:first-of-type .lg\:col-span-5 > :nth-child(4){animation-delay:.3s}
+main > section:first-of-type .lg\:col-span-5 > :nth-child(5){animation-delay:.4s}
+main > section:first-of-type .lg\:col-span-5 > :nth-child(6){animation-delay:.5s}
+main > section:first-of-type .lg\:col-span-5 > :nth-child(7){animation-delay:.6s}
+main > section:first-of-type .lg\:col-span-7{animation:rise 1s .25s var(--ease) backwards}
+.java-playlist-card{box-shadow:0 0 0 1px rgba(245,196,81,.35),0 45px 100px -40px rgba(212,160,23,.6)!important}
+
+/* generic depth */
+main [class*="rounded-2xl"]:not(img):not(iframe):not([class*="w-1"]):not([class*="w-9"]){box-shadow:0 1px 0 rgba(255,255,255,.05) inset,0 24px 55px -30px rgba(0,0,0,.85)}
+main [class*="rounded-3xl"]{box-shadow:0 1px 0 rgba(255,255,255,.06) inset,0 30px 70px -35px rgba(0,0,0,.9)!important}
+
+/* buttons */
+main button.bg-primary,main a.bg-primary,main button.bg-primary-container,main button.bg-secondary-container,
+[class*="bg-[#dc2626]"]:not([class*="bg-[#dc2626]/"]){position:relative;overflow:hidden;isolation:isolate;transition:transform .2s,box-shadow .25s,filter .2s}
+main button.bg-primary,main a.bg-primary,main button.bg-primary-container{background-image:linear-gradient(135deg,#ffe08a,#d4a017)!important;box-shadow:0 10px 28px -10px rgba(212,160,23,.8)}
+main button.bg-secondary-container{background-image:linear-gradient(135deg,#e2e8f0,#94a3b8)!important;color:#0f172a!important}
+[class*="bg-[#dc2626]"]:not([class*="bg-[#dc2626]/"]){background-image:linear-gradient(135deg,#ef4444,#b91c1c)!important}
+main button.bg-primary::after,main a.bg-primary::after,main button.bg-primary-container::after,main button.bg-secondary-container::after,
+[class*="bg-[#dc2626]"]:not([class*="bg-[#dc2626]/"])::after{content:"";position:absolute;inset:0;z-index:-1;
+background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.38) 50%,transparent 70%);transform:translateX(-120%);transition:transform .7s var(--ease)}
+main button.bg-primary:hover::after,main a.bg-primary:hover::after,main button.bg-primary-container:hover::after,main button.bg-secondary-container:hover::after,
+[class*="bg-[#dc2626]"]:not([class*="bg-[#dc2626]/"]):hover::after,a:hover > [class*="bg-[#dc2626]"]::after{transform:translateX(120%)}
+main button.bg-primary:not(:disabled):hover,main a.bg-primary:hover,main button.bg-primary-container:hover,main button.bg-secondary-container:hover{transform:translateY(-2px);filter:brightness(1.05)}
+#quiz-next:disabled{opacity:.4;filter:saturate(.3);cursor:not-allowed;box-shadow:none}
+
+/* section rhythm */
+main > section{border-bottom-color:transparent!important}
+main > section::after{content:"";position:absolute;left:8%;right:8%;bottom:0;height:1px;pointer-events:none;
+background:linear-gradient(90deg,transparent,rgba(245,196,81,.35),rgba(226,232,240,.3),transparent)}
+#contact-form::after{display:none}
+#courses,#practice-quiz,#java-playlist,#java-oneshot,#roadmap{position:relative}
+#handwritten-notes,#online-notes,#java-playlist{background:transparent!important}
+#practice-quiz,#java-oneshot,#handwritten-notes{background:rgba(20,18,12,.45)!important}
+#courses h2,#practice-quiz h2,#java-playlist h2,#java-oneshot h2,#contact-form h2,#roadmap h2{font-size:clamp(1.9rem,4vw,2.8rem)!important;line-height:1.08!important;font-weight:800;letter-spacing:-.035em}
+#courses h2::after,#practice-quiz h2::after,#java-playlist h2::after,#java-oneshot h2::after,#contact-form h2::after,#roadmap h2::after{
+content:"";display:block;width:68px;height:4px;border-radius:4px;margin-top:.9rem;background:linear-gradient(90deg,var(--em),var(--sky))}
+
+/* notes banners */
+#handwritten-notes > div > div:first-child{background:radial-gradient(620px 220px at 0% 0%,rgba(245,196,81,.2),transparent 65%),var(--glass)!important}
+#online-notes > div > div:first-child{background:radial-gradient(620px 220px at 0% 0%,rgba(203,213,225,.2),transparent 65%),var(--glass)!important}
+#handwritten-notes-categories > div:last-child > div,#online-notes-categories > div:last-child > div{background:var(--glass)!important;position:relative;overflow:hidden}
+#handwritten-notes-categories > div:last-child > div:hover,#online-notes-categories > div:last-child > div:hover{transform:translateY(-6px);box-shadow:0 26px 50px -24px rgba(212,160,23,.5)!important}
+
+/* course cards */
+#courses article{transition:transform .3s var(--ease),box-shadow .3s}
+#courses article:hover{transform:translateY(-8px);box-shadow:0 34px 60px -26px rgba(212,160,23,.5)!important}
+#courses article > div:first-child{display:grid;place-items:center;width:3.75rem;height:3.75rem;border-radius:1.1rem;font-size:1.9rem;
+background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);box-shadow:0 10px 24px -12px rgba(0,0,0,.8)}
+#courses article h3{letter-spacing:-.03em}
+
+/* videos */
+#java-playlist .lg\:col-span-3,#java-oneshot .lg\:col-span-3{box-shadow:0 0 0 1px rgba(245,196,81,.28),0 40px 90px -40px rgba(212,160,23,.55)!important}
+#java-playlist a.lg\:col-span-2{background:radial-gradient(520px 260px at 100% 0%,rgba(239,68,68,.2),transparent 62%),var(--glass)!important}
+#java-oneshot a.lg\:col-span-2{background:radial-gradient(520px 260px at 100% 0%,rgba(239,68,68,.2),transparent 62%),var(--glass)!important}
+
+/* quiz */
+#practice-quiz > div > div.rounded-2xl{background:radial-gradient(700px 260px at 50% -10%,rgba(245,196,81,.14),transparent 65%),var(--glass)!important;border-color:rgba(245,196,81,.3)!important}
+#quiz-subject-menu article,#quiz-chapter-grid article{background:var(--glass)!important;transition:transform .25s var(--ease),border-color .25s,box-shadow .25s}
+#quiz-subject-menu article:not(.opacity-70):hover,#quiz-chapter-grid article:hover{transform:translateY(-5px);border-color:var(--em)!important;box-shadow:0 24px 44px -22px rgba(212,160,23,.55)}
+#quiz-chapter-grid article h4{letter-spacing:-.02em}
+#quiz-progress-bar{background:linear-gradient(90deg,#d4a017,#e2e8f0)!important;box-shadow:0 0 16px rgba(245,196,81,.7);border-radius:99px}
+#quiz-question{font-size:clamp(1.15rem,2.4vw,1.5rem);line-height:1.35;letter-spacing:-.02em}
+.quiz-option{background:rgba(255,255,255,.035);font-weight:500;transition:transform .2s var(--ease),background .2s,box-shadow .2s}
+.quiz-option:not(:disabled):hover{transform:translateX(6px);background:rgba(245,196,81,.09);box-shadow:0 0 0 1px var(--em) inset}
+.quiz-option:disabled{cursor:default}
+.quiz-option.border-primary{background:linear-gradient(90deg,rgba(212,160,23,.34),rgba(212,160,23,.08))!important;box-shadow:0 0 26px -6px rgba(212,160,23,.65);color:#d1fae5}
+.quiz-option.border-red-400{background:linear-gradient(90deg,rgba(248,113,113,.3),rgba(248,113,113,.06))!important;box-shadow:0 0 26px -8px rgba(248,113,113,.6);color:#fee2e2}
+#quiz-feedback{font-weight:600}
+
+/* forms + code */
+input,textarea{transition:border-color .2s,box-shadow .2s,background .2s}
+input:focus,textarea:focus{border-color:var(--em)!important;box-shadow:0 0 0 4px rgba(245,196,81,.16)!important}
+#contact-form > div{background:radial-gradient(640px 240px at 100% 0%,rgba(203,213,225,.16),transparent 65%),var(--glass)!important}
+#online-study-java pre,#online-study-dsa pre{font-family:'JetBrains Mono',monospace;background:#050505!important;border:1px solid rgba(226,232,240,.22);border-left:3px solid var(--em)}
+
+/* final CTA + footer */
+#roadmap .rounded-3xl{background:radial-gradient(760px 320px at 92% 0%,rgba(212,160,23,.3),transparent 60%),radial-gradient(560px 300px at 0% 100%,rgba(203,213,225,.2),transparent 60%),linear-gradient(160deg,#211b0d,#0a0907)!important;border-color:rgba(245,196,81,.4)!important}
+#roadmap img{box-shadow:0 0 0 4px rgba(255,224,138,.45),0 0 44px rgba(255,224,138,.3)!important}
+footer{position:relative}
+footer::before{content:"";position:absolute;left:0;right:0;top:-1px;height:1px;background:linear-gradient(90deg,transparent,var(--em),var(--sky),var(--gold),transparent);opacity:.6}
+footer a{transition:color .2s,transform .2s}footer ul a:hover{transform:translateX(3px)}
+
+@media (max-width:640px){body::before{opacity:.7}main > section:first-of-type h1{font-size:2.3rem!important}main > section::after{left:4%;right:4%}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}body::after{display:none}}
+
+/* ===== GOLD x BLACK overrides + responsive fitting ===== */
+html{-webkit-text-size-adjust:100%;font-size:clamp(16px,.55vw + 9px,18px)}
+body{background:#08080a!important}
+::selection{background:#f5c451;color:#2b1d00}
+.quiz-option.border-primary{background:linear-gradient(90deg,rgba(74,222,128,.32),rgba(74,222,128,.07))!important;border-color:#4ade80!important;box-shadow:0 0 26px -6px rgba(74,222,128,.6);color:#dcfce7}
+main > section:first-of-type h1 span{filter:drop-shadow(0 0 28px rgba(245,196,81,.4))}
+main > section:first-of-type a[class*="bg-[#dc2626]"]{animation:pulse 3.2s ease-in-out infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 8px rgba(239,68,68,.12),0 10px 30px -8px rgba(239,68,68,.6)}}
+pre{max-width:100%;overflow:auto}
+main button:not([data-close-study]),main input{min-height:44px}
+
+/* large screens */
+@media (min-width:1536px){[class*="max-w-[1280px]"]{max-width:1440px!important}}
+
+/* tablet */
+@media (min-width:641px) and (max-width:1023px){
+ main > section:first-of-type h1{font-size:clamp(2.6rem,7vw,3.6rem)!important}
+ main > section:first-of-type p{max-width:44rem}
+}
+
+/* mobile */
+@media (max-width:640px){
+ body > header > div{height:64px!important;padding-inline:.85rem!important;gap:.45rem!important}
+ body > header > div > a:first-child{gap:.5rem!important;min-width:0}
+ body > header > div > a:first-child img{height:36px!important;width:36px!important}
+ body > header > div > a:first-child span:first-child{font-size:14px!important;white-space:nowrap}
+ body > header > div > a:first-child span:last-child{font-size:8.5px!important;letter-spacing:.08em}
+ body > header > div > div:last-child{gap:.35rem!important}
+ body > header a[aria-label]{width:32px!important;height:32px!important;border-radius:.65rem!important}
+ body > header a[href*="youtube"]{padding:.45rem .6rem!important;border-radius:.65rem!important}
+ body > header a[href*="youtube"] span:last-child{display:none}
+ main [class*="max-w-"][class*="px-"]{padding-inline:1rem!important}
+ main > section:first-of-type{padding-top:1.5rem!important;padding-bottom:2.5rem!important}
+ main > section:first-of-type h1{font-size:clamp(2.1rem,9.5vw,2.6rem)!important}
+ main > section:first-of-type a[class*="bg-[#dc2626]"]{width:100%;justify-content:center}
+ #handwritten-notes > div > div:first-child,#online-notes > div > div:first-child{padding:1.25rem!important}
+ #explore-handwritten-notes,#explore-online-notes{width:100%}
+ #practice-quiz > div > div.rounded-2xl{padding:1.1rem!important}
+ #quiz-question{font-size:1.1rem}
+ .quiz-option{padding:.9rem 1rem!important;font-size:.95rem}
+ #roadmap .rounded-3xl{padding:1.4rem!important}
+ #contact-form > div{padding:1.25rem!important}
+ #courses article{padding:1.25rem!important}
+ #java-playlist a.lg\:col-span-2 > div:first-child,#java-oneshot a.lg\:col-span-2 > div:first-child{padding:1.2rem!important}
+ footer .px-6{padding-inline:1rem!important}
+}
+@media (max-width:380px){
+ body > header > div > a:first-child span:last-child{display:none}
+ body > header > div > a:first-child span:first-child{font-size:13px!important}
+ body > header a[aria-label]{width:30px!important;height:30px!important}
+}
+</style>
+</head>
 <body class="bg-surface text-on-surface antialiased min-h-screen flex flex-col">
 <!-- 1. STICKY TOP NAVIGATION BAR -->
-<header class="sticky top-0 z-50 bg-[#051424]/90 backdrop-blur-md border-b border-[#3c4a42]/40 shadow-[0_4px_20px_rgba(0,0,0,0.5)]">
+<header class="sticky top-0 z-50 bg-[#08080a]/90 backdrop-blur-md border-b border-[#3a3322]/40 shadow-[0_4px_20px_rgba(0,0,0,0.5)]">
 <div class="max-w-[1280px] mx-auto px-6 h-20 flex items-center justify-between gap-4">
 <!-- Brand Logo + Typography -->
 <a class="flex items-center gap-3.5 group shrink-0" href="#">
 <div class="relative">
-<img alt="LEARN WITH ANMOL Official Logo" class="h-[42px] w-[42px] rounded-full object-cover ring-2 ring-primary/60 shadow-[0_0_12px_rgba(78,222,163,0.35)] group-hover:ring-primary transition-all duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBtW4_ILe1sxcoPxJlb0DzYT6PsXnIv1UFBIQb5hZAVrlXk-8gCvCscB-zlP23N2Bo6CvId9jKGfqjiFNHMAge33LNupGVm0111fJINWJY_6tNvHWrwouyPtiv_rr22Vdf_gZgTgW5MefZYvi0opEfOSPAsd5hbImpPtnUCGq7PhKTW4XNlkOP93NwKZ_JMZuEs_wTkEzf13sjNGSaHhKb2zKjzInLH7SxbMmlOKkrHrE3hLkqZ__uHbK1SbASob1yndE"/>
+<img alt="LEARN WITH ANMOL Official Logo" class="h-[42px] w-[42px] rounded-full object-cover ring-2 ring-primary/60 shadow-[0_0_12px_rgba(245,196,81,0.35)] group-hover:ring-primary transition-all duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBtW4_ILe1sxcoPxJlb0DzYT6PsXnIv1UFBIQb5hZAVrlXk-8gCvCscB-zlP23N2Bo6CvId9jKGfqjiFNHMAge33LNupGVm0111fJINWJY_6tNvHWrwouyPtiv_rr22Vdf_gZgTgW5MefZYvi0opEfOSPAsd5hbImpPtnUCGq7PhKTW4XNlkOP93NwKZ_JMZuEs_wTkEzf13sjNGSaHhKb2zKjzInLH7SxbMmlOKkrHrE3hLkqZ__uHbK1SbASob1yndE"/>
 </div>
 <div class="flex flex-col">
 <span class="font-headline-sm text-[19px] font-extrabold tracking-tight text-on-surface group-hover:text-primary transition-colors">
@@ -174,7 +343,7 @@ footer { background:#030b14 !important; }
 <!-- Left Column -->
 <div class="lg:col-span-5 flex flex-col gap-6">
 <!-- Welcome greeting -->
-<div class="mb-1 rounded-2xl border border-primary/30 bg-gradient-to-r from-primary/10 via-surface-container to-secondary/10 px-4 py-3 shadow-[0_0_28px_rgba(16,185,129,.10)]">
+<div class="mb-1 rounded-2xl border border-primary/30 bg-gradient-to-r from-primary/10 via-surface-container to-secondary/10 px-4 py-3 shadow-[0_0_28px_rgba(212,160,23,.10)]">
   <p class="text-primary text-sm sm:text-base font-bold">👋 Welcome to Learn With Anmol!</p>
   <p class="text-xs sm:text-sm text-on-surface-variant mt-1">Your learning journey starts here — learn, practise, and grow one concept at a time.</p>
 </div>
@@ -257,7 +426,7 @@ footer { background:#030b14 !important; }
 <p class="text-sm sm:text-base text-on-surface-variant mt-2 leading-relaxed max-w-2xl">Easy-to-follow handwritten notes to revise important concepts, prepare for exams, and support your Java and DSA learning journey.</p>
 </div>
 </div>
-<button aria-controls="handwritten-notes-categories" aria-expanded="false" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-primary-container hover:bg-primary-fixed text-on-primary text-sm font-bold transition-all shadow-[0_0_18px_rgba(16,185,129,0.3)] shrink-0" id="explore-handwritten-notes" type="button">
+<button aria-controls="handwritten-notes-categories" aria-expanded="false" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-primary-container hover:bg-primary-fixed text-on-primary text-sm font-bold transition-all shadow-[0_0_18px_rgba(212,160,23,0.3)] shrink-0" id="explore-handwritten-notes" type="button">
 <span class="material-symbols-outlined text-[20px]">menu_book</span>
 <span>Explore Handwritten Notes</span>
 <span class="material-symbols-outlined text-[18px]" id="notes-toggle-icon">expand_more</span>
@@ -360,7 +529,13 @@ footer { background:#030b14 !important; }
   struct node *next;
 };</code></pre><p class="mt-3 text-sm text-on-surface-variant">These are starter notes. Use the PDF link for the full handwritten notes.</p></div></div>
 <!-- LOCAL JAVASCRIPT QUIZ + SAVED PROGRESS -->
-<section id="practice-quiz" class="py-16 border-b border-surface-container-highest/40 bg-surface-container-low/30"><div class="max-w-[960px] mx-auto px-6"><span class="text-xs uppercase tracking-widest text-primary font-bold">Learn by doing</span><h2 class="text-3xl sm:text-4xl font-extrabold mt-2">Java &amp; DSA Quick Quiz</h2><p class="text-on-surface-variant mt-2">Try these questions and track your best score on this device.</p><div class="mt-6 rounded-2xl border border-primary/25 bg-surface-container p-6"><div class="flex justify-between gap-3 text-sm"><span id="quiz-count">Question 1 of 4</span><span id="quiz-best">Best score: 0/4</span></div><div class="h-2 rounded-full bg-black/30 mt-3 overflow-hidden"><div id="quiz-progress-bar" class="h-full bg-primary transition-all" style="width:0%"></div></div><h3 id="quiz-question" class="text-xl font-bold mt-6">Which method is the entry point of a standard Java application?</h3><div id="quiz-options" class="grid gap-3 mt-4"><button class="quiz-option text-left p-4 rounded-xl border border-surface-container-highest hover:border-primary" data-answer="0">main()</button><button class="quiz-option text-left p-4 rounded-xl border border-surface-container-highest hover:border-primary" data-answer="1">start()</button><button class="quiz-option text-left p-4 rounded-xl border border-surface-container-highest hover:border-primary" data-answer="2">runProgram()</button><button class="quiz-option text-left p-4 rounded-xl border border-surface-container-highest hover:border-primary" data-answer="3">init()</button></div><p id="quiz-feedback" class="mt-4 text-sm" aria-live="polite"></p><button id="quiz-next" class="mt-5 rounded-xl bg-primary text-black font-bold px-5 py-3" disabled>Next question</button><button id="quiz-restart" class="mt-5 ml-2 rounded-xl border border-surface-container-highest px-5 py-3 font-bold hidden">Try again</button></div><div class="mt-4 text-xs text-on-surface-variant">Progress is saved in this browser only; it does not sync across devices or accounts.</div></div></section>
+<!-- JAVA CHAPTER-WISE QUIZ APP -->
+<section id="practice-quiz" class="py-16 border-b border-surface-container-highest/40 bg-surface-container-low/30"><div class="max-w-[1000px] mx-auto px-6"><span class="text-xs uppercase tracking-widest text-primary font-bold">Learn by doing</span><h2 class="text-3xl sm:text-4xl font-extrabold mt-2">Java Chapter-wise Quiz</h2><p class="text-on-surface-variant mt-2">Naam enter karein, chapter select karein aur har chapter ke 15 MCQ solve karein.</p>
+<div class="mt-6 rounded-2xl border border-primary/25 bg-surface-container p-6"><div id="quiz-start-gate" class="max-w-lg mx-auto"><h3 class="text-xl font-bold">Start Your Quiz</h3><p class="text-sm text-on-surface-variant mt-2">Quiz se pehle apna naam likhein. Har chapter ka score alag record hoga.</p><form id="quiz-name-form" class="mt-4 grid gap-3"><label for="quiz-student-name" class="text-sm font-semibold">Student name</label><input id="quiz-student-name" name="studentName" type="text" maxlength="80" autocomplete="name" required class="w-full rounded-xl border border-surface-container-highest bg-surface px-4 py-3" placeholder="Apna naam likhein"><button type="submit" class="rounded-xl bg-primary text-black font-bold px-5 py-3">Start Your Quiz</button></form><p id="quiz-name-error" class="text-sm mt-3" aria-live="polite"></p></div>
+<div id="quiz-subject-menu" class="hidden"><div class="mb-5"><p class="text-sm text-on-surface-variant">Welcome</p><h3 id="quiz-subject-welcome" class="text-xl font-bold"></h3><p class="text-sm text-on-surface-variant mt-1">Java, Python ya C Programming mein se subject par click karein. Java ke chapter-wise quizzes abhi available hain.</p></div><div class="grid sm:grid-cols-3 gap-4"><article class="rounded-xl border border-primary/40 bg-primary/5 p-5 flex flex-col gap-3"><div class="text-3xl">☕</div><h4 class="font-bold text-lg">Java</h4><p class="text-sm text-on-surface-variant">Chapter-wise MCQ quizzes • 15 questions per chapter</p><button id="quiz-open-java" type="button" class="mt-auto rounded-lg bg-primary text-black font-bold px-4 py-3">Java ke Chapters Dekhein</button></article><article class="rounded-xl border border-surface-container-highest p-5 flex flex-col gap-3 opacity-70"><div class="text-3xl">🐍</div><h4 class="font-bold text-lg">Python</h4><p class="text-sm text-on-surface-variant">Python ke chapter-wise quizzes jald add honge.</p><button type="button" disabled class="mt-auto rounded-lg border border-surface-container-highest px-4 py-3 font-bold cursor-not-allowed">Coming soon</button></article><article class="rounded-xl border border-surface-container-highest p-5 flex flex-col gap-3 opacity-70"><div class="text-3xl">💻</div><h4 class="font-bold text-lg">C Programming</h4><p class="text-sm text-on-surface-variant">C Programming ke chapter-wise quizzes jald add honge.</p><button type="button" disabled class="mt-auto rounded-lg border border-surface-container-highest px-4 py-3 font-bold cursor-not-allowed">Coming soon</button></article></div></div>
+<div id="quiz-chapter-menu" class="hidden"><button id="quiz-back-subjects" type="button" class="text-sm underline mb-4">← Back to subjects</button><div class="flex flex-wrap items-center justify-between gap-3 mb-5"><div><p class="text-sm text-on-surface-variant">Welcome</p><h3 id="quiz-welcome-name" class="text-xl font-bold"></h3></div><span class="text-sm rounded-full px-3 py-1 border border-primary/30">Java • 15 questions per chapter</span></div><div id="quiz-chapter-grid" class="grid sm:grid-cols-2 gap-4"></div></div>
+<div id="quiz-game" class="hidden"><button id="quiz-back-chapters" class="text-sm underline mb-4">← Back to chapters</button><h3 id="quiz-chapter-title" class="text-xl font-bold"></h3><div class="flex justify-between gap-3 text-sm mt-4"><span id="quiz-count">Question 1 of 15</span><span id="quiz-best">Best score: 0</span></div><div class="h-2 rounded-full bg-black/30 mt-3 overflow-hidden"><div id="quiz-progress-bar" class="h-full bg-primary transition-all" style="width:0%"></div></div><h4 id="quiz-question" class="text-xl font-bold mt-6"></h4><div id="quiz-options" class="grid gap-3 mt-4"></div><p id="quiz-feedback" class="mt-4 text-sm" aria-live="polite"></p><button id="quiz-next" class="mt-5 rounded-xl bg-primary text-black font-bold px-5 py-3" disabled>Next question</button><button id="quiz-restart" class="mt-5 ml-2 rounded-xl border border-surface-container-highest px-5 py-3 font-bold hidden">Retry chapter</button><p id="quiz-save-status" class="text-sm mt-4" aria-live="polite"></p></div></div>
+<p class="mt-4 text-xs text-on-surface-variant">Chapter results are submitted to the configured Google Apps Script backend. Backend must accept action=quizResult.</p></div></section>
 
 <!-- 3B. JAVA YOUTUBE PLAYLIST SHOWCASE -->
 <section class="py-20 border-b border-surface-container-highest/40 bg-surface-container-low/30" id="java-playlist">
@@ -469,40 +644,6 @@ footer { background:#030b14 !important; }
 <!-- 7. PRACTICE JAVA & DSA CHECKPOINTS -->
 
 <!-- 8. CAREER ROADMAP & YOUTUBE CTA BANNER -->
-<section class="py-20" id="roadmap">
-<div class="max-w-[1280px] mx-auto px-6">
-<div class="rounded-3xl bg-gradient-to-br from-surface-container-high via-surface-container to-surface-container-lowest p-8 md:p-12 border border-primary/30 relative overflow-hidden shadow-2xl">
-<div class="absolute -right-16 -top-16 w-80 h-80 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
-<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-<div class="lg:col-span-8 flex flex-col gap-4">
-<span class="font-label-mono-sm text-xs text-primary font-bold uppercase tracking-wider">Start Now — 100% Free</span>
-<h2 class="font-headline-xl text-3xl sm:text-4xl font-extrabold text-on-surface tracking-tight">
-                Master Java &amp; DSA from Zero to Placement
-              </h2>
-<p class="text-base text-on-surface-variant leading-relaxed max-w-2xl">
-                Subscribe to LEARN WITH ANMOL on YouTube for the full video series, regular lecture drops, and step-by-step problem breakdowns.
-              </p>
-<div class="flex flex-wrap items-center gap-4 pt-2">
-<a class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#dc2626] hover:bg-[#ef4444] text-white font-headline-sm text-sm font-bold transition-all shadow-[0_0_24px_rgba(220,38,38,0.4)]" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-[20px]">subscriptions</span>
-<span class="">Subscribe to @LEARNWITHANMOL-q3i</span>
-</a>
-
-</div>
-</div>
-<!-- Emblem Badge Box -->
-<div class="lg:col-span-4 flex justify-center">
-<div class="relative p-6 rounded-2xl bg-surface-container-lowest/80 border border-primary/30 flex flex-col items-center text-center shadow-xl">
-<img alt="Official Seal" class="w-28 h-28 rounded-full object-cover ring-4 ring-primary/40 shadow-[0_0_30px_rgba(78,222,163,0.3)] mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ-qOO1ByZR12BHMy1ztBK-mywSNzDR3gu5hDSmBGWNGuNCK6ml8Nni2XWDM_pH17bsQ41eoDhukg0q9NA69rBnQPtI71ElXpIzltx2JKPtrMZ_DQg9dYFknRX_1uMknXnrQ8nd8CPg4IkSsSCC3lt6BG9PK9o4NNznKMXoO4jm8QlywJCMssJCZ0dth6qaeotYY3nbS3aEUSv22PUBTX-7PNJEmx07DZpbi5V-v9BV0FIrO4x5meA1258is_lYLJ50p8"/>
-<span class="font-headline-sm text-sm font-bold text-on-surface">LEARN WITH ANMOL</span>
-<span class="font-label-mono-sm text-[11px] text-primary mt-1">Official Masterclass Seal</span>
-<p class="text-[11px] text-on-surface-variant mt-2">50+ In-Depth Lectures • Zero Fees</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
 <!-- Contact / Ask Your Doubt form -->
 <section id="contact-form" class="max-w-4xl mx-auto px-5 sm:px-6 py-12 scroll-mt-24">
   <div class="rounded-3xl border border-primary/30 bg-surface-container-low p-6 sm:p-8 md:p-10 shadow-xl">
@@ -534,6 +675,41 @@ footer { background:#030b14 !important; }
     </form>
   </div>
 </section>
+<section class="py-20" id="roadmap">
+<div class="max-w-[1280px] mx-auto px-6">
+<div class="rounded-3xl bg-gradient-to-br from-surface-container-high via-surface-container to-surface-container-lowest p-8 md:p-12 border border-primary/30 relative overflow-hidden shadow-2xl">
+<div class="absolute -right-16 -top-16 w-80 h-80 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-8 flex flex-col gap-4">
+<span class="font-label-mono-sm text-xs text-primary font-bold uppercase tracking-wider">Start Now — 100% Free</span>
+<h2 class="font-headline-xl text-3xl sm:text-4xl font-extrabold text-on-surface tracking-tight">
+                Master Java &amp; DSA from Zero to Placement
+              </h2>
+<p class="text-base text-on-surface-variant leading-relaxed max-w-2xl">
+                Subscribe to LEARN WITH ANMOL on YouTube for the full video series, regular lecture drops, and step-by-step problem breakdowns.
+              </p>
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#dc2626] hover:bg-[#ef4444] text-white font-headline-sm text-sm font-bold transition-all shadow-[0_0_24px_rgba(220,38,38,0.4)]" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">subscriptions</span>
+<span class="">Subscribe to @LEARNWITHANMOL-q3i</span>
+</a>
+
+</div>
+</div>
+<!-- Emblem Badge Box -->
+<div class="lg:col-span-4 flex justify-center">
+<div class="relative p-6 rounded-2xl bg-surface-container-lowest/80 border border-primary/30 flex flex-col items-center text-center shadow-xl">
+<img alt="Official Seal" class="w-28 h-28 rounded-full object-cover ring-4 ring-primary/40 shadow-[0_0_30px_rgba(245,196,81,0.3)] mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ-qOO1ByZR12BHMy1ztBK-mywSNzDR3gu5hDSmBGWNGuNCK6ml8Nni2XWDM_pH17bsQ41eoDhukg0q9NA69rBnQPtI71ElXpIzltx2JKPtrMZ_DQg9dYFknRX_1uMknXnrQ8nd8CPg4IkSsSCC3lt6BG9PK9o4NNznKMXoO4jm8QlywJCMssJCZ0dth6qaeotYY3nbS3aEUSv22PUBTX-7PNJEmx07DZpbi5V-v9BV0FIrO4x5meA1258is_lYLJ50p8"/>
+<span class="font-headline-sm text-sm font-bold text-on-surface">LEARN WITH ANMOL</span>
+<span class="font-label-mono-sm text-[11px] text-primary mt-1">Official Masterclass Seal</span>
+<p class="text-[11px] text-on-surface-variant mt-2">50+ In-Depth Lectures • Zero Fees</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
 
 </main>
 <!-- 9. CLEAN PROFESSIONAL FOOTER -->
@@ -619,23 +795,24 @@ footer { background:#030b14 !important; }
     }));
     document.querySelectorAll('[data-close-study]').forEach(btn => btn.addEventListener('click', () => btn.closest('[id^="online-study-"]').classList.add('hidden')));
 
-    // Java + DSA quiz; best score persists locally.
-    const quizItems = [
-      {q:'Which method is the entry point of a standard Java application?',o:['main()','start()','runProgram()','init()'],a:0,why:'The JVM starts a standard Java application by calling the main method with the appropriate signature.'},
-      {q:'In a singly linked list, what should the last node’s next pointer contain?',o:['The first node','A random address','NULL','The node data'],a:2,why:'NULL indicates there is no next node after the final node.'},
-      {q:'Which Java keyword is used to create an object?',o:['class','new','this','void'],a:1,why:'The new keyword allocates and constructs an object.'},
-      {q:'What does a pointer in a linked-list node store for the next field?',o:['The next node’s address','Only the node’s integer data','The list length automatically','Always the previous node'],a:0,why:'The next pointer holds the address/reference of the next node.'}
-    ];
-    let quizIndex=0, quizScore=0, quizLocked=false;
+// Java chapter-wise quiz app: each chapter has 15 questions.
+    const javaChapters = {"Java Basics & Syntax": [{"q": "Which method is the entry point of a standard Java application?", "o": ["main()", "start()", "run()", "init()"], "a": 0, "why": "The JVM calls the main method with the standard signature."}, {"q": "Which keyword declares a class in Java?", "o": ["object", "class", "define", "struct"], "a": 1, "why": "The class keyword declares a class."}, {"q": "Which file extension is used for Java source files?", "o": [".class", ".js", ".java", ".jav"], "a": 2, "why": "Java source code is saved in .java files."}, {"q": "Which tool compiles Java source code?", "o": ["java", "javac", "javadoc", "jar"], "a": 1, "why": "javac compiles .java source into bytecode."}, {"q": "What does JVM stand for?", "o": ["Java Variable Method", "Java Virtual Machine", "Joint Virtual Memory", "Java Verified Mode"], "a": 1, "why": "JVM means Java Virtual Machine."}, {"q": "Which is a valid single-line comment in Java?", "o": ["<!-- comment -->", "// comment", "** comment **", "## comment"], "a": 1, "why": "Java uses // for single-line comments."}, {"q": "Which keyword creates an object?", "o": ["make", "class", "new", "this"], "a": 2, "why": "new creates an object instance."}, {"q": "Which is the usual return type of main?", "o": ["int", "String", "void", "static"], "a": 2, "why": "The standard main method returns void."}, {"q": "Java source code is typically compiled into what?", "o": ["Machine code only", "Bytecode", "HTML", "SQL"], "a": 1, "why": "The compiler produces JVM bytecode."}, {"q": "Which keyword makes a variable a class-level member shared by instances?", "o": ["static", "shared", "global", "common"], "a": 0, "why": "static members belong to the class."}, {"q": "Which symbol ends most Java statements?", "o": [":", ".", ";", ","], "a": 2, "why": "Most Java statements end with a semicolon."}, {"q": "Which keyword prevents a class from being subclassed?", "o": ["static", "const", "final", "private"], "a": 2, "why": "A final class cannot be extended."}, {"q": "Which is a valid Java identifier?", "o": ["2value", "first-name", "first_name", "class"], "a": 2, "why": "Identifiers may include underscores but cannot start with a digit or be a keyword."}, {"q": "What is the purpose of import?", "o": ["To load a class/package name for use", "To create an object", "To end a loop", "To compile code"], "a": 0, "why": "import lets source code refer to types by their simple names."}, {"q": "Which command runs a compiled Java class named Main?", "o": ["javac Main", "java Main.java only", "java Main", "run Main"], "a": 2, "why": "The java launcher runs the compiled class by name."}], "Variables & Data Types": [{"q": "Which type stores a 32-bit signed integer?", "o": ["byte", "short", "int", "long"], "a": 2, "why": "int is a 32-bit signed integer type."}, {"q": "Which type stores true or false?", "o": ["bool", "boolean", "bit", "BooleanOnly"], "a": 1, "why": "boolean is Java’s primitive truth-value type."}, {"q": "Which primitive type stores a single UTF-16 code unit?", "o": ["char", "String", "byte", "rune"], "a": 0, "why": "char stores a 16-bit UTF-16 code unit."}, {"q": "Which of these is not a primitive type?", "o": ["int", "double", "boolean", "String"], "a": 3, "why": "String is a class, not a primitive type."}, {"q": "What is the default value of an instance int field?", "o": ["1", "-1", "0", "null"], "a": 2, "why": "Numeric instance fields default to zero."}, {"q": "Which keyword declares a variable whose value cannot be reassigned after initialization?", "o": ["static", "final", "const", "fixed"], "a": 1, "why": "A final variable can be assigned once."}, {"q": "Which type is generally suitable for decimal floating-point values with more precision than float?", "o": ["double", "char", "long", "boolean"], "a": 0, "why": "double provides greater precision than float."}, {"q": "Which is a valid long literal?", "o": ["12L", "12D only", "L12.0", "12-long"], "a": 0, "why": "The L suffix marks a long literal."}, {"q": "What is the result type of 5 / 2 when both operands are int?", "o": ["double", "2.5", "2", "Compile error"], "a": 2, "why": "Integer division truncates the fractional part."}, {"q": "Which conversion is a widening primitive conversion?", "o": ["double to int", "long to short", "int to long", "float to byte"], "a": 2, "why": "Converting int to long widens the value range."}, {"q": "Which type is used for a sequence of characters?", "o": ["String", "char", "text", "Character[] only"], "a": 0, "why": "String represents a sequence of characters."}, {"q": "Where must a local variable be initialized before it is read?", "o": ["Never", "Only in static methods", "Before use", "Only after return"], "a": 2, "why": "Local variables do not receive automatic default values."}, {"q": "Which operator assigns a value?", "o": ["==", "=", "!=", "<="], "a": 1, "why": "The single equals sign is the assignment operator."}, {"q": "What does casting do?", "o": ["Converts a value to another type", "Declares a package", "Starts a thread", "Ends a method"], "a": 0, "why": "A cast requests conversion to a specified type."}, {"q": "Which primitive type can represent 3.14 directly?", "o": ["int", "boolean", "double", "char"], "a": 2, "why": "double supports floating-point literals such as 3.14."}], "Operators & Control Flow": [{"q": "Which operator tests equality of primitive values?", "o": ["=", "==", "equals=", ":="], "a": 1, "why": "== compares primitive values for equality."}, {"q": "Which operator means logical AND?", "o": ["&|", "&&", "||", "!"], "a": 1, "why": "&& is the short-circuit logical AND operator."}, {"q": "What does break do inside a loop?", "o": ["Skips one iteration only", "Exits the nearest loop or switch", "Restarts the program", "Pauses the thread"], "a": 1, "why": "break exits the nearest enclosing loop or switch."}, {"q": "Which loop checks its condition before each iteration?", "o": ["while", "do-while only after body", "Neither", "All loops check after body"], "a": 0, "why": "while tests the condition before executing its body."}, {"q": "How many times does a do-while body run if its condition is initially false?", "o": ["Zero", "One", "Two", "Infinite"], "a": 1, "why": "The body runs before the condition is checked."}, {"q": "Which statement selects among multiple constant case labels?", "o": ["if only", "switch", "for", "try"], "a": 1, "why": "switch branches based on the selector value."}, {"q": "What does continue do in a loop?", "o": ["Ends the whole program", "Skips to the next iteration", "Exits the method", "Returns zero"], "a": 1, "why": "continue skips the remainder of the current iteration."}, {"q": "Which is the ternary conditional operator?", "o": ["??", "?:", "::", "=>"], "a": 1, "why": "The conditional expression uses ? and :."}, {"q": "What is printed by `System.out.println(3 + 4 + \"A\")`?", "o": ["34A", "7A", "A34", "Compile error"], "a": 1, "why": "Addition happens first, then the number is concatenated with the string."}, {"q": "What is printed by `System.out.println(\"A\" + 3 + 4)`?", "o": ["A7", "A34", "7A", "Compile error"], "a": 1, "why": "Once a String is encountered, + concatenates left to right."}, {"q": "Which operator increments a variable by one?", "o": ["--", "++", "**", "//"], "a": 1, "why": "++ increases a numeric variable by one."}, {"q": "Which expression means x is between 1 and 10 inclusive?", "o": ["x >= 1 && x <= 10", "x >= 1 || x <= 10", "x > 1 && x < 10", "x == 1 && x == 10"], "a": 0, "why": "Both inclusive bounds must be true."}, {"q": "What is the purpose of default in a switch?", "o": ["Runs only when all cases match", "Handles unmatched cases when no case matches", "Declares a variable", "Terminates the JVM"], "a": 1, "why": "default provides the fallback branch."}, {"q": "Which loop is often used when the iteration count is known?", "o": ["for", "try", "switch", "synchronized"], "a": 0, "why": "A for loop conveniently groups initialization, condition, and update."}, {"q": "What does `!true` evaluate to?", "o": ["true", "false", "null", "0"], "a": 1, "why": "! negates a boolean value."}], "Arrays & Strings": [{"q": "Array indices in Java start at what number?", "o": ["-1", "0", "1", "Depends on type"], "a": 1, "why": "The first element is at index zero."}, {"q": "How do you get the length of array arr?", "o": ["arr.length()", "arr.size", "arr.length", "length(arr)"], "a": 2, "why": "Arrays expose length as a field."}, {"q": "How do you get the number of characters in String s?", "o": ["s.length", "s.length()", "s.size()", "size(s)"], "a": 1, "why": "String length is obtained with length()."}, {"q": "What happens when accessing an array index outside its bounds at runtime?", "o": ["Returns zero", "Returns null", "ArrayIndexOutOfBoundsException", "Automatically expands"], "a": 2, "why": "Invalid array indexes throw ArrayIndexOutOfBoundsException."}, {"q": "Which class represents an immutable string?", "o": ["String", "StringBuilder", "StringBuffer only mutable", "CharArray"], "a": 0, "why": "String objects are immutable."}, {"q": "Which class is commonly used to build a string repeatedly and efficiently?", "o": ["StringBuilder", "Integer", "Scanner", "Math"], "a": 0, "why": "StringBuilder allows mutable character sequences."}, {"q": "How do you compare String contents safely?", "o": ["== always", "equals()", "assign()", "compareByAddress()"], "a": 1, "why": "equals compares String contents."}, {"q": "What does `new int[5]` create?", "o": ["Five ints initialized to 0", "Five null ints", "An int equal to 5", "A compile error"], "a": 0, "why": "An int array of length five is created; elements default to zero."}, {"q": "Which loop is convenient for iterating over each element in an array?", "o": ["enhanced for", "switch", "try-catch", "do-import"], "a": 0, "why": "The enhanced for loop visits each element."}, {"q": "Can an array’s length change after it is created?", "o": ["Yes, automatically", "No", "Only for int arrays", "Only with final"], "a": 1, "why": "Java array length is fixed at creation."}, {"q": "Which method splits a String using a regular expression?", "o": ["divide()", "split()", "separate()", "substring()"], "a": 1, "why": "String.split accepts a regular expression."}, {"q": "What does `substring(1, 4)` include?", "o": ["Indices 1 through 4", "Indices 1, 2, and 3", "Only index 4", "All characters after 1"], "a": 1, "why": "The start index is inclusive and the end index exclusive."}, {"q": "What does `String s = \"Java\"; s.toUpperCase()` return?", "o": ["java", "JAVA", "Java", "null"], "a": 1, "why": "toUpperCase returns a new uppercase String."}, {"q": "Which utility class provides methods such as sort for arrays?", "o": ["Arrays", "Collections only", "ArrayList", "SystemIn"], "a": 0, "why": "java.util.Arrays provides array utility methods."}, {"q": "What is the first valid index of an array of length 3?", "o": ["0", "1", "2", "3"], "a": 0, "why": "A three-element array uses indexes 0, 1, and 2."}], "Object-Oriented Programming": [{"q": "Which concept bundles data and methods into a unit and controls access?", "o": ["Encapsulation", "Compilation", "Iteration", "Casting"], "a": 0, "why": "Encapsulation combines state and behavior while controlling access."}, {"q": "Which keyword refers to the current object?", "o": ["super", "this", "self", "current"], "a": 1, "why": "this refers to the current instance."}, {"q": "Which keyword calls a superclass constructor or member?", "o": ["parent", "base", "super", "thisclass"], "a": 2, "why": "super refers to superclass members and constructors."}, {"q": "What is method overloading?", "o": ["Same method name with different parameter lists", "Same signature in unrelated classes", "Changing only return type", "Deleting a method"], "a": 0, "why": "Overloaded methods differ in their parameter lists."}, {"q": "What is method overriding?", "o": ["Subclass supplies implementation of inherited instance method", "Changing a local variable", "Using same name with unrelated parameters only", "Making a method static"], "a": 0, "why": "Overriding replaces inherited behavior with a compatible implementation."}, {"q": "Which access modifier allows access only within the declaring class?", "o": ["public", "protected", "private", "default public"], "a": 2, "why": "private members are accessible within their declaring top-level class."}, {"q": "Which keyword is used to inherit a class?", "o": ["implements", "extends", "inherits", "instanceof"], "a": 1, "why": "A class extends another class."}, {"q": "Which keyword declares that a class follows an interface contract?", "o": ["extends", "implements", "interfaceOf", "inherits"], "a": 1, "why": "A class uses implements for interfaces."}, {"q": "Can Java classes extend more than one class directly?", "o": ["Yes, unlimited", "Yes, exactly two", "No", "Only abstract classes"], "a": 2, "why": "Java classes have single class inheritance."}, {"q": "What is an abstract class?", "o": ["A class that cannot be instantiated directly", "A final object", "A class with only static fields", "An interface alias"], "a": 0, "why": "An abstract class cannot be instantiated directly."}, {"q": "Which keyword declares an interface?", "o": ["protocol", "interface", "abstract-interface", "contract"], "a": 1, "why": "interface declares an interface type."}, {"q": "Which relationship is commonly described by “has-a”?", "o": ["Composition/aggregation", "Inheritance only", "Overloading", "Casting"], "a": 0, "why": "A has-a relationship means one object contains or refers to another."}, {"q": "What does a constructor do?", "o": ["Initializes a new object", "Destroys an object manually", "Returns an int", "Overrides every method"], "a": 0, "why": "Constructors initialize newly created instances."}, {"q": "Do constructors have a declared return type?", "o": ["Yes, void", "Yes, class type", "No", "Only int"], "a": 2, "why": "Constructors have no return type, not even void."}, {"q": "Which principle allows one interface to have different implementations?", "o": ["Polymorphism", "Tokenization", "Serialization only", "Recursion"], "a": 0, "why": "Polymorphism allows a common type to refer to different implementations."}], "Exceptions & Collections": [{"q": "Which block contains code that may throw an exception?", "o": ["catch", "try", "finally only", "throws"], "a": 1, "why": "Potentially exceptional code is placed in try."}, {"q": "Which block handles a matching exception?", "o": ["catch", "throw", "final", "package"], "a": 0, "why": "catch handles exceptions of the specified type."}, {"q": "Which keyword explicitly throws an exception object?", "o": ["throws", "throw", "catch", "raise"], "a": 1, "why": "throw is used to throw an exception."}, {"q": "Which keyword declares exceptions a method may pass to its caller?", "o": ["throw", "throws", "try", "finally"], "a": 1, "why": "throws appears in a method declaration."}, {"q": "Which is an unchecked exception?", "o": ["IOException", "SQLException", "NullPointerException", "ClassNotFoundException"], "a": 2, "why": "NullPointerException is a RuntimeException."}, {"q": "What is the purpose of finally?", "o": ["Usually runs cleanup code", "Declares a class", "Always catches all errors", "Creates a thread"], "a": 0, "why": "finally is used for cleanup and generally executes after try/catch."}, {"q": "Which collection maintains insertion order and allows duplicates?", "o": ["ArrayList", "HashSet", "TreeSet", "Map keys"], "a": 0, "why": "ArrayList preserves element order and permits duplicates."}, {"q": "Which collection disallows duplicate elements?", "o": ["ArrayList", "LinkedList", "HashSet", "Vector"], "a": 2, "why": "Set implementations such as HashSet do not allow duplicates."}, {"q": "Which interface maps keys to values?", "o": ["List", "Set", "Map", "Queue"], "a": 2, "why": "Map stores key-value mappings."}, {"q": "Which method adds an element to a List?", "o": ["put()", "add()", "pushOnly()", "insertValue()"], "a": 1, "why": "List implementations use add to append or insert elements."}, {"q": "Which collection is designed for key-value lookup?", "o": ["HashMap", "ArrayList", "ArrayDeque only", "StringBuilder"], "a": 0, "why": "HashMap stores key-value pairs and supports key-based lookup."}, {"q": "What does generics provide in collections?", "o": ["Compile-time type safety", "Automatic networking", "Thread scheduling", "Memory-free objects"], "a": 0, "why": "Generics let collections specify and check element types at compile time."}, {"q": "Which interface represents a first-in-first-out style abstraction commonly?", "o": ["Queue", "Set", "Map", "Comparable"], "a": 0, "why": "Queue models elements waiting to be processed, commonly FIFO."}, {"q": "What does `List<String>` mean?", "o": ["A list whose elements are Strings", "A String with a list", "A list of integers", "A class named ListString"], "a": 0, "why": "The generic type parameter indicates String elements."}, {"q": "Which exception can occur when parsing invalid text with Integer.parseInt?", "o": ["NumberFormatException", "IOException", "SQLException", "ClassCastException only"], "a": 0, "why": "Invalid integer text causes NumberFormatException."}]};
+    let quizIndex=0, quizScore=0, quizLocked=false, quizStudentName='', currentChapter='';
+    const quizNameForm=document.getElementById('quiz-name-form'), quizNameInput=document.getElementById('quiz-student-name'), quizStartGate=document.getElementById('quiz-start-gate'), quizSubjectMenu=document.getElementById('quiz-subject-menu'), quizChapterMenu=document.getElementById('quiz-chapter-menu'), quizGame=document.getElementById('quiz-game'), quizNameError=document.getElementById('quiz-name-error'), quizSaveStatus=document.getElementById('quiz-save-status');
     const qEl=document.getElementById('quiz-question'), optsEl=document.getElementById('quiz-options'), feedEl=document.getElementById('quiz-feedback'), nextEl=document.getElementById('quiz-next'), restartEl=document.getElementById('quiz-restart');
     const bestEl=document.getElementById('quiz-best'), countEl=document.getElementById('quiz-count'), barEl=document.getElementById('quiz-progress-bar');
-    let bestScore=0; try { bestScore=Number(localStorage.getItem('lwa-quiz-best')||0); } catch(e) {}
-    if(bestEl) bestEl.textContent='Best score: '+bestScore+'/4';
-    function renderQuestion(){ const item=quizItems[quizIndex]; quizLocked=false; qEl.textContent=item.q; countEl.textContent='Question '+(quizIndex+1)+' of '+quizItems.length; barEl.style.width=(quizIndex/quizItems.length*100)+'%'; feedEl.textContent=''; nextEl.disabled=true; nextEl.classList.remove('hidden'); restartEl.classList.add('hidden'); optsEl.innerHTML=''; item.o.forEach((label,i)=>{const b=document.createElement('button');b.className='quiz-option text-left p-4 rounded-xl border border-surface-container-highest hover:border-primary';b.textContent=label;b.addEventListener('click',()=>answerQuestion(i,b));optsEl.appendChild(b);}); }
-    function answerQuestion(choice,button){if(quizLocked)return;quizLocked=true;const item=quizItems[quizIndex];const buttons=optsEl.querySelectorAll('button');buttons.forEach(b=>b.disabled=true);if(choice===item.a){quizScore++;button.classList.add('border-primary');feedEl.textContent='Correct! '+item.why;}else{button.classList.add('border-red-400');buttons[item.a].classList.add('border-primary');feedEl.textContent='Not quite. '+item.why;}nextEl.disabled=false;barEl.style.width=((quizIndex+1)/quizItems.length*100)+'%';}
-    if(nextEl) nextEl.addEventListener('click',()=>{if(!quizLocked)return;if(quizIndex<quizItems.length-1){quizIndex++;renderQuestion();}else{qEl.textContent='Quiz complete! Your score: '+quizScore+'/'+quizItems.length;optsEl.innerHTML='';feedEl.textContent='Keep practising to improve your score.';countEl.textContent='Completed';nextEl.classList.add('hidden');restartEl.classList.remove('hidden');barEl.style.width='100%';if(quizScore>bestScore){bestScore=quizScore;try{localStorage.setItem('lwa-quiz-best',String(bestScore));}catch(e){}bestEl.textContent='Best score: '+bestScore+'/4';}}});
-    if(restartEl) restartEl.addEventListener('click',()=>{quizIndex=0;quizScore=0;renderQuestion();});
-    if(qEl && optsEl && nextEl) renderQuestion();
+    const chapterGrid=document.getElementById('quiz-chapter-grid');
+    function renderChapterMenu(){ document.getElementById('quiz-welcome-name').textContent=quizStudentName; chapterGrid.innerHTML=''; Object.entries(javaChapters).forEach(([name,items])=>{const card=document.createElement('article');card.className='rounded-xl border border-surface-container-highest p-5 flex flex-col gap-3';const title=document.createElement('h4');title.className='font-bold text-lg';title.textContent=name;const desc=document.createElement('p');desc.className='text-sm text-on-surface-variant';desc.textContent=items.length+' questions • MCQ • chapter score saved';const btn=document.createElement('button');btn.className='mt-auto rounded-lg bg-primary text-black font-bold px-4 py-3';btn.textContent='Start Chapter Quiz';btn.addEventListener('click',()=>startChapter(name));card.append(title,desc,btn);chapterGrid.appendChild(card);}); }
+    function startChapter(name){currentChapter=name;quizIndex=0;quizScore=0;quizLocked=false;quizChapterMenu.classList.add('hidden');quizGame.classList.remove('hidden');document.getElementById('quiz-chapter-title').textContent=name; if(quizSaveStatus)quizSaveStatus.textContent='';renderQuestion();}
+    function renderQuestion(){const quizItems=javaChapters[currentChapter];const item=quizItems[quizIndex];quizLocked=false;qEl.textContent=item.q;countEl.textContent='Question '+(quizIndex+1)+' of '+quizItems.length;barEl.style.width=(quizIndex/quizItems.length*100)+'%';feedEl.textContent='';nextEl.disabled=true;nextEl.classList.remove('hidden');restartEl.classList.add('hidden');optsEl.innerHTML='';item.o.forEach((label,i)=>{const b=document.createElement('button');b.className='quiz-option text-left p-4 rounded-xl border border-surface-container-highest hover:border-primary';b.textContent=label;b.addEventListener('click',()=>answerQuestion(i,b));optsEl.appendChild(b);});bestEl.textContent='Chapter score: '+quizScore+'/'+quizItems.length;}
+    function answerQuestion(choice,button){if(quizLocked)return;quizLocked=true;const item=javaChapters[currentChapter][quizIndex];const buttons=optsEl.querySelectorAll('button');buttons.forEach(b=>b.disabled=true);if(choice===item.a){quizScore++;button.classList.add('border-primary');feedEl.textContent='Correct! '+item.why;}else{button.classList.add('border-red-400');buttons[item.a].classList.add('border-primary');feedEl.textContent='Not quite. '+item.why;}nextEl.disabled=false;barEl.style.width=((quizIndex+1)/javaChapters[currentChapter].length*100)+'%';bestEl.textContent='Chapter score: '+quizScore+'/'+javaChapters[currentChapter].length;}
+    async function saveQuizResult(){if(!quizSaveStatus)return;quizSaveStatus.textContent='Submitting chapter result...';const quizBackendURL='https://script.google.com/macros/s/AKfycbx-ssPGpQkp4bE_e8ApjEVzaTApOd6g56Yhdk2lWtF2SI0CNNwrZwtQZvuzJ30ilnqaow/exec';try{const payload=new URLSearchParams({action:'quizResult',name:quizStudentName,score:String(quizScore),total:String(javaChapters[currentChapter].length),quiz:'Java - '+currentChapter,chapter:currentChapter,submittedAt:new Date().toISOString()});await fetch(quizBackendURL,{method:'POST',mode:'no-cors',body:payload});quizSaveStatus.textContent='Result submission sent. Google Sheet mein entry verify kar lein.';}catch(error){quizSaveStatus.textContent='Score submit nahi ho saka. Internet connection check karein.';}}
+    if(quizNameForm)quizNameForm.addEventListener('submit',event=>{event.preventDefault();const name=(quizNameInput.value||'').trim();if(!name){quizNameError.textContent='Please enter your name.';return;}quizStudentName=name;quizNameError.textContent='';quizStartGate.classList.add('hidden');document.getElementById('quiz-subject-welcome').textContent='Welcome, '+quizStudentName+'!';quizSubjectMenu.classList.remove('hidden');});
+    const openJavaButton=document.getElementById('quiz-open-java');const javaSubjectCard=openJavaButton?openJavaButton.closest('article'):null;function openJavaChapters(){quizSubjectMenu.classList.add('hidden');quizChapterMenu.classList.remove('hidden');renderChapterMenu();}if(openJavaButton)openJavaButton.addEventListener('click',event=>{event.stopPropagation();openJavaChapters();});if(javaSubjectCard){javaSubjectCard.style.cursor='pointer';javaSubjectCard.setAttribute('role','button');javaSubjectCard.setAttribute('tabindex','0');javaSubjectCard.setAttribute('aria-label','Open Java chapter quizzes');javaSubjectCard.addEventListener('click',openJavaChapters);javaSubjectCard.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();openJavaChapters();}});}
+    const backSubjectsButton=document.getElementById('quiz-back-subjects');if(backSubjectsButton)backSubjectsButton.addEventListener('click',()=>{quizChapterMenu.classList.add('hidden');quizSubjectMenu.classList.remove('hidden');});
+    if(nextEl)nextEl.addEventListener('click',()=>{if(!quizLocked)return;const items=javaChapters[currentChapter];if(quizIndex<items.length-1){quizIndex++;renderQuestion();}else{qEl.textContent='Chapter complete! Score: '+quizScore+'/'+items.length;optsEl.innerHTML='';feedEl.textContent='Great work, '+quizStudentName+'! Aap doosra chapter bhi try kar sakte hain.';countEl.textContent='Completed';nextEl.classList.add('hidden');restartEl.classList.remove('hidden');barEl.style.width='100%';bestEl.textContent='Final chapter score: '+quizScore+'/'+items.length;saveQuizResult();}});
+    if(restartEl)restartEl.addEventListener('click',()=>{quizGame.classList.add('hidden');quizChapterMenu.classList.remove('hidden');if(quizSaveStatus)quizSaveStatus.textContent='';});
+    const backChapters=document.getElementById('quiz-back-chapters');if(backChapters)backChapters.addEventListener('click',()=>{quizGame.classList.add('hidden');quizChapterMenu.classList.remove('hidden');if(quizSaveStatus)quizSaveStatus.textContent='';});
 
     // Handwritten notes subject menu toggle
     const notesExploreButton = document.getElementById('explore-handwritten-notes');
@@ -685,10 +862,13 @@ footer { background:#030b14 !important; }
 
     // Prevent placeholder resource links from jumping to the top of the page.
     document.querySelectorAll('[data-placeholder-link="true"]').forEach((link) => {
-      link.addEventListener('click', (event) => {
-        event.preventDefault();
-        alert('Is subject ke liye actual notes link abhi add nahi kiya gaya hai.');
-      });
+      const href = (link.getAttribute('href') || '').trim();
+      if (!href || href === '#') {
+        link.addEventListener('click', (event) => {
+          event.preventDefault();
+          alert('Is subject ke liye actual notes link abhi add nahi kiya gaya hai.');
+        });
+      }
     });
 </script>
 <script>
