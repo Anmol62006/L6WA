@@ -524,7 +524,14 @@ header { border-color:rgba(96,165,250,.24) !important; }
   placeholder="Enter your Name"><button type="submit" class="rounded-xl bg-primary text-black font-bold px-5 py-3">Start Your Quiz</button></form><p id="quiz-name-error" class="text-sm mt-3" aria-live="polite"></p></div>
 <div id="quiz-subject-menu" class="hidden"><div class="mb-5"><p class="text-sm text-on-surface-variant">Welcome</p><h3 id="quiz-subject-welcome" class="text-xl font-bold"></h3><p class="text-sm text-on-surface-variant mt-1">Java, Python ya C Programming mein se subject par click karein. Java ke chapter-wise quizzes abhi available hain.</p></div><div class="grid sm:grid-cols-3 gap-4"><article class="rounded-xl border border-primary/40 bg-primary/5 p-5 flex flex-col gap-3"><div class="text-3xl">☕</div><h4 class="font-bold text-lg">Java</h4><p class="text-sm text-on-surface-variant">Chapter-wise MCQ quizzes • 15 questions per chapter</p><button id="quiz-open-java" type="button" class="mt-auto rounded-lg bg-primary text-black font-bold px-4 py-3">Java ke Chapters Dekhein</button></article><article class="rounded-xl border border-surface-container-highest p-5 flex flex-col gap-3 opacity-70"><div class="text-3xl">🐍</div><h4 class="font-bold text-lg">Python</h4><p class="text-sm text-on-surface-variant">Python ke chapter-wise quizzes jald add honge.</p><button type="button" disabled class="mt-auto rounded-lg border border-surface-container-highest px-4 py-3 font-bold cursor-not-allowed">Coming soon</button></article><article class="rounded-xl border border-surface-container-highest p-5 flex flex-col gap-3 opacity-70"><div class="text-3xl">💻</div><h4 class="font-bold text-lg">C Programming</h4><p class="text-sm text-on-surface-variant">C Programming ke chapter-wise quizzes jald add honge.</p><button type="button" disabled class="mt-auto rounded-lg border border-surface-container-highest px-4 py-3 font-bold cursor-not-allowed">Coming soon</button></article></div></div>
 <div id="quiz-chapter-menu" class="hidden"><button id="quiz-back-subjects" type="button" class="text-sm underline mb-4">← Back to subjects</button><div class="flex flex-wrap items-center justify-between gap-3 mb-5"><div><p class="text-sm text-on-surface-variant">Welcome</p><h3 id="quiz-welcome-name" class="text-xl font-bold"></h3></div><span class="text-sm rounded-full px-3 py-1 border border-primary/30">Java • 15 questions per chapter</span></div><div id="quiz-chapter-grid" class="grid sm:grid-cols-2 gap-4"></div></div>
-<div id="quiz-game" class="hidden"><button id="quiz-back-chapters" class="text-sm underline mb-4">← Back to chapters</button><h3 id="quiz-chapter-title" class="text-xl font-bold"></h3><div class="flex justify-between gap-3 text-sm mt-4"><span id="quiz-count">Question 1 of 15</span><span id="quiz-best">Best score: 0</span></div><div class="h-2 rounded-full bg-black/30 mt-3 overflow-hidden"><div id="quiz-progress-bar" class="h-full bg-primary transition-all" style="width:0%"></div></div><h4 id="quiz-question" class="text-xl font-bold mt-6"></h4><div id="quiz-options" class="grid gap-3 mt-4"></div><p id="quiz-feedback" class="mt-4 text-sm" aria-live="polite"></p><button id="quiz-next" class="mt-5 rounded-xl bg-primary text-black font-bold px-5 py-3" disabled>Next question</button><button id="quiz-restart" class="mt-5 ml-2 rounded-xl border border-surface-container-highest px-5 py-3 font-bold hidden">Retry chapter</button><p id="quiz-save-status" class="text-sm mt-4" aria-live="polite"></p></div></div>
+<div id="quiz-game" class="hidden"><button id="quiz-back-chapters" class="text-sm underline mb-4">← Back to chapters</button><h3 id="quiz-chapter-title" class="text-xl font-bold"></h3><div class="flex justify-between gap-3 text-sm mt-4"><span id="quiz-count">Question 1 of 15</span><span id="quiz-best">Best score: 0</span></div><div class="h-2 rounded-full bg-black/30 mt-3 overflow-hidden"><div id="quiz-progress-bar" class="h-full bg-primary transition-all" style="width:0%"></div></div><h4 id="quiz-question" class="text-xl font-bold mt-6"></h4><div id="quiz-options" class="grid gap-3 mt-4"></div><p id="quiz-feedback" class="mt-4 text-sm" aria-live="polite"></p><button id="quiz-next" class="mt-5 rounded-xl bg-primary text-black font-bold px-5 py-3" disabled>Next question</button><button id="quiz-restart" class="mt-5 ml-2 rounded-xl border border-surface-container-highest px-5 py-3 font-bold hidden">Retry chapter</button><p id="quiz-save-status" class="text-sm mt-4" aria-live="polite"></p><div id="quiz-result-card"
+     class="hidden mt-5 rounded-xl border border-primary/40 p-6"
+     aria-live="polite">
+  <h3 class="text-2xl font-bold">Quiz Result</h3>
+  <p id="quiz-result-score" class="text-xl font-bold mt-3"></p>
+  <p id="quiz-result-percentage" class="text-lg mt-2"></p>
+  <p id="quiz-result-message" class="mt-2"></p>
+</div></div></div>
 <p class="mt-4 text-xs text-on-surface-variant">Chapter results are submitted to the configured Google Apps Script backend. Backend must accept action=quizResult.</p></div></section>
 
 <!-- 3B. JAVA YOUTUBE PLAYLIST SHOWCASE -->
@@ -903,12 +910,47 @@ header { border-color:rgba(96,165,250,.24) !important; }
     function startChapter(name){currentChapter=name;quizIndex=0;quizScore=0;quizLocked=false;quizChapterMenu.classList.add('hidden');quizGame.classList.remove('hidden');document.getElementById('quiz-chapter-title').textContent=name; if(quizSaveStatus)quizSaveStatus.textContent='';renderQuestion();}
     function renderQuestion(){const quizItems=javaChapters[currentChapter];const item=quizItems[quizIndex];quizLocked=false;qEl.textContent=item.q;countEl.textContent='Question '+(quizIndex+1)+' of '+quizItems.length;barEl.style.width=(quizIndex/quizItems.length*100)+'%';feedEl.textContent='';nextEl.disabled=true;nextEl.classList.remove('hidden');restartEl.classList.add('hidden');optsEl.innerHTML='';item.o.forEach((label,i)=>{const b=document.createElement('button');b.className='quiz-option text-left p-4 rounded-xl border border-surface-container-highest hover:border-primary';b.textContent=label;b.addEventListener('click',()=>answerQuestion(i,b));optsEl.appendChild(b);});bestEl.textContent='Chapter score: '+quizScore+'/'+quizItems.length;}
     function answerQuestion(choice,button){if(quizLocked)return;quizLocked=true;const item=javaChapters[currentChapter][quizIndex];const buttons=optsEl.querySelectorAll('button');buttons.forEach(b=>b.disabled=true);if(choice===item.a){quizScore++;button.classList.add('border-primary');feedEl.textContent='Correct! '+item.why;}else{button.classList.add('border-red-400');buttons[item.a].classList.add('border-primary');feedEl.textContent='Not quite. '+item.why;}nextEl.disabled=false;barEl.style.width=((quizIndex+1)/javaChapters[currentChapter].length*100)+'%';bestEl.textContent='Chapter score: '+quizScore+'/'+javaChapters[currentChapter].length;}
-    async function saveQuizResult(){if(!quizSaveStatus)return;quizSaveStatus.textContent='Submitting chapter result...';const quizBackendURL='https://script.google.com/macros/s/AKfycbx-ssPGpQkp4bE_e8ApjEVzaTApOd6g56Yhdk2lWtF2SI0CNNwrZwtQZvuzJ30ilnqaow/exec';try{const payload=new URLSearchParams({action:'quizResult',name:quizStudentName,score:String(quizScore),total:String(javaChapters[currentChapter].length),quiz:'Java - '+currentChapter,chapter:currentChapter,submittedAt:new Date().toISOString()});await fetch(quizBackendURL,{method:'POST',mode:'no-cors',body:payload});quizSaveStatus.textContent='Result submission sent. Google Sheet mein entry verify kar lein.';}catch(error){quizSaveStatus.textContent='Score submit nahi ho saka. Internet connection check karein.';}}
+    async function saveQuizResult(){if(!quizSaveStatus)return;quizSaveStatus.textContent='Submitting chapter result...';const quizBackendURL='https://script.google.com/macros/s/AKfycbx-ssPGpQkp4bE_e8ApjEVzaTApOd6g56Yhdk2lWtF2SI0CNNwrZwtQZvuzJ30ilnqaow/exec';try{const payload=new URLSearchParams({action:'quizResult',name:quizStudentName,score:String(quizScore),total:String(javaChapters[currentChapter].length),quiz:'Java - '+currentChapter,chapter:currentChapter,submittedAt:new Date().toISOString()});await fetch(quizBackendURL,{method:'POST',mode:'no-cors',body:payload});quizSaveStatus.textContent='Submitted Successfully ✓';}catch(error){quizSaveStatus.textContent='Score submit nahi ho saka. Internet connection check karein.';}}
     if(quizNameForm)quizNameForm.addEventListener('submit',event=>{event.preventDefault();const name=(quizNameInput.value||'').trim();if(!name){quizNameError.textContent='Please enter your name.';return;}quizStudentName=name;quizNameError.textContent='';quizStartGate.classList.add('hidden');document.getElementById('quiz-subject-welcome').textContent='Welcome, '+quizStudentName+'!';quizSubjectMenu.classList.remove('hidden');});
     const openJavaButton=document.getElementById('quiz-open-java');const javaSubjectCard=openJavaButton?openJavaButton.closest('article'):null;function openJavaChapters(){quizSubjectMenu.classList.add('hidden');quizChapterMenu.classList.remove('hidden');renderChapterMenu();}if(openJavaButton)openJavaButton.addEventListener('click',event=>{event.stopPropagation();openJavaChapters();});if(javaSubjectCard){javaSubjectCard.style.cursor='pointer';javaSubjectCard.setAttribute('role','button');javaSubjectCard.setAttribute('tabindex','0');javaSubjectCard.setAttribute('aria-label','Open Java chapter quizzes');javaSubjectCard.addEventListener('click',openJavaChapters);javaSubjectCard.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();openJavaChapters();}});}
     const backSubjectsButton=document.getElementById('quiz-back-subjects');if(backSubjectsButton)backSubjectsButton.addEventListener('click',()=>{quizChapterMenu.classList.add('hidden');quizSubjectMenu.classList.remove('hidden');});
-    if(nextEl)nextEl.addEventListener('click',()=>{if(!quizLocked)return;const items=javaChapters[currentChapter];if(quizIndex<items.length-1){quizIndex++;renderQuestion();}else{qEl.textContent='Chapter complete! Score: '+quizScore+'/'+items.length;optsEl.innerHTML='';feedEl.textContent='Great work, '+quizStudentName+'! Aap doosra chapter bhi try kar sakte hain.';countEl.textContent='Completed';nextEl.classList.add('hidden');restartEl.classList.remove('hidden');barEl.style.width='100%';bestEl.textContent='Final chapter score: '+quizScore+'/'+items.length;saveQuizResult();}});
-    if(restartEl)restartEl.addEventListener('click',()=>{quizGame.classList.add('hidden');quizChapterMenu.classList.remove('hidden');if(quizSaveStatus)quizSaveStatus.textContent='';});
+if(nextEl)nextEl.addEventListener('click',()=>{
+  if(!quizLocked)return;
+
+  const items=javaChapters[currentChapter];
+
+  if(quizIndex<items.length-1){
+    quizIndex++;
+    renderQuestion();
+  }else{
+    const total=items.length;
+    const percentage=Math.round((quizScore/total)*100);
+
+    qEl.textContent='Chapter Complete!';
+    optsEl.innerHTML='';
+    feedEl.textContent='Great work, '+quizStudentName+'!';
+    countEl.textContent='Completed';
+    nextEl.classList.add('hidden');
+    restartEl.classList.remove('hidden');
+    barEl.style.width='100%';
+    bestEl.textContent='Final Score: '+quizScore+'/'+total;
+
+    document.getElementById('quiz-result-score').textContent=
+      'Score: '+quizScore+'/'+total;
+
+    document.getElementById('quiz-result-percentage').textContent=
+      'Percentage: '+percentage+'%';
+
+    document.getElementById('quiz-result-message').textContent=
+      percentage>=80 ? 'Excellent work!' :
+      percentage>=60 ? 'Good job! Keep practising!' :
+      'Keep practising. You can improve!';
+
+    document.getElementById('quiz-result-card').classList.remove('hidden');
+
+    saveQuizResult();
+  }
+});    if(restartEl)restartEl.addEventListener('click',()=>{quizGame.classList.add('hidden');quizChapterMenu.classList.remove('hidden');if(quizSaveStatus)quizSaveStatus.textContent='';});
     const backChapters=document.getElementById('quiz-back-chapters');if(backChapters)backChapters.addEventListener('click',()=>{quizGame.classList.add('hidden');quizChapterMenu.classList.remove('hidden');if(quizSaveStatus)quizSaveStatus.textContent='';});
 
     // Handwritten notes subject menu toggle
