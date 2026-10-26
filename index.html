@@ -3,6 +3,9 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>LEARN WITH ANMOL — Learn Java. Master DSA.</title>
+<link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/aida-public/AB6AXuDBtW4_ILe1sxcoPxJlb0DzYT6PsXnIv1UFBIQb5hZAVrlXk-8gCvCscB-zlP23N2Bo6CvId9jKGfqjiFNHMAge33LNupGVm0111fJINWJY_6tNvHWrwouyPtiv_rr22Vdf_gZgTgW5MefZYvi0opEfOSPAsd5hbImpPtnUCGq7PhKTW4XNlkOP93NwKZ_JMZuEs_wTkEzf13sjNGSaHhKb2zKjzInLH7SxbMmlOKkrHrE3hLkqZ__uHbK1SbASob1yndE" />
+<link rel="shortcut icon" href="https://lh3.googleusercontent.com/aida-public/AB6AXuDBtW4_ILe1sxcoPxJlb0DzYT6PsXnIv1UFBIQb5hZAVrlXk-8gCvCscB-zlP23N2Bo6CvId9jKGfqjiFNHMAge33LNupGVm0111fJINWJY_6tNvHWrwouyPtiv_rr22Vdf_gZgTgW5MefZYvi0opEfOSPAsd5hbImpPtnUCGq7PhKTW4XNlkOP93NwKZ_JMZuEs_wTkEzf13sjNGSaHhKb2zKjzInLH7SxbMmlOKkrHrE3hLkqZ__uHbK1SbASob1yndE" />
+<meta name="theme-color" content="#061a33" />
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
@@ -14,16 +17,31 @@
       theme: {
         extend: {
           colors: {
-            "surface": "#08080a", "surface-dim": "#08080a",
-            "surface-container-lowest": "#050505", "surface-container-low": "#0f0e0c",
-            "surface-container": "#151412", "surface-container-high": "#1d1b17",
-            "surface-container-highest": "#2a2720", "surface-bright": "#343026",
-            "on-surface": "#f1ece0", "on-surface-variant": "#b9b3a3",
-            "primary": "#f5c451", "primary-container": "#d4a017", "primary-fixed": "#ffe08a", "on-primary": "#2b1d00",
-            "secondary": "#d5dbe5", "secondary-container": "#aab4c4", "on-secondary": "#0f172a",
-            "tertiary": "#ffb3ad", "tertiary-container": "#ff7a73", "on-tertiary": "#68000a", "on-tertiary-container": "#79000e",
-            "outline": "#8a8575", "outline-variant": "#3a372f", "error": "#ffb4ab", "error-container": "#93000a",
-            "sky": {"300": "#e2e8f0", "400": "#cbd5e1"}
+            "surface": "#051424",
+            "surface-dim": "#051424",
+            "surface-container-lowest": "#010f1f",
+            "surface-container-low": "#0d1c2d",
+            "surface-container": "#122131",
+            "surface-container-high": "#1c2b3c",
+            "surface-container-highest": "#273647",
+            "surface-bright": "#2c3a4c",
+            "on-surface": "#d4e4fa",
+            "on-surface-variant": "#bbcabf",
+            "primary": "#60a5fa",
+            "primary-container": "#2563eb",
+            "primary-fixed": "#93c5fd",
+            "on-primary": "#06152e",
+            "secondary": "#89ceff",
+            "secondary-container": "#00a2e6",
+            "on-secondary": "#00344d",
+            "tertiary": "#ffb3ad",
+            "tertiary-container": "#ff7a73",
+            "on-tertiary": "#68000a",
+            "on-tertiary-container": "#79000e",
+            "outline": "#8aa8ca",
+            "outline-variant": "#29415f",
+            "error": "#ffb4ab",
+            "error-container": "#93000a"
           },
           fontFamily: {
             "display-hero": ["Plus Jakarta Sans", "sans-serif"],
@@ -45,13 +63,13 @@
   </script>
 <style>
     body {
-      background-color: #08080a;
-      color: #f1ece0;
+      background-color: #051424;
+      color: #d4e4fa;
       font-family: 'Inter', sans-serif;
     }
     ::selection {
-      background-color: #f5c451;
-      color: #2b1d00;
+      background-color: #2563eb;
+      color: #06152e;
     }
 
     /* Responsive fixes for phones and tablets */
@@ -86,219 +104,69 @@
   </style>
 <!-- Playlist image is embedded directly so it works on GitHub Pages and Netlify without a separate image upload. -->
 <style>
-/* Premium visual refresh */
-:root { color-scheme: dark; }
-html { scroll-behavior: smooth; }
-body { background: radial-gradient(ellipse at 50% -10%, rgba(212,160,23,.13), transparent 42%), #08080a !important; }
-header { background: rgba(8,8,10,.88) !important; border-color: rgba(245,196,81,.22) !important; }
-section { scroll-margin-top: 90px; }
+/* Blue theme + responsive polish */
+:root { color-scheme: dark; --brand-blue:#3b82f6; --brand-cyan:#67e8f9; --page-bg:#061225; }
+html { scroll-behavior:smooth; scroll-padding-top:88px; }
+body { background:radial-gradient(ellipse at 50% -10%, rgba(37,99,235,.20), transparent 44%), var(--page-bg) !important; color:#e6f0ff; }
+::selection { background:#2563eb; color:#fff; }
+header { background:rgba(4,14,31,.92) !important; border-color:rgba(96,165,250,.24) !important; }
+section { scroll-margin-top:88px; }
 section:first-of-type { position:relative; }
 section:first-of-type h1 { letter-spacing:-.045em; text-wrap:balance; }
 section:first-of-type p { line-height:1.8; }
+a, button { -webkit-tap-highlight-color:transparent; }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline:3px solid #7dd3fc; outline-offset:3px; }
 section:first-of-type a, section:first-of-type button { transition:transform .2s ease, box-shadow .2s ease; }
-section:first-of-type a:hover, section:first-of-type button:hover { transform:translateY(-2px); box-shadow:0 10px 35px rgba(212,160,23,.2); }
+section:first-of-type a:hover, section:first-of-type button:hover { transform:translateY(-2px); box-shadow:0 10px 32px rgba(37,99,235,.24); }
 #handwritten-notes, #online-notes, #java-playlist, #java-oneshot { position:relative; }
-#handwritten-notes, #online-notes { background:linear-gradient(145deg, rgba(22,20,15,.92), rgba(8,8,10,.96)) !important; }
-#java-playlist, #java-oneshot { background:linear-gradient(145deg, rgba(20,18,13,.88), rgba(8,8,10,.96)) !important; }
+#handwritten-notes, #online-notes { background:linear-gradient(145deg, rgba(13,34,65,.92), rgba(5,18,37,.97)) !important; }
+#java-playlist, #java-oneshot { background:linear-gradient(145deg, rgba(8,31,65,.88), rgba(5,17,35,.97)) !important; }
 #handwritten-notes h2, #online-notes h2, #java-playlist h2, #java-oneshot h2 { letter-spacing:-.035em; }
-#handwritten-notes [class*="rounded"], #online-notes [class*="rounded"], #java-playlist [class*="rounded"], #java-oneshot [class*="rounded"] { transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease; }
-#handwritten-notes [class*="rounded"]:hover, #online-notes [class*="rounded"]:hover { border-color:rgba(245,196,81,.55) !important; box-shadow:0 12px 35px rgba(0,0,0,.22); }
-iframe { display:block; width:100%; aspect-ratio:16/9; height:auto; border:0; border-radius:16px; background:#050505; box-shadow:0 16px 45px rgba(0,0,0,.32); }
-footer { background:#050505 !important; }
-@media (max-width:640px) { section { padding-top:3.5rem !important; padding-bottom:3.5rem !important; } header { backdrop-filter:blur(18px); } }
-</style><style id="glow-up">
-/* ===== GLOW-UP: sirf visual layer. Content, IDs, links aur JS bilkul same ===== */
-:root{--em:#f5c451;--em2:#d4a017;--sky:#e2e8f0;--gold:#ffe9a8;--edge:rgba(226,232,240,.16);
---glass:linear-gradient(160deg,rgba(28,25,18,.78),rgba(9,9,10,.88));--ease:cubic-bezier(.2,.7,.2,1)}
-html{scrollbar-color:#d4a017 #08080a}
-::-webkit-scrollbar{width:11px}::-webkit-scrollbar-track{background:#08080a}
-::-webkit-scrollbar-thumb{background:linear-gradient(#d4a017,#e2e8f0);border-radius:9px;border:2px solid #08080a}
-a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--em);outline-offset:3px}
-
-/* background aurora + scroll progress */
-body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
-background:radial-gradient(40vmax 40vmax at 10% 6%,rgba(212,160,23,.18),transparent 60%),
-radial-gradient(38vmax 38vmax at 92% 18%,rgba(203,213,225,.14),transparent 60%),
-radial-gradient(46vmax 46vmax at 70% 96%,rgba(255,224,138,.07),transparent 60%);
-animation:drift 28s ease-in-out infinite alternate}
-@keyframes drift{to{transform:translate3d(-3%,2%,0) scale(1.08)}}
-body::after{content:"";position:fixed;left:0;top:0;height:3px;width:100%;z-index:100;pointer-events:none;
-background:linear-gradient(90deg,#d4a017,#f5c451,#e2e8f0);transform-origin:0 50%;transform:scaleX(0)}
-@supports (animation-timeline:scroll()){body::after{animation:prog linear both;animation-timeline:scroll(root)}}
-@keyframes prog{to{transform:scaleX(1)}}
-
-/* header */
-body > header{background:rgba(4,14,26,.72)!important;backdrop-filter:blur(20px) saturate(1.4)}
-body > header::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;
-background:linear-gradient(90deg,transparent,var(--em),var(--sky),var(--gold),transparent);opacity:.55}
-body > header a[href="#"] img{box-shadow:0 0 0 2px rgba(255,224,138,.6),0 0 24px rgba(255,224,138,.35)!important}
-header nav a{position:relative}
-header nav a::after{content:"";position:absolute;left:50%;bottom:3px;width:0;height:2px;border-radius:2px;
-background:linear-gradient(90deg,var(--em),var(--sky));transform:translateX(-50%);transition:width .25s var(--ease)}
-header nav a:hover::after{width:62%}header nav a[class*="text-primary"]::after{width:42%}
-header a[aria-label]{transition:transform .2s,box-shadow .2s}
-header a[aria-label]:hover{transform:translateY(-3px);box-shadow:0 8px 20px -6px currentColor}
-
-/* hero */
-main > section:first-of-type::before{content:"";position:absolute;inset:0;pointer-events:none;
-background-image:linear-gradient(rgba(226,232,240,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(226,232,240,.06) 1px,transparent 1px);
-background-size:44px 44px;-webkit-mask-image:radial-gradient(ellipse at 50% 0%,#000 25%,transparent 72%);mask-image:radial-gradient(ellipse at 50% 0%,#000 25%,transparent 72%)}
-main > section:first-of-type h1{font-size:clamp(2.5rem,5.4vw,4.1rem)!important;line-height:1.04!important;font-weight:800;letter-spacing:-.045em}
-main > section:first-of-type h1 span{background:linear-gradient(100deg,#f5c451,#fff1c2,#e2e8f0,#f5c451)!important;background-size:250% 100%!important;
--webkit-background-clip:text!important;background-clip:text!important;color:transparent!important;animation:shine 7s linear infinite;
-filter:drop-shadow(0 0 26px rgba(245,196,81,.35))}
-@keyframes shine{to{background-position:-250% 0}}
-@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
-main > section:first-of-type .lg\:col-span-5 > *{animation:rise .8s var(--ease) backwards}
-main > section:first-of-type .lg\:col-span-5 > :nth-child(1){animation-delay:.05s}
-main > section:first-of-type .lg\:col-span-5 > :nth-child(2){animation-delay:.12s}
-main > section:first-of-type .lg\:col-span-5 > :nth-child(3){animation-delay:.2s}
-main > section:first-of-type .lg\:col-span-5 > :nth-child(4){animation-delay:.3s}
-main > section:first-of-type .lg\:col-span-5 > :nth-child(5){animation-delay:.4s}
-main > section:first-of-type .lg\:col-span-5 > :nth-child(6){animation-delay:.5s}
-main > section:first-of-type .lg\:col-span-5 > :nth-child(7){animation-delay:.6s}
-main > section:first-of-type .lg\:col-span-7{animation:rise 1s .25s var(--ease) backwards}
-.java-playlist-card{box-shadow:0 0 0 1px rgba(245,196,81,.35),0 45px 100px -40px rgba(212,160,23,.6)!important}
-
-/* generic depth */
-main [class*="rounded-2xl"]:not(img):not(iframe):not([class*="w-1"]):not([class*="w-9"]){box-shadow:0 1px 0 rgba(255,255,255,.05) inset,0 24px 55px -30px rgba(0,0,0,.85)}
-main [class*="rounded-3xl"]{box-shadow:0 1px 0 rgba(255,255,255,.06) inset,0 30px 70px -35px rgba(0,0,0,.9)!important}
-
-/* buttons */
-main button.bg-primary,main a.bg-primary,main button.bg-primary-container,main button.bg-secondary-container,
-[class*="bg-[#dc2626]"]:not([class*="bg-[#dc2626]/"]){position:relative;overflow:hidden;isolation:isolate;transition:transform .2s,box-shadow .25s,filter .2s}
-main button.bg-primary,main a.bg-primary,main button.bg-primary-container{background-image:linear-gradient(135deg,#ffe08a,#d4a017)!important;box-shadow:0 10px 28px -10px rgba(212,160,23,.8)}
-main button.bg-secondary-container{background-image:linear-gradient(135deg,#e2e8f0,#94a3b8)!important;color:#0f172a!important}
-[class*="bg-[#dc2626]"]:not([class*="bg-[#dc2626]/"]){background-image:linear-gradient(135deg,#ef4444,#b91c1c)!important}
-main button.bg-primary::after,main a.bg-primary::after,main button.bg-primary-container::after,main button.bg-secondary-container::after,
-[class*="bg-[#dc2626]"]:not([class*="bg-[#dc2626]/"])::after{content:"";position:absolute;inset:0;z-index:-1;
-background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.38) 50%,transparent 70%);transform:translateX(-120%);transition:transform .7s var(--ease)}
-main button.bg-primary:hover::after,main a.bg-primary:hover::after,main button.bg-primary-container:hover::after,main button.bg-secondary-container:hover::after,
-[class*="bg-[#dc2626]"]:not([class*="bg-[#dc2626]/"]):hover::after,a:hover > [class*="bg-[#dc2626]"]::after{transform:translateX(120%)}
-main button.bg-primary:not(:disabled):hover,main a.bg-primary:hover,main button.bg-primary-container:hover,main button.bg-secondary-container:hover{transform:translateY(-2px);filter:brightness(1.05)}
-#quiz-next:disabled{opacity:.4;filter:saturate(.3);cursor:not-allowed;box-shadow:none}
-
-/* section rhythm */
-main > section{border-bottom-color:transparent!important}
-main > section::after{content:"";position:absolute;left:8%;right:8%;bottom:0;height:1px;pointer-events:none;
-background:linear-gradient(90deg,transparent,rgba(245,196,81,.35),rgba(226,232,240,.3),transparent)}
-#contact-form::after{display:none}
-#courses,#practice-quiz,#java-playlist,#java-oneshot,#roadmap{position:relative}
-#handwritten-notes,#online-notes,#java-playlist{background:transparent!important}
-#practice-quiz,#java-oneshot,#handwritten-notes{background:rgba(20,18,12,.45)!important}
-#courses h2,#practice-quiz h2,#java-playlist h2,#java-oneshot h2,#contact-form h2,#roadmap h2{font-size:clamp(1.9rem,4vw,2.8rem)!important;line-height:1.08!important;font-weight:800;letter-spacing:-.035em}
-#courses h2::after,#practice-quiz h2::after,#java-playlist h2::after,#java-oneshot h2::after,#contact-form h2::after,#roadmap h2::after{
-content:"";display:block;width:68px;height:4px;border-radius:4px;margin-top:.9rem;background:linear-gradient(90deg,var(--em),var(--sky))}
-
-/* notes banners */
-#handwritten-notes > div > div:first-child{background:radial-gradient(620px 220px at 0% 0%,rgba(245,196,81,.2),transparent 65%),var(--glass)!important}
-#online-notes > div > div:first-child{background:radial-gradient(620px 220px at 0% 0%,rgba(203,213,225,.2),transparent 65%),var(--glass)!important}
-#handwritten-notes-categories > div:last-child > div,#online-notes-categories > div:last-child > div{background:var(--glass)!important;position:relative;overflow:hidden}
-#handwritten-notes-categories > div:last-child > div:hover,#online-notes-categories > div:last-child > div:hover{transform:translateY(-6px);box-shadow:0 26px 50px -24px rgba(212,160,23,.5)!important}
-
-/* course cards */
-#courses article{transition:transform .3s var(--ease),box-shadow .3s}
-#courses article:hover{transform:translateY(-8px);box-shadow:0 34px 60px -26px rgba(212,160,23,.5)!important}
-#courses article > div:first-child{display:grid;place-items:center;width:3.75rem;height:3.75rem;border-radius:1.1rem;font-size:1.9rem;
-background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);box-shadow:0 10px 24px -12px rgba(0,0,0,.8)}
-#courses article h3{letter-spacing:-.03em}
-
-/* videos */
-#java-playlist .lg\:col-span-3,#java-oneshot .lg\:col-span-3{box-shadow:0 0 0 1px rgba(245,196,81,.28),0 40px 90px -40px rgba(212,160,23,.55)!important}
-#java-playlist a.lg\:col-span-2{background:radial-gradient(520px 260px at 100% 0%,rgba(239,68,68,.2),transparent 62%),var(--glass)!important}
-#java-oneshot a.lg\:col-span-2{background:radial-gradient(520px 260px at 100% 0%,rgba(239,68,68,.2),transparent 62%),var(--glass)!important}
-
-/* quiz */
-#practice-quiz > div > div.rounded-2xl{background:radial-gradient(700px 260px at 50% -10%,rgba(245,196,81,.14),transparent 65%),var(--glass)!important;border-color:rgba(245,196,81,.3)!important}
-#quiz-subject-menu article,#quiz-chapter-grid article{background:var(--glass)!important;transition:transform .25s var(--ease),border-color .25s,box-shadow .25s}
-#quiz-subject-menu article:not(.opacity-70):hover,#quiz-chapter-grid article:hover{transform:translateY(-5px);border-color:var(--em)!important;box-shadow:0 24px 44px -22px rgba(212,160,23,.55)}
-#quiz-chapter-grid article h4{letter-spacing:-.02em}
-#quiz-progress-bar{background:linear-gradient(90deg,#d4a017,#e2e8f0)!important;box-shadow:0 0 16px rgba(245,196,81,.7);border-radius:99px}
-#quiz-question{font-size:clamp(1.15rem,2.4vw,1.5rem);line-height:1.35;letter-spacing:-.02em}
-.quiz-option{background:rgba(255,255,255,.035);font-weight:500;transition:transform .2s var(--ease),background .2s,box-shadow .2s}
-.quiz-option:not(:disabled):hover{transform:translateX(6px);background:rgba(245,196,81,.09);box-shadow:0 0 0 1px var(--em) inset}
-.quiz-option:disabled{cursor:default}
-.quiz-option.border-primary{background:linear-gradient(90deg,rgba(212,160,23,.34),rgba(212,160,23,.08))!important;box-shadow:0 0 26px -6px rgba(212,160,23,.65);color:#d1fae5}
-.quiz-option.border-red-400{background:linear-gradient(90deg,rgba(248,113,113,.3),rgba(248,113,113,.06))!important;box-shadow:0 0 26px -8px rgba(248,113,113,.6);color:#fee2e2}
-#quiz-feedback{font-weight:600}
-
-/* forms + code */
-input,textarea{transition:border-color .2s,box-shadow .2s,background .2s}
-input:focus,textarea:focus{border-color:var(--em)!important;box-shadow:0 0 0 4px rgba(245,196,81,.16)!important}
-#contact-form > div{background:radial-gradient(640px 240px at 100% 0%,rgba(203,213,225,.16),transparent 65%),var(--glass)!important}
-#online-study-java pre,#online-study-dsa pre{font-family:'JetBrains Mono',monospace;background:#050505!important;border:1px solid rgba(226,232,240,.22);border-left:3px solid var(--em)}
-
-/* final CTA + footer */
-#roadmap .rounded-3xl{background:radial-gradient(760px 320px at 92% 0%,rgba(212,160,23,.3),transparent 60%),radial-gradient(560px 300px at 0% 100%,rgba(203,213,225,.2),transparent 60%),linear-gradient(160deg,#211b0d,#0a0907)!important;border-color:rgba(245,196,81,.4)!important}
-#roadmap img{box-shadow:0 0 0 4px rgba(255,224,138,.45),0 0 44px rgba(255,224,138,.3)!important}
-footer{position:relative}
-footer::before{content:"";position:absolute;left:0;right:0;top:-1px;height:1px;background:linear-gradient(90deg,transparent,var(--em),var(--sky),var(--gold),transparent);opacity:.6}
-footer a{transition:color .2s,transform .2s}footer ul a:hover{transform:translateX(3px)}
-
-@media (max-width:640px){body::before{opacity:.7}main > section:first-of-type h1{font-size:2.3rem!important}main > section::after{left:4%;right:4%}}
-@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}body::after{display:none}}
-
-/* ===== GOLD x BLACK overrides + responsive fitting ===== */
-html{-webkit-text-size-adjust:100%;font-size:clamp(16px,.55vw + 9px,18px)}
-body{background:#08080a!important}
-::selection{background:#f5c451;color:#2b1d00}
-.quiz-option.border-primary{background:linear-gradient(90deg,rgba(74,222,128,.32),rgba(74,222,128,.07))!important;border-color:#4ade80!important;box-shadow:0 0 26px -6px rgba(74,222,128,.6);color:#dcfce7}
-main > section:first-of-type h1 span{filter:drop-shadow(0 0 28px rgba(245,196,81,.4))}
-main > section:first-of-type a[class*="bg-[#dc2626]"]{animation:pulse 3.2s ease-in-out infinite}
-@keyframes pulse{50%{box-shadow:0 0 0 8px rgba(239,68,68,.12),0 10px 30px -8px rgba(239,68,68,.6)}}
-pre{max-width:100%;overflow:auto}
-main button:not([data-close-study]),main input{min-height:44px}
-
-/* large screens */
-@media (min-width:1536px){[class*="max-w-[1280px]"]{max-width:1440px!important}}
-
-/* tablet */
-@media (min-width:641px) and (max-width:1023px){
- main > section:first-of-type h1{font-size:clamp(2.6rem,7vw,3.6rem)!important}
- main > section:first-of-type p{max-width:44rem}
+#handwritten-notes [class*="rounded"], #online-notes [class*="rounded"], #java-playlist [class*="rounded"], #java-oneshot [class*="rounded"] { transition:border-color .2s ease, transform .2s ease, box-shadow .2s ease; }
+#handwritten-notes [class*="rounded"]:hover, #online-notes [class*="rounded"]:hover { border-color:rgba(96,165,250,.6) !important; box-shadow:0 12px 35px rgba(0,0,0,.22); }
+iframe { display:block; width:100%; aspect-ratio:16/9; height:auto; border:0; border-radius:16px; background:#02070d; box-shadow:0 16px 45px rgba(0,0,0,.32); }
+img { max-width:100%; }
+input, textarea, select { max-width:100%; }
+button, a { touch-action:manipulation; }
+footer { background:#030b14 !important; }
+@media (max-width:1024px) {
+  header > div { gap:12px !important; }
+  header img { max-width:42px; }
 }
-
-/* mobile */
-@media (max-width:640px){
- body > header > div{height:64px!important;padding-inline:.85rem!important;gap:.45rem!important}
- body > header > div > a:first-child{gap:.5rem!important;min-width:0}
- body > header > div > a:first-child img{height:36px!important;width:36px!important}
- body > header > div > a:first-child span:first-child{font-size:14px!important;white-space:nowrap}
- body > header > div > a:first-child span:last-child{font-size:8.5px!important;letter-spacing:.08em}
- body > header > div > div:last-child{gap:.35rem!important}
- body > header a[aria-label]{width:32px!important;height:32px!important;border-radius:.65rem!important}
- body > header a[href*="youtube"]{padding:.45rem .6rem!important;border-radius:.65rem!important}
- body > header a[href*="youtube"] span:last-child{display:none}
- main [class*="max-w-"][class*="px-"]{padding-inline:1rem!important}
- main > section:first-of-type{padding-top:1.5rem!important;padding-bottom:2.5rem!important}
- main > section:first-of-type h1{font-size:clamp(2.1rem,9.5vw,2.6rem)!important}
- main > section:first-of-type a[class*="bg-[#dc2626]"]{width:100%;justify-content:center}
- #handwritten-notes > div > div:first-child,#online-notes > div > div:first-child{padding:1.25rem!important}
- #explore-handwritten-notes,#explore-online-notes{width:100%}
- #practice-quiz > div > div.rounded-2xl{padding:1.1rem!important}
- #quiz-question{font-size:1.1rem}
- .quiz-option{padding:.9rem 1rem!important;font-size:.95rem}
- #roadmap .rounded-3xl{padding:1.4rem!important}
- #contact-form > div{padding:1.25rem!important}
- #courses article{padding:1.25rem!important}
- #java-playlist a.lg\:col-span-2 > div:first-child,#java-oneshot a.lg\:col-span-2 > div:first-child{padding:1.2rem!important}
- footer .px-6{padding-inline:1rem!important}
+@media (max-width:640px) {
+  html { scroll-padding-top:76px; }
+  section { padding-top:3rem !important; padding-bottom:3rem !important; }
+  header { backdrop-filter:blur(18px); }
+  header > div { height:auto !important; min-height:68px; padding:10px 14px !important; flex-wrap:wrap; }
+  header > div > a:first-child { gap:9px !important; min-width:0; }
+  header > div > a:first-child span:first-child { font-size:15px !important; }
+  header > div > a:first-child span:last-child { font-size:9px !important; }
+  header > div > div:last-child { gap:7px !important; }
+  header > div > div:last-child > a { min-width:34px; min-height:34px; }
+  header > div > div:last-child > a:last-child { padding:7px 9px !important; }
+  header > div > div:last-child > a:last-child span:last-child { display:none; }
+  main .max-w-\[1280px\], section > .max-w-\[1000px\] { padding-left:16px !important; padding-right:16px !important; }
+  h1 { font-size:clamp(2.1rem, 9vw, 3.4rem) !important; line-height:1.12 !important; }
+  h2 { overflow-wrap:anywhere; }
+  .java-playlist-image { width:100% !important; height:auto !important; object-fit:contain !important; }
+  .java-playlist-card { width:100% !important; max-width:100% !important; }
+  #quiz-options button, #quiz-chapter-grid button, #quiz-game button { min-height:44px; }
+  #quiz-options { grid-template-columns:minmax(0,1fr) !important; }
+  pre, code { overflow-wrap:anywhere; white-space:pre-wrap; }
+  .mobile-safe { max-width:100% !important; overflow:hidden !important; }
 }
-@media (max-width:380px){
- body > header > div > a:first-child span:last-child{display:none}
- body > header > div > a:first-child span:first-child{font-size:13px!important}
- body > header a[aria-label]{width:30px!important;height:30px!important}
+@media (prefers-reduced-motion:reduce) {
+  *, *::before, *::after { scroll-behavior:auto !important; animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; }
 }
-</style>
-</head>
+</style></head>
 <body class="bg-surface text-on-surface antialiased min-h-screen flex flex-col">
 <!-- 1. STICKY TOP NAVIGATION BAR -->
-<header class="sticky top-0 z-50 bg-[#08080a]/90 backdrop-blur-md border-b border-[#3a3322]/40 shadow-[0_4px_20px_rgba(0,0,0,0.5)]">
+<header class="sticky top-0 z-50 bg-[#051424]/90 backdrop-blur-md border-b border-[#3c4a42]/40 shadow-[0_4px_20px_rgba(0,0,0,0.5)]">
 <div class="max-w-[1280px] mx-auto px-6 h-20 flex items-center justify-between gap-4">
 <!-- Brand Logo + Typography -->
 <a class="flex items-center gap-3.5 group shrink-0" href="#">
 <div class="relative">
-<img alt="LEARN WITH ANMOL Official Logo" class="h-[42px] w-[42px] rounded-full object-cover ring-2 ring-primary/60 shadow-[0_0_12px_rgba(245,196,81,0.35)] group-hover:ring-primary transition-all duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBtW4_ILe1sxcoPxJlb0DzYT6PsXnIv1UFBIQb5hZAVrlXk-8gCvCscB-zlP23N2Bo6CvId9jKGfqjiFNHMAge33LNupGVm0111fJINWJY_6tNvHWrwouyPtiv_rr22Vdf_gZgTgW5MefZYvi0opEfOSPAsd5hbImpPtnUCGq7PhKTW4XNlkOP93NwKZ_JMZuEs_wTkEzf13sjNGSaHhKb2zKjzInLH7SxbMmlOKkrHrE3hLkqZ__uHbK1SbASob1yndE"/>
+<img alt="LEARN WITH ANMOL Official Logo" class="h-[42px] w-[42px] rounded-full object-cover ring-2 ring-primary/60 shadow-[0_0_12px_rgba(78,222,163,0.35)] group-hover:ring-primary transition-all duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBtW4_ILe1sxcoPxJlb0DzYT6PsXnIv1UFBIQb5hZAVrlXk-8gCvCscB-zlP23N2Bo6CvId9jKGfqjiFNHMAge33LNupGVm0111fJINWJY_6tNvHWrwouyPtiv_rr22Vdf_gZgTgW5MefZYvi0opEfOSPAsd5hbImpPtnUCGq7PhKTW4XNlkOP93NwKZ_JMZuEs_wTkEzf13sjNGSaHhKb2zKjzInLH7SxbMmlOKkrHrE3hLkqZ__uHbK1SbASob1yndE"/>
 </div>
 <div class="flex flex-col">
 <span class="font-headline-sm text-[19px] font-extrabold tracking-tight text-on-surface group-hover:text-primary transition-colors">
@@ -316,7 +184,7 @@ main button:not([data-close-study]),main input{min-height:44px}
 <a class="px-3.5 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#courses">Courses</a>
 <a class="px-3.5 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#java-playlist">Videos</a>
 <a class="px-3.5 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#practice-quiz">Quiz</a>
-<a class="px-3.5 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#lectures">50+ Lectures</a>
+<a class="px-3.5 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#java-playlist">50+ Lectures</a>
 <a class="px-3.5 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#contact-form">Ask Doubt</a>
 
 
@@ -343,7 +211,7 @@ main button:not([data-close-study]),main input{min-height:44px}
 <!-- Left Column -->
 <div class="lg:col-span-5 flex flex-col gap-6">
 <!-- Welcome greeting -->
-<div class="mb-1 rounded-2xl border border-primary/30 bg-gradient-to-r from-primary/10 via-surface-container to-secondary/10 px-4 py-3 shadow-[0_0_28px_rgba(212,160,23,.10)]">
+<div class="mb-1 rounded-2xl border border-primary/30 bg-gradient-to-r from-primary/10 via-surface-container to-secondary/10 px-4 py-3 shadow-[0_0_28px_rgba(37,99,235,.12)]">
   <p class="text-primary text-sm sm:text-base font-bold">👋 Welcome to Learn With Anmol!</p>
   <p class="text-xs sm:text-sm text-on-surface-variant mt-1">Your learning journey starts here — learn, practise, and grow one concept at a time.</p>
 </div>
@@ -395,7 +263,7 @@ main button:not([data-close-study]),main input{min-height:44px}
 <div class="lg:col-span-7">
 <a class="block group" href="https://youtube.com/playlist?list=PLGv1PVd5hYNQ&amp;si=AlgKVB69Q7mbzN7-9" rel="noopener noreferrer" target="_blank">
 <div class="relative rounded-2xl bg-surface-container-lowest border border-primary/40 shadow-2xl overflow-hidden hover:border-primary/70 transition-all duration-300 hover:-translate-y-1 java-playlist-card">
-<img alt="Complete Java Tutorial in Hindi by Learn With Anmol" class="w-full h-auto block object-contain java-playlist-image transition-transform duration-500 group-hover:scale-[1.01]" src="java-playlist.png"/>
+<img alt="Complete Java Tutorial in Hindi by Learn With Anmol" class="w-full h-auto block object-contain java-playlist-image transition-transform duration-500 group-hover:scale-[1.01]" src="https://img.youtube.com/vi/PX7VZpHAgLk/maxresdefault.jpg"/>
 <div class="px-5 py-4 bg-surface-container border-t border-surface-container-highest flex items-center justify-between gap-3">
 <div>
 <p class="text-base font-bold text-on-surface">Complete Java Tutorial in Hindi</p>
@@ -426,7 +294,7 @@ main button:not([data-close-study]),main input{min-height:44px}
 <p class="text-sm sm:text-base text-on-surface-variant mt-2 leading-relaxed max-w-2xl">Easy-to-follow handwritten notes to revise important concepts, prepare for exams, and support your Java and DSA learning journey.</p>
 </div>
 </div>
-<button aria-controls="handwritten-notes-categories" aria-expanded="false" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-primary-container hover:bg-primary-fixed text-on-primary text-sm font-bold transition-all shadow-[0_0_18px_rgba(212,160,23,0.3)] shrink-0" id="explore-handwritten-notes" type="button">
+<button aria-controls="handwritten-notes-categories" aria-expanded="false" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-primary-container hover:bg-primary-fixed text-on-primary text-sm font-bold transition-all shadow-[0_0_18px_rgba(16,185,129,0.3)] shrink-0" id="explore-handwritten-notes" type="button">
 <span class="material-symbols-outlined text-[20px]">menu_book</span>
 <span>Explore Handwritten Notes</span>
 <span class="material-symbols-outlined text-[18px]" id="notes-toggle-icon">expand_more</span>
@@ -699,7 +567,7 @@ main button:not([data-close-study]),main input{min-height:44px}
 <!-- Emblem Badge Box -->
 <div class="lg:col-span-4 flex justify-center">
 <div class="relative p-6 rounded-2xl bg-surface-container-lowest/80 border border-primary/30 flex flex-col items-center text-center shadow-xl">
-<img alt="Official Seal" class="w-28 h-28 rounded-full object-cover ring-4 ring-primary/40 shadow-[0_0_30px_rgba(245,196,81,0.3)] mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ-qOO1ByZR12BHMy1ztBK-mywSNzDR3gu5hDSmBGWNGuNCK6ml8Nni2XWDM_pH17bsQ41eoDhukg0q9NA69rBnQPtI71ElXpIzltx2JKPtrMZ_DQg9dYFknRX_1uMknXnrQ8nd8CPg4IkSsSCC3lt6BG9PK9o4NNznKMXoO4jm8QlywJCMssJCZ0dth6qaeotYY3nbS3aEUSv22PUBTX-7PNJEmx07DZpbi5V-v9BV0FIrO4x5meA1258is_lYLJ50p8"/>
+<img alt="Official Seal" class="w-28 h-28 rounded-full object-cover ring-4 ring-primary/40 shadow-[0_0_30px_rgba(78,222,163,0.3)] mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ-qOO1ByZR12BHMy1ztBK-mywSNzDR3gu5hDSmBGWNGuNCK6ml8Nni2XWDM_pH17bsQ41eoDhukg0q9NA69rBnQPtI71ElXpIzltx2JKPtrMZ_DQg9dYFknRX_1uMknXnrQ8nd8CPg4IkSsSCC3lt6BG9PK9o4NNznKMXoO4jm8QlywJCMssJCZ0dth6qaeotYY3nbS3aEUSv22PUBTX-7PNJEmx07DZpbi5V-v9BV0FIrO4x5meA1258is_lYLJ50p8"/>
 <span class="font-headline-sm text-sm font-bold text-on-surface">LEARN WITH ANMOL</span>
 <span class="font-label-mono-sm text-[11px] text-primary mt-1">Official Masterclass Seal</span>
 <p class="text-[11px] text-on-surface-variant mt-2">50+ In-Depth Lectures • Zero Fees</p>
