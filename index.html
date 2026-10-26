@@ -138,6 +138,12 @@ img { max-width:100%; }
 input, textarea, select { max-width:100%; }
 button, a { touch-action:manipulation; }
 footer { background:#030b14 !important; }
+/* Blue + dark theme only: replace leftover green/olive tint with cool blue tones. */
+:root { color-scheme:dark; }
+body { background-color:#061225 !important; color:#e6f0ff; }
+header { border-color:rgba(96,165,250,.24) !important; }
+.text-on-surface-variant { color:#a9bdd7 !important; }
+.ring-primary\/60 { --tw-ring-color:rgba(96,165,250,.6) !important; }
 @media (max-width:1024px) {
   header > div { gap:12px !important; }
   header img { max-width:42px; }
@@ -336,7 +342,7 @@ footer { background:#030b14 !important; }
 <img
   alt="Complete Java Tutorial in Hindi by Learn With Anmol"
   class="w-full h-auto block object-contain java-playlist-image transition-transform duration-500 group-hover:scale-[1.01]"
-  src="java-playlist.png"/>
+  src="playlist.png"/>
 <div class="px-5 py-4 bg-surface-container border-t border-surface-container-highest flex items-center justify-between gap-3">
 <div>
 <p class="text-base font-bold text-on-surface">Complete Java Tutorial in Hindi</p>
@@ -783,23 +789,23 @@ footer { background:#030b14 !important; }
 <div class="lg:col-span-2 flex flex-col gap-3">
 <h4 class="font-headline-sm text-sm font-bold text-on-surface uppercase tracking-wider">Curriculum</h4>
 <ul class="flex flex-col gap-2 text-xs">
-<li class=""></li>
-<li class=""></li>
-<li class=""></li>
-<li class=""></li>
-<li class=""></li>
-<li class=""></li>
+<li><a class="hover:text-primary transition-colors" href="#courses">Explore Courses</a></li>
+<li><a class="hover:text-primary transition-colors" href="#java-playlist">Java Video Lectures</a></li>
+<li><a class="hover:text-primary transition-colors" href="#java-oneshot">Java One Shot</a></li>
+<li><a class="hover:text-primary transition-colors" href="#handwritten-notes">Handwritten Notes</a></li>
+<li><a class="hover:text-primary transition-colors" href="#online-notes">Online Notes</a></li>
+<li><a class="hover:text-primary transition-colors" href="#roadmap">Learning Roadmap</a></li>
 </ul>
 </div>
 <!-- Practice Column -->
 <div class="lg:col-span-2 flex flex-col gap-3">
 <h4 class="font-headline-sm text-sm font-bold text-on-surface uppercase tracking-wider">Practice</h4>
 <ul class="flex flex-col gap-2 text-xs">
-<li class=""></li>
-<li class=""></li>
-<li class=""></li>
-<li class=""></li>
-<li class=""></li>
+<li><a class="hover:text-primary transition-colors" href="#practice-quiz">Java Chapter-wise Quiz</a></li>
+<li><a class="hover:text-primary transition-colors" href="#online-notes">Practice with Online Notes</a></li>
+<li><a class="hover:text-primary transition-colors" href="#handwritten-notes">Study Notes</a></li>
+<li><a class="hover:text-primary transition-colors" href="#courses">Programming Courses</a></li>
+<li><a class="hover:text-primary transition-colors" href="#roadmap">DSA Learning Roadmap</a></li>
 </ul>
 </div>
 <!-- Community Column -->
