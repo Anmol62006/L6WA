@@ -549,9 +549,7 @@ header { border-color:rgba(96,165,250,.24) !important; }
 </div>
 <a
   class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#dc2626] hover:bg-[#ef4444] text-white text-sm font-bold transition-all shadow-[0_0_20px_rgba(220,38,38,0.3)] shrink-0"
-  href="https://youtube.com/playlist?list=PLGv1PVd5hYNQ&amp;si=AlgKVB69Q7mbzN7-9"
-  rel="noopener noreferrer"
-  target="_blank">
+ <a class="block group" href="#" id="java-playlist-preview">
 <span class="material-symbols-outlined text-[19px]">playlist_play</span>
 <span>Open Full Playlist</span>
 </a>
@@ -1046,4 +1044,32 @@ if(nextEl)nextEl.addEventListener('click',()=>{
 })();
 </script>
 
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const card = document.getElementById('java-playlist-preview');
+
+  if (!card) return;
+
+  card.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    const image = card.querySelector('.java-playlist-image');
+    if (!image) return;
+
+    const player = document.createElement('div');
+    player.className = 'relative w-full aspect-video';
+
+    const video = document.createElement('iframe');
+    video.className = 'absolute inset-0 w-full h-full';
+video.src = 'https://www.youtube-nocookie.com/embed/Ev1ESxeJs0s?autoplay=1';    video.title = 'Learn With Anmol Java Playlist';
+    video.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    video.allowFullscreen = true;
+
+    player.appendChild(video);
+    image.replaceWith(player);
+  });
+});
+</script>
+</body>
 </body></html>
