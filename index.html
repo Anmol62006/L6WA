@@ -337,7 +337,7 @@ header { border-color:rgba(96,165,250,.24) !important; }
 </div>
 <!-- Right Column: Large Java Playlist Preview -->
 <div class="lg:col-span-7">
-<a class="block group" href="https://youtube.com/playlist?list=PLGv1PVd5hYNQ&amp;si=AlgKVB69Q7mbzN7-9" rel="noopener noreferrer" target="_blank">
+<a class="block group" href="#" id="java-playlist-preview" aria-label="Play Java One Shot video">
 <div class="relative rounded-2xl bg-surface-container-lowest border border-primary/40 shadow-2xl overflow-hidden hover:border-primary/70 transition-all duration-300 hover:-translate-y-1 java-playlist-card">
 <img
   alt="Complete Java Tutorial in Hindi by Learn With Anmol"
@@ -549,7 +549,9 @@ header { border-color:rgba(96,165,250,.24) !important; }
 </div>
 <a
   class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#dc2626] hover:bg-[#ef4444] text-white text-sm font-bold transition-all shadow-[0_0_20px_rgba(220,38,38,0.3)] shrink-0"
- <a class="block group" href="#" id="java-playlist-preview">
+  href="https://youtube.com/playlist?list=PLGv1PVd5hYNQ&amp;si=AlgKVB69Q7mbzN7-9"
+  rel="noopener noreferrer"
+  target="_blank">
 <span class="material-symbols-outlined text-[19px]">playlist_play</span>
 <span>Open Full Playlist</span>
 </a>
@@ -1046,30 +1048,38 @@ if(nextEl)nextEl.addEventListener('click',()=>{
 
 
 <script>
-document.addEventListener('DOMContentLoaded', function () {
+(function () {
   const card = document.getElementById('java-playlist-preview');
-
   if (!card) return;
 
   card.addEventListener('click', function (event) {
     event.preventDefault();
 
+    // Keep the poster image in place until the user clicks it.
     const image = card.querySelector('.java-playlist-image');
     if (!image) return;
 
     const player = document.createElement('div');
-    player.className = 'relative w-full aspect-video';
+    player.className = 'relative w-full';
+    player.style.aspectRatio = '16 / 9';
 
     const video = document.createElement('iframe');
-    video.className = 'absolute inset-0 w-full h-full';
-video.src = 'https://www.youtube-nocookie.com/embed/Ev1ESxeJs0s?autoplay=1';    video.title = 'Learn With Anmol Java Playlist';
-    video.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
-    video.allowFullscreen = true;
+    video.src = 'https://www.youtube-nocookie.com/embed/Ev1ESxeJs0s?autoplay=1';
+    video.title = 'Java One Shot - Learn With Anmol';
+    video.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+    video.setAttribute('allowfullscreen', '');
+    video.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+    video.style.position = 'absolute';
+    video.style.inset = '0';
+    video.style.width = '100%';
+    video.style.height = '100%';
 
     player.appendChild(video);
     image.replaceWith(player);
+
+    const arrow = card.querySelector('.material-symbols-outlined');
+    if (arrow) arrow.textContent = 'play_circle';
   });
-});
+})();
 </script>
-</body>
 </body></html>
